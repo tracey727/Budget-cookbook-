@@ -1,0 +1,124 @@
+{
+  "schema_version": "1.0",
+  "note": "Universal conversions (verified=true) hold for any ingredient by definition of the units. Ingredient-specific conversions (verified=false) are reference/average values needing confirmation against a real product before high-precision use -- never treated as a launch safety fact the way the dietary engine's VERIFIED_PRESENT/ABSENT states are.",
+  "conversions": [
+    {
+      "from_unit_code": "kg",
+      "to_unit_code": "g",
+      "multiplier": 1000,
+      "notes": "Metric definition.",
+      "ingredient_id": null,
+      "verified": true
+    },
+    {
+      "from_unit_code": "g",
+      "to_unit_code": "kg",
+      "multiplier": 0.001,
+      "notes": "Metric definition.",
+      "ingredient_id": null,
+      "verified": true
+    },
+    {
+      "from_unit_code": "cup",
+      "to_unit_code": "mL",
+      "multiplier": 250,
+      "notes": "Australian/metric cup = 250 mL.",
+      "ingredient_id": null,
+      "verified": true
+    },
+    {
+      "from_unit_code": "mL",
+      "to_unit_code": "cup",
+      "multiplier": 0.004,
+      "notes": "Australian/metric cup = 250 mL.",
+      "ingredient_id": null,
+      "verified": true
+    },
+    {
+      "from_unit_code": "tbsp",
+      "to_unit_code": "mL",
+      "multiplier": 20,
+      "notes": "Australian tablespoon = 20 mL (NOT the US 15 mL tablespoon -- this product is AU-scoped, see REFERENCE_SOURCES.md).",
+      "ingredient_id": null,
+      "verified": true
+    },
+    {
+      "from_unit_code": "mL",
+      "to_unit_code": "tbsp",
+      "multiplier": 0.05,
+      "notes": "Australian tablespoon = 20 mL.",
+      "ingredient_id": null,
+      "verified": true
+    },
+    {
+      "from_unit_code": "tsp",
+      "to_unit_code": "mL",
+      "multiplier": 5,
+      "notes": "Australian/metric teaspoon = 5 mL.",
+      "ingredient_id": null,
+      "verified": true
+    },
+    {
+      "from_unit_code": "mL",
+      "to_unit_code": "tsp",
+      "multiplier": 0.2,
+      "notes": "Australian/metric teaspoon = 5 mL.",
+      "ingredient_id": null,
+      "verified": true
+    },
+    {
+      "ingredient_id": "b3547654-3c56-5474-9fa5-ddf51740c460",
+      "ingredient_key": "broccoli",
+      "from_unit_code": "cup",
+      "to_unit_code": "g",
+      "multiplier": 90,
+      "verified": false,
+      "notes": "Reference average for chopped broccoli (~90 g/cup). Confirm against the specific product before high-precision use."
+    },
+    {
+      "ingredient_id": "8d1eff52-32b3-573e-8182-8c0f3880c1c7",
+      "ingredient_key": "carrot",
+      "from_unit_code": "cup",
+      "to_unit_code": "g",
+      "multiplier": 110,
+      "verified": false,
+      "notes": "Reference average for grated/chopped carrot (~110 g/cup). Confirm against the specific product."
+    },
+    {
+      "ingredient_id": "44669542-f2f9-5d8f-a3c0-ab6d42a4e668",
+      "ingredient_key": "pumpkin",
+      "from_unit_code": "cup",
+      "to_unit_code": "g",
+      "multiplier": 120,
+      "verified": false,
+      "notes": "Reference average for diced raw pumpkin (~120 g/cup). Confirm against the specific product."
+    },
+    {
+      "ingredient_id": "517e7db7-97c9-52f9-8d9f-44b92f1a8345",
+      "ingredient_key": "rice",
+      "from_unit_code": "cup dry",
+      "to_unit_code": "cup cooked",
+      "multiplier": 3.0,
+      "verified": false,
+      "notes": "1 cup dry rice yields ~3 cups cooked rice (reference ratio; varies by rice type and method)."
+    },
+    {
+      "ingredient_id": "e8869607-7317-5fd1-b4ba-778d1ef5eb76",
+      "ingredient_key": "pasta",
+      "from_unit_code": "cup dry",
+      "to_unit_code": "cup cooked",
+      "multiplier": 2.0,
+      "verified": false,
+      "notes": "1 cup dry pasta yields ~2 cups cooked pasta (reference ratio; varies by shape)."
+    },
+    {
+      "ingredient_id": "35fc33c1-bf27-5caa-969a-cf87a1930226",
+      "ingredient_key": "couscous",
+      "from_unit_code": "cup dry",
+      "to_unit_code": "cup cooked",
+      "multiplier": 2.0,
+      "verified": false,
+      "notes": "1 cup dry couscous yields ~2 cups cooked couscous (reference ratio)."
+    }
+  ]
+}

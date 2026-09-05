@@ -1,0 +1,1560 @@
+{
+  "schema_version": "1.0",
+  "keying": "ingredient_id is a stable uuid5 derived from ingredient_key -- re-running this script reproduces identical IDs. This IS the canonical ingredient ID Phase 2.2/2.4/2.5's interim ingredient_key-based tables should be re-keyed onto.",
+  "quantity_dimensions": [
+    "MASS",
+    "VOLUME",
+    "COUNT",
+    "MANUAL"
+  ],
+  "ingredient_count": 151,
+  "manual_dimension_count": 31,
+  "ingredients": [
+    {
+      "ingredient_id": "494e5cb3-0de0-58b2-a6dd-7bc56db7fb6c",
+      "ingredient_key": "apple",
+      "quantity_dimension": "MANUAL",
+      "canonical_unit_code": null,
+      "recipe_units_used": [
+        "cup",
+        "serve"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "93bf4a2f-e1df-507c-9ca0-5936ea4c9f99",
+      "ingredient_key": "apple cinnamon",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "d02965d3-cc4d-59cd-8d10-bc94ed7e35ac",
+      "ingredient_key": "apricot",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "0fa6a58e-74fc-5979-b787-df0c81e7aa8d",
+      "ingredient_key": "avocado",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "a04c51fc-ce6b-514d-9ef4-74915452b9bb",
+      "ingredient_key": "baked beans",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "1d52ab62-1afb-5c50-bcad-4bf9d196b570",
+      "ingredient_key": "baking powder",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "tsp"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "806a243d-1463-574b-9dd2-d85bc30c3392",
+      "ingredient_key": "banana",
+      "quantity_dimension": "MANUAL",
+      "canonical_unit_code": null,
+      "recipe_units_used": [
+        "cup",
+        "serve"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "90f48ee4-917c-581b-ba27-35bb84d675f1",
+      "ingredient_key": "banana oat",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "9de69bf7-f93b-571f-a964-0075f5fb68b1",
+      "ingredient_key": "bbq sauce",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "0a05baca-5aeb-56f4-94a8-091dcab6c6fd",
+      "ingredient_key": "bbq seasoning",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "tbsp"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "a4047934-9469-59a5-b3ef-225b90576297",
+      "ingredient_key": "bbq tomato sauce",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "f1f0d4b3-c4e9-5462-aed4-995e1ee69164",
+      "ingredient_key": "beans",
+      "quantity_dimension": "MANUAL",
+      "canonical_unit_code": null,
+      "recipe_units_used": [
+        "cup",
+        "g"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "43e01f3e-5d3c-5e52-9d47-157a32fbb1da",
+      "ingredient_key": "beef mince",
+      "quantity_dimension": "MANUAL",
+      "canonical_unit_code": null,
+      "recipe_units_used": [
+        "cup",
+        "g"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "a1de470c-255c-54e3-9d57-00c98212b237",
+      "ingredient_key": "berries",
+      "quantity_dimension": "MANUAL",
+      "canonical_unit_code": null,
+      "recipe_units_used": [
+        "serve"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "f075ac77-b70c-5b71-a934-16288d26e69e",
+      "ingredient_key": "berry",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "cb8d0cb9-b821-567e-b6da-459826b505db",
+      "ingredient_key": "berry oat",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "427dfc30-e431-5f03-8155-5f21feb16957",
+      "ingredient_key": "blueberry",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "27d1eb4c-ce38-5160-b20b-586ca0c3be7f",
+      "ingredient_key": "bread",
+      "quantity_dimension": "MANUAL",
+      "canonical_unit_code": null,
+      "recipe_units_used": [
+        "serve"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "3b7cbc18-b953-5a9a-92e7-6c45a838eac9",
+      "ingredient_key": "bread rolls",
+      "quantity_dimension": "MANUAL",
+      "canonical_unit_code": null,
+      "recipe_units_used": [
+        "serve"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "cc7a835f-a9d7-59d0-b690-7c0e4c83b317",
+      "ingredient_key": "breadcrumbs",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "b3547654-3c56-5474-9fa5-ddf51740c460",
+      "ingredient_key": "broccoli",
+      "quantity_dimension": "MANUAL",
+      "canonical_unit_code": null,
+      "recipe_units_used": [
+        "cup",
+        "kg"
+      ],
+      "has_ingredient_specific_conversion": true
+    },
+    {
+      "ingredient_id": "68afe1ed-f292-509e-8e22-62fd027397dc",
+      "ingredient_key": "brown sugar",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "6801c9be-18b9-5060-9bce-1003ba0e3522",
+      "ingredient_key": "brown sugar or honey",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "82bf4728-5925-52be-9738-971c3c61f8ba",
+      "ingredient_key": "butter or oil",
+      "quantity_dimension": "MASS",
+      "canonical_unit_code": "g",
+      "recipe_units_used": [
+        "g"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "2552e923-c3ef-5742-bed6-10a563daed1b",
+      "ingredient_key": "butter or plant spread",
+      "quantity_dimension": "MASS",
+      "canonical_unit_code": "g",
+      "recipe_units_used": [
+        "g"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "f5ea648b-9702-501e-b1ee-1dd7660dc690",
+      "ingredient_key": "cabbage",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "a28498f4-8fdf-5d2c-be42-a2906027d5df",
+      "ingredient_key": "canned tomatoes",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "f3f34965-5f1d-5312-82e4-ce5195d60b4d",
+      "ingredient_key": "capsicum",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "a96db98a-65e8-5642-b2dd-266c5ac1f222",
+      "ingredient_key": "caramel",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "8d1eff52-32b3-573e-8182-8c0f3880c1c7",
+      "ingredient_key": "carrot",
+      "quantity_dimension": "MANUAL",
+      "canonical_unit_code": null,
+      "recipe_units_used": [
+        "cup",
+        "kg"
+      ],
+      "has_ingredient_specific_conversion": true
+    },
+    {
+      "ingredient_id": "d55e2870-470c-5f43-889f-715f59cbcdd4",
+      "ingredient_key": "cheese",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "f8a68e7a-6abd-5744-b667-207e2ae02aa3",
+      "ingredient_key": "cheese or breadcrumbs",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "4e54e628-d8bc-5d11-8835-b011e8cb65b6",
+      "ingredient_key": "cheese or yoghurt",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "9fe03000-9404-5dcc-81a3-7e747cd9780e",
+      "ingredient_key": "chia seeds",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "tbsp"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "dc40dddb-0b09-59a6-8e17-9103d632e07f",
+      "ingredient_key": "chicken",
+      "quantity_dimension": "MANUAL",
+      "canonical_unit_code": null,
+      "recipe_units_used": [
+        "cup",
+        "g"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "36b80199-847b-5406-98ff-2e5298b842cd",
+      "ingredient_key": "chickpeas",
+      "quantity_dimension": "MANUAL",
+      "canonical_unit_code": null,
+      "recipe_units_used": [
+        "cup",
+        "g"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "8a3d1f06-41f3-5f76-abd3-ed4c4e5b8a24",
+      "ingredient_key": "choc chip",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "393bc6ac-2e35-59dc-90b8-7a6e187f082f",
+      "ingredient_key": "chocolate",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "ab7ad73a-2b1c-560e-934e-91053862a210",
+      "ingredient_key": "cinnamon",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup",
+        "tsp"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "97ba7dfb-3bb7-5b76-abc1-b0d63723c155",
+      "ingredient_key": "cocoa oat",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "320003d4-c427-560d-9f93-32fbccf99764",
+      "ingredient_key": "coconut",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "ee9cbef8-e27b-5f89-9da2-248f7747bfc4",
+      "ingredient_key": "coconut milk",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "85888ddc-18e3-5404-9fb3-09df82a1b180",
+      "ingredient_key": "coconut oat",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "023b6fc8-2e47-5788-9b73-6e82001bfd7f",
+      "ingredient_key": "coffee",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "60a2e162-107a-5970-959c-2a5260a310a2",
+      "ingredient_key": "corn",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "d4cc87f9-7a42-5cf7-a754-8add4d3f6d2d",
+      "ingredient_key": "cottage cheese",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "35fc33c1-bf27-5caa-969a-cf87a1930226",
+      "ingredient_key": "couscous",
+      "quantity_dimension": "MANUAL",
+      "canonical_unit_code": null,
+      "recipe_units_used": [
+        "cup cooked"
+      ],
+      "has_ingredient_specific_conversion": true
+    },
+    {
+      "ingredient_id": "72871a68-0609-5e15-bfec-b36fdb013426",
+      "ingredient_key": "crackers",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "91fd1840-6191-5dbb-ac4b-a7c96ce4ba63",
+      "ingredient_key": "crackers or oats",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "7684ea09-7446-5381-a0a0-ea3281af85b2",
+      "ingredient_key": "creamy garlic sauce",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "6faadcac-23c8-5006-b58f-283baab341cb",
+      "ingredient_key": "cucumber",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "472af089-2258-55eb-8550-f176cd1eee65",
+      "ingredient_key": "egg",
+      "quantity_dimension": "MANUAL",
+      "canonical_unit_code": null,
+      "recipe_units_used": [
+        "cup",
+        "each",
+        "g"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "30016d1b-c78a-58d2-b2d4-67c421c748fd",
+      "ingredient_key": "eggs",
+      "quantity_dimension": "COUNT",
+      "canonical_unit_code": "each",
+      "recipe_units_used": [
+        "each"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "1ab3589b-09cf-52c9-a172-9302781102ce",
+      "ingredient_key": "english muffins",
+      "quantity_dimension": "MANUAL",
+      "canonical_unit_code": null,
+      "recipe_units_used": [
+        "serve"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "3cd903fc-a95b-5f73-8bc2-c31c79764d5e",
+      "ingredient_key": "garlic seasoning",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "tbsp"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "80df7b02-3afb-5231-b30d-4e0ac3f2c634",
+      "ingredient_key": "grapes",
+      "quantity_dimension": "MANUAL",
+      "canonical_unit_code": null,
+      "recipe_units_used": [
+        "serve"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "ac04196c-d14d-5937-8ab2-a9e0e1647c76",
+      "ingredient_key": "green beans",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "c55a8d18-653f-5797-b273-78294d3a4f82",
+      "ingredient_key": "ham",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "08ae2deb-ea3d-545f-9a27-0e0a00885ef9",
+      "ingredient_key": "herb",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "958ef243-16c0-55ac-a98f-138f4d81042f",
+      "ingredient_key": "herbs",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "05d65b83-baf0-5720-99fb-59f17abc8011",
+      "ingredient_key": "herbs or seasoning",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "tsp"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "2eda3c12-62de-5db8-954f-b83f81a0adaf",
+      "ingredient_key": "honey",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup",
+        "tsp"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "b9c15726-8b1a-5eb0-b69d-fbf84205d1fe",
+      "ingredient_key": "honey or syrup",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "bb6ba523-4d81-5918-bf20-25dfa3cd04f7",
+      "ingredient_key": "honey soy sauce",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "d650059c-800d-5c19-b7d5-71dff080041a",
+      "ingredient_key": "hummus",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "ecd46d58-2785-540a-a5fb-5a49852a989d",
+      "ingredient_key": "italian herbs",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "tbsp"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "c8501bd3-8518-57df-94ae-82bd942a804e",
+      "ingredient_key": "jam",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "45554dd4-314f-50a0-bc66-0c0b738f009a",
+      "ingredient_key": "leftover roast meat",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "b389211d-3648-5093-ab92-843026fa59b1",
+      "ingredient_key": "lemon",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "87c2ff57-927e-531a-99a4-341117b32fca",
+      "ingredient_key": "lemon herb dressing",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "4da55e63-3ad5-55c5-989a-4b31bc863f64",
+      "ingredient_key": "lemon herb seasoning",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "tbsp"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "d0f0628d-babc-50ed-a76e-e56c5f9745d2",
+      "ingredient_key": "lentils",
+      "quantity_dimension": "MANUAL",
+      "canonical_unit_code": null,
+      "recipe_units_used": [
+        "cup",
+        "g"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "b33d83fb-2c02-5f19-81bb-8f641b9158e7",
+      "ingredient_key": "lettuce",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "bea0b9fd-4cc6-5d4a-b5d7-121b522a0a46",
+      "ingredient_key": "mango",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "26e4fbd0-d77f-5725-8882-2fd816072d69",
+      "ingredient_key": "melon",
+      "quantity_dimension": "MANUAL",
+      "canonical_unit_code": null,
+      "recipe_units_used": [
+        "serve"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "084f5f29-a58d-573b-9f10-21a6fc125cc9",
+      "ingredient_key": "mild chilli sauce",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "8fda11c6-2808-5ae1-b064-00c7d1000d96",
+      "ingredient_key": "mild curry powder or paste",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "tbsp"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "72434ef6-b34a-5093-85aa-9334f33eac50",
+      "ingredient_key": "mild curry sauce",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "dda830cc-d17e-51a7-9b63-968a053aafd0",
+      "ingredient_key": "mild paprika",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "tbsp"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "f69a6a28-9724-55d8-9fe8-a7ad09d3b9dc",
+      "ingredient_key": "milk",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "57fcc87f-0a73-5f6c-8e50-05e55302bc51",
+      "ingredient_key": "milk or water",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "dc039c3f-1281-59bb-b099-b68bbf6c0ae9",
+      "ingredient_key": "mixed fruit",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "a08bd78d-70cd-5518-be06-0d4060f17fcc",
+      "ingredient_key": "mixed salad vegetables",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "bd877ce4-4c62-54fd-95ce-16f9d18c6271",
+      "ingredient_key": "mixed vegetables",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "3d0708ed-5f79-5192-8b46-eab4400e3af4",
+      "ingredient_key": "mushroom",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "41be3817-8417-5bd8-b10c-e18f636a8404",
+      "ingredient_key": "mustard dressing",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "4453bbbf-5492-588e-9921-d7e571276878",
+      "ingredient_key": "noodles",
+      "quantity_dimension": "MANUAL",
+      "canonical_unit_code": null,
+      "recipe_units_used": [
+        "cup",
+        "g"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "2e72992d-92d5-5466-8f94-d66d88b69b30",
+      "ingredient_key": "oat flour",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "1b9dde7d-e643-5ae0-9ccf-f21e2b587167",
+      "ingredient_key": "oat honey",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "d5869d26-1451-5577-9414-48a264b371c5",
+      "ingredient_key": "oat jam",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "248fb56a-ebf3-57d0-8920-428fb02e3592",
+      "ingredient_key": "oil",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup",
+        "tbsp"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "5bc4f39b-2790-5fe9-a965-2801771a3aa6",
+      "ingredient_key": "oil or butter",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup",
+        "tbsp"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "a04dc849-fe2f-5cf0-8f16-e06530247c7c",
+      "ingredient_key": "oil or melted butter",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "ef1215f7-0a4e-5fba-8fa9-238428bae37c",
+      "ingredient_key": "onion",
+      "quantity_dimension": "MANUAL",
+      "canonical_unit_code": null,
+      "recipe_units_used": [
+        "cup",
+        "each"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "f710b365-9e8f-5fe1-b73b-ab4677219bd8",
+      "ingredient_key": "orange",
+      "quantity_dimension": "MANUAL",
+      "canonical_unit_code": null,
+      "recipe_units_used": [
+        "cup",
+        "serve"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "00b9fb78-c560-5fd4-b2db-af7358110d91",
+      "ingredient_key": "paprika",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "e8869607-7317-5fd1-b4ba-778d1ef5eb76",
+      "ingredient_key": "pasta",
+      "quantity_dimension": "MANUAL",
+      "canonical_unit_code": null,
+      "recipe_units_used": [
+        "cup",
+        "cup cooked",
+        "g"
+      ],
+      "has_ingredient_specific_conversion": true
+    },
+    {
+      "ingredient_id": "c2fe41b1-8174-545b-91cc-b59cdcf58b59",
+      "ingredient_key": "peach",
+      "quantity_dimension": "MANUAL",
+      "canonical_unit_code": null,
+      "recipe_units_used": [
+        "cup",
+        "serve"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "8a3830ab-c18d-5426-9fee-f5d99d925777",
+      "ingredient_key": "peanut",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "894e7360-dbe0-5f37-bbde-34d30e413a7f",
+      "ingredient_key": "peanut butter",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "5fdd04bc-a4e7-581c-a3a6-458e999f1ebe",
+      "ingredient_key": "peanut oat",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "7c57c5cd-32cb-57b0-ad5d-b13e68feb340",
+      "ingredient_key": "peanut or seed butter",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "39512423-2a8c-52dd-9b27-c97461c8d98b",
+      "ingredient_key": "peanut sauce",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "35618001-0318-5618-8d8e-13547454674d",
+      "ingredient_key": "pear",
+      "quantity_dimension": "MANUAL",
+      "canonical_unit_code": null,
+      "recipe_units_used": [
+        "cup",
+        "serve"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "00d79ac2-2bcb-55ab-ab26-4453f37958e9",
+      "ingredient_key": "peas",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "64348770-7a53-5515-abac-dc0ef00d8e3a",
+      "ingredient_key": "pesto veg sauce",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "2af02d5a-e51b-5a7a-b00d-f3c3c9ea0cd1",
+      "ingredient_key": "pineapple",
+      "quantity_dimension": "MANUAL",
+      "canonical_unit_code": null,
+      "recipe_units_used": [
+        "cup",
+        "serve"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "aa7c08db-1e2a-56a4-93dc-8a983c49cc53",
+      "ingredient_key": "pita bread",
+      "quantity_dimension": "MANUAL",
+      "canonical_unit_code": null,
+      "recipe_units_used": [
+        "serve"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "6e680157-1664-5b16-8e02-6e6266ceb34f",
+      "ingredient_key": "plain",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "40437111-8b34-53a4-ada9-ae2c9d5b1165",
+      "ingredient_key": "plain flour",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "d6882b46-ac9c-548e-9872-19d5c46e5b56",
+      "ingredient_key": "plum",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "79447e7c-a08d-5c8f-886a-5c007d88cec5",
+      "ingredient_key": "popcorn",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "ecba71a5-8eda-5e1a-8fe5-9bef6929c65d",
+      "ingredient_key": "pork",
+      "quantity_dimension": "MASS",
+      "canonical_unit_code": "g",
+      "recipe_units_used": [
+        "g"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "2c2eb7b7-5f59-50d1-955a-95f3620fbb7c",
+      "ingredient_key": "potato",
+      "quantity_dimension": "MANUAL",
+      "canonical_unit_code": null,
+      "recipe_units_used": [
+        "cup",
+        "cup cooked",
+        "g",
+        "kg",
+        "large"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "44669542-f2f9-5d8f-a3c0-ab6d42a4e668",
+      "ingredient_key": "pumpkin",
+      "quantity_dimension": "MANUAL",
+      "canonical_unit_code": null,
+      "recipe_units_used": [
+        "cup",
+        "kg"
+      ],
+      "has_ingredient_specific_conversion": true
+    },
+    {
+      "ingredient_id": "992c4cd8-c4ce-5737-8405-123cd8f21ee0",
+      "ingredient_key": "raspberry",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "517e7db7-97c9-52f9-8d9f-44b92f1a8345",
+      "ingredient_key": "rice",
+      "quantity_dimension": "MANUAL",
+      "canonical_unit_code": null,
+      "recipe_units_used": [
+        "cup",
+        "cup cooked",
+        "cup dry"
+      ],
+      "has_ingredient_specific_conversion": true
+    },
+    {
+      "ingredient_id": "7e86254d-f6f0-5a6f-99ff-c7ed5b590404",
+      "ingredient_key": "ricotta",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "d45aaa79-4da6-51bf-a483-7f03a3b2b599",
+      "ingredient_key": "rolled oats",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "9a33d0c3-a863-5916-9243-1826d188cf61",
+      "ingredient_key": "salad leaves",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "20652274-fa04-5d7e-8184-e4fcf6d2cae4",
+      "ingredient_key": "salsa",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "856fc4c0-4562-553d-bfc6-2052e434a54e",
+      "ingredient_key": "sausages",
+      "quantity_dimension": "MASS",
+      "canonical_unit_code": "g",
+      "recipe_units_used": [
+        "g"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "d5f2584d-7452-502b-9aa4-a9ffcc8bda62",
+      "ingredient_key": "seed oat",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "b1b378bb-31af-5c4c-a6bc-78b1357d599d",
+      "ingredient_key": "self-raising flour",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "6ee798a7-2ebd-5832-b979-486de6c5ed1d",
+      "ingredient_key": "self-raising flour or oats",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "bcefff21-45c0-5a7e-829e-03636084924b",
+      "ingredient_key": "simple white or tomato sauce",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "b4220c8e-b9cd-5030-a591-5267f06f7875",
+      "ingredient_key": "soy garlic sauce",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "22c20e6a-71a8-5ab7-8f77-666d205a78d8",
+      "ingredient_key": "spinach",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "b8724980-6a37-5fd5-81bb-27c29c22a365",
+      "ingredient_key": "spread or dressing",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "bd815015-b119-5570-bd80-7f262fdb4e4e",
+      "ingredient_key": "stock",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "317d245d-f5e4-56ca-a56e-61755d81c837",
+      "ingredient_key": "strawberry",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "18a328c0-7562-53db-82f9-292798f3d9af",
+      "ingredient_key": "sugar",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "96d6ac37-b2a8-5970-b601-7e7a612afe61",
+      "ingredient_key": "sultana",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "3be59912-7bba-5af6-9c9f-a96786b3dbb7",
+      "ingredient_key": "sultana oat",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "e14dcb32-0b7f-5f6f-83c5-fb81b697b6cd",
+      "ingredient_key": "sweet chilli dressing",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "2e463b04-4c76-55b6-bbe8-6ea8bd8f07ee",
+      "ingredient_key": "sweet chilli sauce",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "f19a0ba4-5cab-5ae7-b788-809951b8fd21",
+      "ingredient_key": "sweet potato",
+      "quantity_dimension": "MANUAL",
+      "canonical_unit_code": null,
+      "recipe_units_used": [
+        "cup",
+        "g",
+        "kg",
+        "large"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "f0614971-f5ce-5314-a897-345b1928e3b0",
+      "ingredient_key": "teriyaki sauce",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "800d460a-668c-560d-a074-fd6a0772b16d",
+      "ingredient_key": "tofu",
+      "quantity_dimension": "MASS",
+      "canonical_unit_code": "g",
+      "recipe_units_used": [
+        "g"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "926e6f5c-0952-58ac-a67a-f5f209b08dc4",
+      "ingredient_key": "tomato",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "b1e7d706-d0a3-559c-9533-6bed14a23903",
+      "ingredient_key": "tomato herb dressing",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "13b17df0-6d43-520f-9694-9899ad84b850",
+      "ingredient_key": "tomato herb sauce",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "b2e18c85-1a35-58d6-aecb-0e64d66cacee",
+      "ingredient_key": "tuna",
+      "quantity_dimension": "MANUAL",
+      "canonical_unit_code": null,
+      "recipe_units_used": [
+        "cup",
+        "g"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "174eb66b-f1f7-5d1b-a796-fcae80606e3a",
+      "ingredient_key": "vanilla",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup",
+        "tsp"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "9938ea1d-b4be-5849-8ed8-8f25f39aae34",
+      "ingredient_key": "vegetable sticks or fruit",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "98d940fc-8fad-54fe-93c7-0aa7be82a323",
+      "ingredient_key": "vinaigrette dressing",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "dcc18cb0-4e85-57c4-8374-cffd1dbd64d3",
+      "ingredient_key": "wholemeal flour",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "900d0f88-e7dd-5398-b5ac-7ab0b1948223",
+      "ingredient_key": "wraps",
+      "quantity_dimension": "MANUAL",
+      "canonical_unit_code": null,
+      "recipe_units_used": [
+        "each",
+        "serve"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "ac98f251-042d-5c30-9e7b-5a8ed4ff06ad",
+      "ingredient_key": "yoghurt",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "960176d7-b51f-5819-9d39-7f36eaf79c24",
+      "ingredient_key": "yoghurt dressing",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    },
+    {
+      "ingredient_id": "4fe3939a-3ce4-57da-b02a-97cb4f338c88",
+      "ingredient_key": "zucchini",
+      "quantity_dimension": "VOLUME",
+      "canonical_unit_code": "mL",
+      "recipe_units_used": [
+        "cup"
+      ],
+      "has_ingredient_specific_conversion": false
+    }
+  ]
+}
