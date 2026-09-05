@@ -18,11 +18,11 @@
   "excluded_stack": [
     "Vercel"
   ],
-  "next_phase": "Phase 2.5 \u2014 Substitution Safety & Cost Recalculation",
+  "next_phase": "Phase 2.6 \u2014 Medical / Professional-Plan Boundaries",
   "pack_name": "GENEVIEVE_Family_Budget_Cookbook_COMPLETE_BUILD_PACK_V2_DIETARY_ENGINE",
   "version": "2.0",
   "dietary_engine": {
-    "status": "TAXONOMY v1.1 FROZEN (Phase 2.1 GREEN); ingredient attribute model built for all 151 distinct V1 ingredients (Phase 2.2 GREEN, v1.1 addendum in 2.4); household member combination engine built and tested (Phase 2.3 GREEN); all 800 recipes classified against 42 ingredient-derivable requirement codes, reviewed=false pending human sign-off (Phase 2.4 GREEN); substitution mapping NOT YET CLAIMED COMPLETE",
+    "status": "TAXONOMY v1.1 FROZEN (Phase 2.1 GREEN); ingredient attribute model built for all 151 distinct V1 ingredients, v1.2 with LACTOSE_CONTENT (Phase 2.2 GREEN, addenda in 2.4/2.5); household member combination engine built and tested (Phase 2.3 GREEN); all 800 recipes classified against 42 ingredient-derivable requirement codes, reviewed=false pending human sign-off (Phase 2.4 GREEN); substitution safety + cost recalculation engine built and tested against all 20 V1 swap groups (Phase 2.5 GREEN)",
     "suitability_states": [
       "MEETS",
       "ADAPTABLE",
@@ -33,13 +33,15 @@
     "ingredient_attribute_model": "07_DIETARY_REQUIREMENTS_ENGINE/ingredient_dietary_attributes_v1.json",
     "household_member_model": "04_PRODUCTION_STARTER/src/dietary/household.ts",
     "recipe_requirement_assessments": "07_DIETARY_REQUIREMENTS_ENGINE/recipe_requirement_assessments_v1.json",
+    "substitution_engine": "04_PRODUCTION_STARTER/src/dietary/substitution.ts",
     "frozen_gate_records": [
       "07_DIETARY_REQUIREMENTS_ENGINE/PHASE_2_1_TAXONOMY_AND_LANGUAGE_FREEZE.md",
       "07_DIETARY_REQUIREMENTS_ENGINE/PHASE_2_2_INGREDIENT_ATTRIBUTE_MODEL_REPORT.md",
       "07_DIETARY_REQUIREMENTS_ENGINE/PHASE_2_3_HOUSEHOLD_MEMBER_REQUIREMENT_MODEL_REPORT.md",
-      "07_DIETARY_REQUIREMENTS_ENGINE/PHASE_2_4_RECIPE_CLASSIFICATION_REPORT.md"
+      "07_DIETARY_REQUIREMENTS_ENGINE/PHASE_2_4_RECIPE_CLASSIFICATION_REPORT.md",
+      "07_DIETARY_REQUIREMENTS_ENGINE/PHASE_2_5_SUBSTITUTION_SAFETY_REPORT.md"
     ],
-    "exact_next_gate": "Phase 2.5 \u2014 Substitution Safety & Cost Recalculation",
+    "exact_next_gate": "Phase 2.6 \u2014 Medical / Professional-Plan Boundaries",
     "migration": "04_PRODUCTION_STARTER/schema/002_dietary_requirements.sql"
   }
 }

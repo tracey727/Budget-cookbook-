@@ -1,9 +1,13 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "change_log": [
     {
       "version": "1.1",
       "change": "Phase 2.4 addendum: added CAFFEINE_CONTENT (coffee, chocolate, choc chip, cocoa oat), ONION_CONTENT and GARLIC_CONTENT (onion, garlic seasoning, creamy garlic sauce, soy garlic sauce, pesto veg sauce exact matches, plus a generic CONDITIONAL flag for any sauce-group or Herbs/Spices-swap-group ingredient) -- needed to derive CAFFEINE_FREE/ONION_FREE/GARLIC_FREE per-recipe classification."
+    },
+    {
+      "version": "1.2",
+      "change": "Phase 2.5 addendum: added LACTOSE_CONTENT, mirroring DAIRY_MILK on every dairy ingredient in this table. Needed once the substitution catalogue introduced 'lactose-free milk' as a real substitute option: it is DAIRY_MILK=true (still carries the milk allergen) but LACTOSE_CONTENT=false, a distinction DAIRY_MILK alone cannot express."
     }
   ],
   "keying": "INTERIM: keyed by normalised ingredient_key (lowercased ingredient text), not canonical ingredient_id. Re-key onto ingredients.ingredient_id (schema/001_initial_schema.sql) when Phase 4 assigns canonical IDs.",
@@ -535,6 +539,13 @@
           "evidence_state": "CONDITIONAL",
           "notes": "Commercial bread-family products commonly contain milk powder. Verify product.",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
         }
       ]
     },
@@ -578,6 +589,13 @@
           "attribute_value": "unspecified",
           "evidence_state": "CONDITIONAL",
           "notes": "Commercial bread-family products commonly contain milk powder. Verify product.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
         }
       ]
@@ -740,6 +758,13 @@
           "evidence_state": "CONDITIONAL",
           "notes": "Swap-flexible ingredient line ('butter or oil'): 'butter' -> true; 'oil' -> false. Household's actual choice determines this attribute.",
           "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
         }
       ]
     },
@@ -777,6 +802,13 @@
           "evidence_state": "CONDITIONAL",
           "notes": "Swap-flexible ingredient line ('butter or plant spread'): 'butter' -> true; 'plant spread' -> unspecified. Household's actual choice determines this attribute.",
           "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
         }
       ]
     },
@@ -892,6 +924,13 @@
           "evidence_state": "CONDITIONAL",
           "notes": "Follows the DAIRY_MILK assessment: traditional caramel uses butter/cream.",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
         }
       ]
     },
@@ -972,6 +1011,13 @@
           "evidence_state": "VERIFIED_PRESENT",
           "notes": null,
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
         }
       ]
     },
@@ -1023,6 +1069,13 @@
           "evidence_state": "CONDITIONAL",
           "notes": "Swap-flexible ingredient line ('cheese or breadcrumbs'): 'cheese' -> not identified; 'breadcrumbs' -> true. Household's actual choice determines this attribute.",
           "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
         }
       ]
     },
@@ -1059,6 +1112,13 @@
           "attribute_value": "true",
           "evidence_state": "VERIFIED_PRESENT",
           "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
         }
       ]
@@ -1188,6 +1248,13 @@
           "evidence_state": "CONDITIONAL",
           "notes": "Follows the DAIRY_MILK assessment: milk chocolate chips are common.",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
         }
       ]
     },
@@ -1231,6 +1298,13 @@
           "attribute_value": "true",
           "evidence_state": "CONDITIONAL",
           "notes": "Follows the DAIRY_MILK assessment: milk chocolate is common.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
         }
       ]
@@ -1356,6 +1430,13 @@
           "evidence_state": "CONDITIONAL",
           "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
           "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
         }
       ]
     },
@@ -1479,6 +1560,13 @@
           "attribute_value": "true",
           "evidence_state": "VERIFIED_PRESENT",
           "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
         }
       ]
@@ -1642,6 +1730,13 @@
           "evidence_state": "CONDITIONAL",
           "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
           "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
         }
       ]
     },
@@ -1794,6 +1889,13 @@
           "attribute_value": "unspecified",
           "evidence_state": "CONDITIONAL",
           "notes": "Commercial bread-family products commonly contain milk powder. Verify product.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
         }
       ]
@@ -2562,6 +2664,13 @@
           "evidence_state": "CONDITIONAL",
           "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
           "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
         }
       ]
     },
@@ -2636,6 +2745,13 @@
           "evidence_state": "VERIFIED_PRESENT",
           "notes": null,
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
         }
       ]
     },
@@ -2673,6 +2789,13 @@
           "evidence_state": "CONDITIONAL",
           "notes": "Swap-flexible ingredient line ('milk or water'): 'milk' -> true; 'water' -> false. Household's actual choice determines this attribute.",
           "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
         }
       ]
     },
@@ -2951,6 +3074,13 @@
           "evidence_state": "VERIFIED_ABSENT",
           "notes": null,
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
         }
       ]
     },
@@ -2989,6 +3119,13 @@
           "evidence_state": "CONDITIONAL",
           "notes": "Swap-flexible ingredient line ('oil or butter'): 'oil' -> false; 'butter' -> true. Household's actual choice determines this attribute.",
           "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
         }
       ]
     },
@@ -3026,6 +3163,13 @@
           "evidence_state": "CONDITIONAL",
           "notes": "Swap-flexible ingredient line ('oil or melted butter'): 'oil' -> false; 'melted butter' -> true. Household's actual choice determines this attribute.",
           "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
         }
       ]
     },
@@ -3454,6 +3598,13 @@
           "evidence_state": "CONDITIONAL",
           "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
           "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
         }
       ]
     },
@@ -3523,6 +3674,13 @@
           "attribute_value": "unspecified",
           "evidence_state": "CONDITIONAL",
           "notes": "Commercial bread-family products commonly contain milk powder. Verify product.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
         }
       ]
@@ -3826,6 +3984,13 @@
           "attribute_value": "true",
           "evidence_state": "VERIFIED_PRESENT",
           "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
         }
       ]
@@ -4876,6 +5041,13 @@
           "evidence_state": "CONDITIONAL",
           "notes": "Commercial bread-family products commonly contain milk powder. Verify product.",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
         }
       ]
     },
@@ -4932,6 +5104,13 @@
           "evidence_state": "CONDITIONAL",
           "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
           "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
         }
       ]
     },
@@ -4983,6 +5162,13 @@
           "evidence_state": "CONDITIONAL",
           "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
           "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
         }
       ]
     },

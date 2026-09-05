@@ -333,6 +333,22 @@ def add_generic_sauce_seasoning_onion_garlic_risk(name, info, attributes):
     return attributes + extra
 
 
+def add_lactose_content(attributes):
+    """LACTOSE_FREE and DAIRY_FREE are different requirements (lactose-free milk
+    is still dairy -- it still carries the milk allergen -- it's just had the
+    lactose sugar removed). Every ordinary dairy ingredient in this recipe bank
+    is regular dairy, so LACTOSE_CONTENT mirrors DAIRY_MILK here; the
+    distinction only matters once a specific lactose-reduced *substitute*
+    enters the picture (Phase 2.5's substitution catalogue), which is exactly
+    why this code needed to exist as its own attribute rather than being
+    folded into DAIRY_MILK."""
+    dairy_row = next((a for a in attributes if a["attribute_code"] == "DAIRY_MILK"), None)
+    if dairy_row is None:
+        return attributes
+    return attributes + [attr("LACTOSE_CONTENT", dairy_row["attribute_value"], dairy_row["evidence_state"],
+                               "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).")]
+
+
 def main():
     names = load_ingredient_names()
     records = []
@@ -340,6 +356,7 @@ def main():
         info = names[name]
         attributes, is_compound = classify(name)
         attributes = add_generic_sauce_seasoning_onion_garlic_risk(name, info, attributes)
+        attributes = add_lactose_content(attributes)
         records.append({
             "ingredient_key": name,
             "recipe_groups": sorted(info["groups"]),
@@ -350,7 +367,7 @@ def main():
             "attributes": attributes,
         })
     out = {
-        "schema_version": "1.1",
+        "schema_version": "1.2",
         "change_log": [
             {"version": "1.1", "change": "Phase 2.4 addendum: added CAFFEINE_CONTENT (coffee, chocolate, "
                                           "choc chip, cocoa oat), ONION_CONTENT and GARLIC_CONTENT "
@@ -358,6 +375,11 @@ def main():
                                           "pesto veg sauce exact matches, plus a generic CONDITIONAL flag for "
                                           "any sauce-group or Herbs/Spices-swap-group ingredient) -- needed to "
                                           "derive CAFFEINE_FREE/ONION_FREE/GARLIC_FREE per-recipe classification."},
+            {"version": "1.2", "change": "Phase 2.5 addendum: added LACTOSE_CONTENT, mirroring DAIRY_MILK on "
+                                          "every dairy ingredient in this table. Needed once the substitution "
+                                          "catalogue introduced 'lactose-free milk' as a real substitute option: "
+                                          "it is DAIRY_MILK=true (still carries the milk allergen) but "
+                                          "LACTOSE_CONTENT=false, a distinction DAIRY_MILK alone cannot express."},
         ],
         "keying": "INTERIM: keyed by normalised ingredient_key (lowercased ingredient text), "
                   "not canonical ingredient_id. Re-key onto ingredients.ingredient_id "

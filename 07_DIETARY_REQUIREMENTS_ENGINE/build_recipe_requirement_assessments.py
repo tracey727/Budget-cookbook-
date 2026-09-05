@@ -281,7 +281,7 @@ REQUIREMENT_EVALUATORS = {
     "RYE_FREE": direct_code_requirement({"GLUTEN_CEREAL_RYE"}, "rye"),
     "BARLEY_FREE": direct_code_requirement({"GLUTEN_CEREAL_BARLEY"}, "barley"),
     "OAT_EXCLUDE": oat_exclude_evaluator,
-    "LACTOSE_FREE": direct_code_requirement({"DAIRY_MILK"}, "milk/lactose (lactose-free dairy alternatives exist and would need product-level verification)"),
+    "LACTOSE_FREE": direct_code_requirement({"LACTOSE_CONTENT"}, "lactose"),
     "DAIRY_FREE": direct_code_requirement({"DAIRY_MILK"}, "dairy"),
     "ALCOHOL_FREE": direct_code_requirement({"ALCOHOL_CONTENT"}, "alcohol"),
     "CAFFEINE_FREE": direct_code_requirement({"CAFFEINE_CONTENT"}, "caffeine"),
