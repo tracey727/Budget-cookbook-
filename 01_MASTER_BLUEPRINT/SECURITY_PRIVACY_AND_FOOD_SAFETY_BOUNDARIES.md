@@ -20,3 +20,13 @@ The UI must instruct users to check labels and cross-contamination requirements.
 
 ## Recipe QA
 Before public launch, review ingredient amounts, cooking temperatures where relevant, timings, storage/freezer guidance and special scaling behaviours. Recipes not yet reviewed should be excluded from the public launch set rather than presented as tested.
+
+
+## Dietary-engine safety boundary
+- Do not store diagnoses when a functional rule such as “avoid peanut” is sufficient.
+- Treat allergy/coeliac/clinician-plan/IDDSI controls as higher consequence than lifestyle preferences.
+- `ADAPTABLE` never means allergy-safe.
+- Missing product/cross-contact evidence returns `UNVERIFIED`, not a reassuring guess.
+- Do not claim halal/kosher certification without certification evidence.
+- Do not invent clinician-directed nutrient targets.
+- Oat/gluten claims must respect the Australian production boundary documented in the dietary reference file.

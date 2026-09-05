@@ -22,3 +22,20 @@
 | Stripe | Not built | Required for paid tier |
 | PWA/offline | Not built | Optional/late gate |
 | Production monitoring | Not built | Required before launch |
+
+
+## V2 Dietary Requirements Engine additions
+- Multi-member household dietary profiles
+- Vegetarian / vegan / pescatarian / flexitarian preferences
+- Australia allergen declaration model with individual tree nuts/cereals
+- Coeliac/gluten/oats special boundary
+- Lactose/dairy and custom intolerance/exclusion support
+- Low-FODMAP professional-plan mode
+- Religious/cultural compatibility settings without false certification
+- Clinician-directed nutrient target records
+- IDDSI/texture-modified boundary
+- Life-stage and sensory/preference controls
+- MEETS / ADAPTABLE / EXCLUDED / UNVERIFIED recipe states
+- Safe substitution intersection across all selected household members
+- Adapted-recipe affordability recalculation
+- CUSTOM_EXCLUSION / CUSTOM_REQUIREMENT / CUSTOM_PREFERENCE

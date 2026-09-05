@@ -24,3 +24,10 @@ This folder is a **starter**, not a claim that production is already complete.
 
 ## Secrets
 Use Cloudflare secret storage for Stripe secrets and any other secret. Never put secret values in source, `wrangler.toml.example`, `.env.example` or browser JavaScript.
+
+## V2 dietary-engine migration
+After Phase 2 model review and before seeding production dietary classifications, apply:
+1. `schema/001_initial_schema.sql`
+2. `schema/002_dietary_requirements.sql`
+
+Do not populate `recipe_requirement_assessments` with optimistic defaults. Public suitability must come from the Phase 2 classification audit; unknown/high-consequence values remain `UNVERIFIED`.

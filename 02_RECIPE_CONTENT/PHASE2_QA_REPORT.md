@@ -35,6 +35,8 @@ Families with more than 12 recipes (review for repetitive/near-duplicate variant
 - Baking/Side / "breads & scones" — 15 recipes
 - Baking/Side / "vegetable sides" — 15 recipes
 
+Spot-check (`build_recipe_bank.py` generates these families by combining a flavour/sauce variant with a protein, e.g. "Tomato Herb Chicken Pasta", "Creamy Garlic Chicken Pasta") confirms these are deliberate templated variants, not accidental duplicates. They still need a human read for whether every flavour × protein combination is actually a distinct, sensible dish (Phase 2 item 1) — the generator pattern alone doesn't prove that.
+
 ## 2. Method / timing sanity
 
 Flags: 0

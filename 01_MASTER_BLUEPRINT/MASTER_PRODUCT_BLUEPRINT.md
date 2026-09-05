@@ -125,3 +125,7 @@ Production may support Free and Premium entitlements. Exact pricing is a commerc
 - invented supermarket prices;
 - live supermarket scraping without a lawful, reliable source contract;
 - complex AI meal generation before deterministic recipe matching is stable.
+
+
+## Dietary Requirements & Restrictions Engine — V2 Locked Extension
+Dietary requirements are now a first-class recommendation input. The engine must support multiple household members with different hard exclusions, verified requirements and preferences. Canonical result states are **MEETS / ADAPTABLE / EXCLUDED / UNVERIFIED**. Adapted recipes must recalculate both ingredients and cost. High-consequence claims remain unverified unless evidence supports them. Full contract: `07_DIETARY_REQUIREMENTS_ENGINE/DIETARY_REQUIREMENTS_MASTER_BLUEPRINT.md`.

@@ -21,16 +21,58 @@ Build strictly in order. Do not call a phase complete until its GREEN gate passe
 
 **GREEN gate:** counts match, IDs are stable, source files are checksummed, browser engine syntax passes.
 
-## Phase 2 — Recipe/Content Production QA & Dietary-Claim Boundary — NEXT
+## Phase 2 — Dietary Requirements Engine + Recipe/Content Production QA — NEXT
+The dietary engine is now a prerequisite to reviewing the 800 recipes so the catalogue is audited once against the correct production model.
+
+### Phase 2.1 — Freeze Dietary Taxonomy & Claim Boundaries — NEXT
+- approve the taxonomy in `07_DIETARY_REQUIREMENTS_ENGINE/DIETARY_REQUIREMENTS_MASTER_BLUEPRINT.md`;
+- approve the four suitability states: MEETS / ADAPTABLE / EXCLUDED / UNVERIFIED;
+- separate hard safety requirements from preferences;
+- preserve CUSTOM_EXCLUSION / CUSTOM_REQUIREMENT / CUSTOM_PREFERENCE;
+- freeze certification and medical-claim language.
+
+**GREEN gate:** no wording implies allergy, coeliac, medical, religious-certification or dysphagia safety without appropriate evidence.
+
+### Phase 2.2 — Canonical Ingredient Dietary Attribute Model
+Implement ingredient attributes for ethical/lifestyle, allergens, cereals/gluten, animal-source, alcohol and extension fields.
+
+**GREEN gate:** locked requirement classes can be expressed without unsafe ingredient-name string matching alone.
+
+### Phase 2.3 — Household Member Requirements
+Implement member profiles, enforcement levels and source/provenance.
+
+**GREEN gate:** one household can safely combine different requirements for different people.
+
+### Phase 2.4 — Classify all 800 Recipes
+Audit every recipe against applicable requirement families. High-consequence suitability is evidence-based; unresolved states remain UNVERIFIED.
+
+**GREEN gate:** every launch recipe has a versioned classification record for enabled requirement families or remains visibly unverified.
+
+### Phase 2.5 — Substitution Safety + Adapted Cost
+Map substitutions and prevent any substitute from violating another member’s hard exclusions. Recalculate ingredient quantities and cost using the chosen substitute.
+
+**GREEN gate:** every adaptation changes both the displayed ingredient list and affordability maths.
+
+### Phase 2.6 — Medical / Professional-Plan Boundaries
+Support supplied dietary targets without diagnosing or inventing therapeutic targets.
+
+**GREEN gate:** professional-plan modes require explicit configuration and cannot be activated from inferred health conditions.
+
+### Phase 2.7 — Texture / IDDSI Boundary
+If IDDSI support is enabled, use clinician/care-plan supplied levels and require preparation verification before suitability claims.
+
+**GREEN gate:** no recipe is called IDDSI compliant from description alone.
+
+### Phase 2.8 — Full Recipe/Content Production QA
 1. Audit duplicate/near-duplicate recipe names and families.
 2. Validate cooking methods and timings category-by-category.
 3. Review recipe quantities for realistic household use.
 4. Review high-risk scaling cases: eggs, raising agents, strong spices, pan oil, cans/packs.
-5. Freeze the language for GF/DF “adaptable” versus allergen-safe claims.
-6. Add allergen/adaptation disclaimer in product UX.
-7. Mark any recipe requiring real kitchen testing before public launch.
+5. Freeze allergen/adaptation disclaimers in product UX.
+6. Mark any recipe requiring real kitchen testing before public launch.
+7. Exclude unresolved launch recipes rather than guessing.
 
-**GREEN gate:** no unsafe or misleading dietary claims; every launch recipe has a reviewed ingredient/method record; unresolved recipes are excluded from launch rather than guessed.
+**GREEN gate:** no unsafe or misleading dietary claims; every launch recipe has a reviewed ingredient/method record and dietary classification; unresolved recipes remain unverified or excluded from launch.
 
 ## Phase 3 — Authoritative GitHub Production Repository & Protection
 1. Create or verify one authoritative private repository.
