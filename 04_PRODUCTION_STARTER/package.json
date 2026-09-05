@@ -6,17 +6,17 @@
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
     "typecheck": "tsc --noEmit",
-    "test:dietary": "tsc --ignoreConfig --outDir dist/dietary-test src/dietary/household.ts src/dietary/household.test.ts --target ES2022 --module CommonJS --strict && node dist/dietary-test/household.test.js",
-    "test:substitution": "tsc --ignoreConfig --outDir dist/dietary-test src/dietary/household.ts src/dietary/substitutionCatalogue.ts src/dietary/substitution.ts src/dietary/substitution.test.ts --target ES2022 --module CommonJS --strict && node dist/dietary-test/substitution.test.js",
-    "test:professional": "tsc --ignoreConfig --outDir dist/dietary-test src/dietary/household.ts src/dietary/professionalTargets.ts src/dietary/professionalTargets.test.ts --target ES2022 --module CommonJS --strict && node dist/dietary-test/professionalTargets.test.js",
-    "test:texture": "tsc --ignoreConfig --outDir dist/dietary-test src/dietary/household.ts src/dietary/textureVerification.ts src/dietary/textureVerification.test.ts --target ES2022 --module CommonJS --strict && node dist/dietary-test/textureVerification.test.js",
-    "test:units": "tsc --ignoreConfig --outDir dist/dietary-test src/canonical/units.ts src/canonical/units.test.ts --target ES2022 --module CommonJS --strict && node dist/dietary-test/units.test.js"
+    "test:dietary": "tsc --outDir dist/dietary-test src/dietary/household.ts src/dietary/household.test.ts --target ES2022 --module CommonJS --strict && node dist/dietary-test/household.test.js",
+    "test:substitution": "tsc --outDir dist/dietary-test src/dietary/household.ts src/dietary/substitutionCatalogue.ts src/dietary/substitution.ts src/dietary/substitution.test.ts --target ES2022 --module CommonJS --strict && node dist/dietary-test/substitution.test.js",
+    "test:professional": "tsc --outDir dist/dietary-test src/dietary/household.ts src/dietary/professionalTargets.ts src/dietary/professionalTargets.test.ts --target ES2022 --module CommonJS --strict && node dist/dietary-test/professionalTargets.test.js",
+    "test:texture": "tsc --outDir dist/dietary-test src/dietary/household.ts src/dietary/textureVerification.ts src/dietary/textureVerification.test.ts --target ES2022 --module CommonJS --strict && node dist/dietary-test/textureVerification.test.js",
+    "test:units": "tsc --outDir dist/dietary-test src/canonical/units.ts src/canonical/units.test.ts --target ES2022 --module CommonJS --strict && node dist/dietary-test/units.test.js"
   },
   "dependencies": {
     "pg": "^8.13.0"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20260901.0",
+    "@cloudflare/workers-types": "^5.20260901.1",
     "@types/pg": "^8.11.10",
     "typescript": "^5.9.0",
     "wrangler": "^4.0.0"

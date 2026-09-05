@@ -18,7 +18,7 @@
   "excluded_stack": [
     "Vercel"
   ],
-  "next_phase": "Phase 6 \u2014 Cloudflare Worker + Hyperdrive Foundation",
+  "next_phase": "Phase 6 \u2014 Cloudflare Worker + Hyperdrive Foundation (BLOCKED on Cloudflare credentials/manual provisioning; see phase_6_status)",
   "pack_name": "GENEVIEVE_Family_Budget_Cookbook_COMPLETE_BUILD_PACK_V2_DIETARY_ENGINE",
   "version": "2.0",
   "phase_2_status": "ALL SUB-PHASES 2.1\u20132.8 GREEN. 385/800 recipes LAUNCH_READY; 415/800 HELD_FOR_KITCHEN_TEST (real kitchen/scaling testing, not a content defect -- see 02_RECIPE_CONTENT/PHASE_2_8_LAUNCH_READINESS_REPORT.md).",
@@ -34,6 +34,7 @@
     "seed_generator": "04_PRODUCTION_STARTER/scripts/build_seed_sql.py",
     "known_content_gap": "23 of 43 swap_group_code values referenced by recipe_ingredients (1,165 of 3,840 lines) have no matching swap_groups/swap_options entry -- a V1 pack content gap, not a seeding defect."
   },
+  "phase_6_status": "PARTIAL/BLOCKED. Checked 20 existing Workers and 7 existing Hyperdrive configs in the Cloudflare account by inspection (not name alone) -- none is this product; closest name match genevieve-budget-app is an unrelated generic expense tracker reusing the 'Genevieve' brand. Structured error handling + per-request x-request-id added to src/index.ts and verified via typecheck. Fixed two real starter-pack defects found while verifying: package.json pinned a nonexistent @cloudflare/workers-types version (npm install failed outright), and all 5 test:* scripts invoked a nonexistent 'tsc --ignoreConfig' flag (every dietary/canonical test script was unrunnable as written); both fixed and all 5 suites re-run clean. Creating the actual Worker, creating the Hyperdrive config, and deploying /api/health are BLOCKED: the Cloudflare MCP tools available this session can list/get/edit/delete Workers and Hyperdrive configs but not create either, and wrangler has no stored Cloudflare credentials in this sandbox (wrangler login needs interactive OAuth). Needs the product owner to either provide a CLOUDFLARE_API_TOKEN or provision manually and hand back the Hyperdrive config ID. See 01_MASTER_BLUEPRINT/PHASE_6_CLOUDFLARE_WORKER_HYPERDRIVE_REPORT.md.",
   "canonical_ingredient_model": {
     "ingredients": "08_CANONICAL_INGREDIENT_MODEL/canonical_ingredients_v1.json",
     "unit_conversions": "08_CANONICAL_INGREDIENT_MODEL/unit_conversions_v1.json",
