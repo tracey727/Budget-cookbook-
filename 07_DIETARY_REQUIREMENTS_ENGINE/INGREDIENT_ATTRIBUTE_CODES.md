@@ -53,6 +53,8 @@ keeps this distinction visible in the product.
 | `GLUTEN_CEREAL_WHEAT` / `GLUTEN_CEREAL_BARLEY` / `GLUTEN_CEREAL_RYE` | Contains that gluten-containing cereal. |
 | `GLUTEN_CEREAL_OATS` | Contains oats. Kept separate from the other cereals per the Australian claim boundary in `REFERENCE_SOURCES.md` — presence of oats never implies a gluten-free claim on its own. |
 | `HIDDEN_SOURCE_RISK` | General-purpose flag for a specific hidden-allergen pattern not covered by a more specific code above; always `CONDITIONAL`/`UNVERIFIED` with an explanatory note (this catalogue mostly uses the specific allergen code instead, e.g. `ALLERGEN_SESAME` on `hummus`, and reserves this generic code for cases that don't fit an existing allergen). |
+| `CAFFEINE_CONTENT` | Contains caffeine (coffee, or cocoa/chocolate's caffeine+theobromine). Added in v1.1 (Phase 2.4 addendum) to support `CAFFEINE_FREE`. |
+| `ONION_CONTENT` / `GARLIC_CONTENT` | Contains onion / garlic. Added in v1.1 (Phase 2.4 addendum) to support `ONION_FREE`/`GARLIC_FREE`. Applied both as exact-match facts (e.g. `onion`, `creamy garlic sauce`) and as a generic `CONDITIONAL` flag on any ingredient in the `sauce` recipe group or the `Herbs/Spices` swap group that doesn't already have an explicit verdict -- bottled sauces and seasoning blends are a well-known common carrier of onion/garlic powder even when not named. |
 
 ## Allergen-declaration attribute codes
 

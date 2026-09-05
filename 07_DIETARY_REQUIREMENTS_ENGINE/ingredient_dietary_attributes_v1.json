@@ -1,5 +1,11 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
+  "change_log": [
+    {
+      "version": "1.1",
+      "change": "Phase 2.4 addendum: added CAFFEINE_CONTENT (coffee, chocolate, choc chip, cocoa oat), ONION_CONTENT and GARLIC_CONTENT (onion, garlic seasoning, creamy garlic sauce, soy garlic sauce, pesto veg sauce exact matches, plus a generic CONDITIONAL flag for any sauce-group or Herbs/Spices-swap-group ingredient) -- needed to derive CAFFEINE_FREE/ONION_FREE/GARLIC_FREE per-recipe classification."
+    }
+  ],
   "keying": "INTERIM: keyed by normalised ingredient_key (lowercased ingredient text), not canonical ingredient_id. Re-key onto ingredients.ingredient_id (schema/001_initial_schema.sql) when Phase 4 assigns canonical IDs.",
   "attribute_dictionary": "See INGREDIENT_ATTRIBUTE_CODES.md for attribute_code definitions and evidence_state semantics.",
   "ingredient_count": 151,
@@ -232,6 +238,20 @@
           "evidence_state": "CONDITIONAL",
           "notes": "Some commercial BBQ sauces include Worcestershire sauce (anchovy); verify product.",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },
@@ -255,6 +275,20 @@
           "evidence_state": "VERIFIED_ABSENT",
           "notes": "No animal-derived component identified in this generic ingredient name.",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },
@@ -285,6 +319,20 @@
           "evidence_state": "CONDITIONAL",
           "notes": "Some commercial BBQ-style sauces include Worcestershire sauce (anchovy); verify product.",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },
@@ -775,6 +823,20 @@
           "evidence_state": "VERIFIED_ABSENT",
           "notes": "No animal-derived component identified in this generic ingredient name.",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },
@@ -1114,6 +1176,13 @@
           "source_reference": "generic ingredient identity, as named in the recipe bank"
         },
         {
+          "attribute_code": "CAFFEINE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Cocoa naturally contains caffeine/theobromine; amount varies by product.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
           "attribute_code": "ANIMAL_DERIVED",
           "attribute_value": "true",
           "evidence_state": "CONDITIONAL",
@@ -1148,6 +1217,13 @@
           "attribute_value": "unspecified",
           "evidence_state": "CONDITIONAL",
           "notes": "Soy lecithin is a common chocolate emulsifier. Verify product.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "CAFFEINE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Cocoa naturally contains caffeine/theobromine; amount varies by product.",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
         },
         {
@@ -1201,10 +1277,17 @@
       "is_compound_alternative": false,
       "attributes": [
         {
+          "attribute_code": "CAFFEINE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Contains cocoa, which naturally contains caffeine/theobromine.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
           "attribute_code": "ANIMAL_DERIVED",
           "attribute_value": "false",
           "evidence_state": "VERIFIED_ABSENT",
-          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "notes": null,
           "source_reference": "generic ingredient identity, as named in the recipe bank"
         }
       ]
@@ -1259,6 +1342,20 @@
           "evidence_state": "VERIFIED_ABSENT",
           "notes": "Coconut milk is plant-derived. Named 'milk' but must NOT be classified as dairy or as the AU milk allergen -- naive substring matching on 'milk' would get this wrong, which is exactly the failure mode this model exists to avoid.",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },
@@ -1300,10 +1397,17 @@
       "is_compound_alternative": false,
       "attributes": [
         {
+          "attribute_code": "CAFFEINE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
           "attribute_code": "ANIMAL_DERIVED",
           "attribute_value": "false",
           "evidence_state": "VERIFIED_ABSENT",
-          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "notes": null,
           "source_reference": "generic ingredient identity, as named in the recipe bank"
         }
       ]
@@ -1519,11 +1623,25 @@
           "source_reference": "generic ingredient identity, as named in the recipe bank"
         },
         {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": "Named in the ingredient itself.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
           "attribute_code": "ANIMAL_DERIVED",
           "attribute_value": "true",
           "evidence_state": "CONDITIONAL",
           "notes": "Follows the DAIRY_MILK assessment for this ingredient: conventionally cream-based.",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },
@@ -1695,11 +1813,25 @@
       "is_compound_alternative": false,
       "attributes": [
         {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": "Named in the ingredient itself.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
           "attribute_code": "ANIMAL_DERIVED",
           "attribute_value": "false",
           "evidence_state": "VERIFIED_ABSENT",
-          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "notes": null,
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },
@@ -1846,6 +1978,20 @@
           "evidence_state": "VERIFIED_ABSENT",
           "notes": "No animal-derived component identified in this generic ingredient name.",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },
@@ -1953,6 +2099,20 @@
           "evidence_state": "VERIFIED_PRESENT",
           "notes": "Honey is bee-derived.",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },
@@ -2010,6 +2170,20 @@
           "evidence_state": "VERIFIED_ABSENT",
           "notes": "No animal-derived component identified in this generic ingredient name.",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },
@@ -2103,6 +2277,20 @@
           "evidence_state": "VERIFIED_ABSENT",
           "notes": "No animal-derived component identified in this generic ingredient name.",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },
@@ -2126,6 +2314,20 @@
           "evidence_state": "VERIFIED_ABSENT",
           "notes": "No animal-derived component identified in this generic ingredient name.",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },
@@ -2244,6 +2446,20 @@
           "evidence_state": "VERIFIED_ABSENT",
           "notes": "No animal-derived component identified in this generic ingredient name.",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },
@@ -2281,6 +2497,20 @@
           "evidence_state": "CONDITIONAL",
           "notes": "Some commercial curry pastes contain shrimp paste; verify product.",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },
@@ -2318,6 +2548,20 @@
           "evidence_state": "CONDITIONAL",
           "notes": "Curry sauces are often cream/yoghurt based and some pastes contain shrimp paste; verify product.",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },
@@ -2341,6 +2585,20 @@
           "evidence_state": "VERIFIED_ABSENT",
           "notes": "No animal-derived component identified in this generic ingredient name.",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },
@@ -2533,6 +2791,20 @@
           "evidence_state": "VERIFIED_ABSENT",
           "notes": "No animal-derived component identified in this generic ingredient name.",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },
@@ -2775,10 +3047,17 @@
       "is_compound_alternative": false,
       "attributes": [
         {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
           "attribute_code": "ANIMAL_DERIVED",
           "attribute_value": "false",
           "evidence_state": "VERIFIED_ABSENT",
-          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "notes": null,
           "source_reference": "generic ingredient identity, as named in the recipe bank"
         }
       ]
@@ -3056,6 +3335,20 @@
           "evidence_state": "VERIFIED_ABSENT",
           "notes": null,
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },
@@ -3142,11 +3435,25 @@
           "source_reference": "generic ingredient identity, as named in the recipe bank"
         },
         {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Garlic is a core traditional pesto ingredient, not named in the ingredient text.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
           "attribute_code": "ANIMAL_DERIVED",
           "attribute_value": "true",
           "evidence_state": "CONDITIONAL",
           "notes": "Follows the DAIRY_MILK/pine-nut assessment: traditional pesto contains parmesan.",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },
@@ -3417,6 +3724,20 @@
           "evidence_state": "VERIFIED_ABSENT",
           "notes": "No animal-derived component identified in this generic ingredient name.",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },
@@ -3596,6 +3917,20 @@
           "evidence_state": "VERIFIED_ABSENT",
           "notes": "No animal-derived component identified in this generic ingredient name.",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },
@@ -3762,6 +4097,20 @@
           "evidence_state": "VERIFIED_ABSENT",
           "notes": "No animal-derived component identified in this generic ingredient name.",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },
@@ -3794,11 +4143,25 @@
           "source_reference": "generic ingredient identity, as named in the recipe bank"
         },
         {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": "Named in the ingredient itself.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
           "attribute_code": "ANIMAL_DERIVED",
           "attribute_value": "false",
           "evidence_state": "VERIFIED_ABSENT",
           "notes": null,
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },
@@ -3850,6 +4213,20 @@
           "evidence_state": "VERIFIED_ABSENT",
           "notes": "No animal-derived component identified in this generic ingredient name.",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },
@@ -4006,6 +4383,20 @@
           "evidence_state": "VERIFIED_ABSENT",
           "notes": "No animal-derived component identified in this generic ingredient name.",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },
@@ -4029,6 +4420,20 @@
           "evidence_state": "VERIFIED_ABSENT",
           "notes": "No animal-derived component identified in this generic ingredient name.",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },
@@ -4060,6 +4465,20 @@
           "evidence_state": "VERIFIED_ABSENT",
           "notes": "No animal-derived component identified in this generic ingredient name.",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },
@@ -4098,6 +4517,20 @@
           "evidence_state": "VERIFIED_ABSENT",
           "notes": null,
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },
@@ -4173,6 +4606,20 @@
           "evidence_state": "VERIFIED_ABSENT",
           "notes": "No animal-derived component identified in this generic ingredient name.",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },
@@ -4196,6 +4643,20 @@
           "evidence_state": "VERIFIED_ABSENT",
           "notes": "No animal-derived component identified in this generic ingredient name.",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },
@@ -4319,6 +4780,20 @@
           "evidence_state": "VERIFIED_ABSENT",
           "notes": "No animal-derived component identified in this generic ingredient name.",
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },
@@ -4443,6 +4918,20 @@
           "evidence_state": "VERIFIED_PRESENT",
           "notes": null,
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },
@@ -4480,6 +4969,20 @@
           "evidence_state": "VERIFIED_PRESENT",
           "notes": null,
           "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
         }
       ]
     },

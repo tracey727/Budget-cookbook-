@@ -128,6 +128,19 @@ Phase 4/5 must re-key this file's records onto `ingredients.ingredient_id`
 attribute_code/value/evidence_state/notes shape already matches that table's
 columns, so this is a re-keying exercise, not a re-classification.
 
+## v1.1 addendum (added during Phase 2.4)
+
+Phase 2.4 (recipe classification) needed `CAFFEINE_FREE`/`ONION_FREE`/
+`GARLIC_FREE` derived from real ingredient evidence rather than skipped, so
+this model gained three attribute codes: `CAFFEINE_CONTENT` (coffee;
+chocolate/choc chip/cocoa oat as `CONDITIONAL`), `ONION_CONTENT` and
+`GARLIC_CONTENT` (direct matches like `onion`, `creamy garlic sauce`, `soy
+garlic sauce`, plus a generic `CONDITIONAL` flag applied to any ingredient in
+the `sauce` recipe group or `Herbs/Spices` swap group that lacked an explicit
+verdict — see `PHASE_2_4_RECIPE_CLASSIFICATION_REPORT.md` and
+`INGREDIENT_ATTRIBUTE_CODES.md`). 71 new attribute records; the build-time
+`ANIMAL_DERIVED` completeness assertion still passes.
+
 ## Gate status
 
 **GREEN** for the model itself: every locked requirement class (ethical,

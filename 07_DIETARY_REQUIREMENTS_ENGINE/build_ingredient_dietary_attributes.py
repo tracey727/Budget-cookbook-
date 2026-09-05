@@ -88,7 +88,12 @@ EXACT_RULES = {
     "yoghurt dressing": [attr("ANIMAL_DERIVED", "true", VERIFIED_PRESENT), attr("DAIRY_MILK", "true", VERIFIED_PRESENT),
                           attr("ALLERGEN_MILK", "true", VERIFIED_PRESENT)],
     "creamy garlic sauce": [attr("DAIRY_MILK", "true", CONDITIONAL, "Cream-based sauces are conventionally dairy; verify the specific product/recipe if a dairy-free version is used."),
-                             attr("ALLERGEN_MILK", "true", CONDITIONAL)],
+                             attr("ALLERGEN_MILK", "true", CONDITIONAL),
+                             attr("GARLIC_CONTENT", "true", VERIFIED_PRESENT, "Named in the ingredient itself.")],
+    "onion": [attr("ONION_CONTENT", "true", VERIFIED_PRESENT), attr("ANIMAL_DERIVED", "false", VERIFIED_ABSENT)],
+    "garlic seasoning": [attr("GARLIC_CONTENT", "true", VERIFIED_PRESENT, "Named in the ingredient itself."),
+                          attr("ANIMAL_DERIVED", "false", VERIFIED_ABSENT)],
+    "coffee": [attr("CAFFEINE_CONTENT", "true", VERIFIED_PRESENT), attr("ANIMAL_DERIVED", "false", VERIFIED_ABSENT)],
     "honey": [attr("HONEY_BEE_DERIVED", "true", VERIFIED_PRESENT), attr("ANIMAL_DERIVED", "true", VERIFIED_PRESENT,
               "Bee-derived. Relevant to VEGAN, not to VEGETARIAN.")],
     "peanut": [attr("ALLERGEN_PEANUT", "true", VERIFIED_PRESENT)],
@@ -101,7 +106,9 @@ EXACT_RULES = {
     "pesto veg sauce": [attr("DAIRY_MILK", "true", CONDITIONAL,
                               "Traditional pesto contains parmesan (dairy) and pine nuts. Not named in the ingredient text -- hidden-source risk."),
                          attr("ALLERGEN_PINE_NUT", "true", CONDITIONAL,
-                              "Traditional pesto contains pine nuts. Hidden-source risk; verify product/recipe.")],
+                              "Traditional pesto contains pine nuts. Hidden-source risk; verify product/recipe."),
+                         attr("GARLIC_CONTENT", "true", CONDITIONAL,
+                              "Garlic is a core traditional pesto ingredient, not named in the ingredient text.")],
     "mild curry powder or paste": [attr("FISH", "unspecified", CONDITIONAL,
                                          "Some commercial curry pastes contain shrimp/fish paste. Not named in the ingredient text -- hidden-source risk; verify product for fish/shellfish allergy."),
                                     attr("ALLERGEN_CRUSTACEAN", "unspecified", CONDITIONAL,
@@ -112,15 +119,20 @@ EXACT_RULES = {
     "bbq sauce": [attr("FISH", "unspecified", CONDITIONAL, "Some commercial BBQ sauces include Worcestershire sauce, which typically contains anchovy. Hidden-source risk; verify product for fish allergy.")],
     "bbq tomato sauce": [attr("FISH", "unspecified", CONDITIONAL, "Some commercial BBQ-style sauces include Worcestershire sauce (anchovy). Hidden-source risk; verify product.")],
     "soy garlic sauce": [attr("ALLERGEN_SOY", "true", VERIFIED_PRESENT),
-                          attr("ALLERGEN_WHEAT", "true", CONDITIONAL, "Traditional soy sauce is brewed with wheat; tamari is a wheat-free alternative. Verify product for a wheat allergy.")],
+                          attr("ALLERGEN_WHEAT", "true", CONDITIONAL, "Traditional soy sauce is brewed with wheat; tamari is a wheat-free alternative. Verify product for a wheat allergy."),
+                          attr("GARLIC_CONTENT", "true", VERIFIED_PRESENT, "Named in the ingredient itself.")],
     "honey soy sauce": [attr("ALLERGEN_SOY", "true", VERIFIED_PRESENT), attr("HONEY_BEE_DERIVED", "true", VERIFIED_PRESENT),
                          attr("ALLERGEN_WHEAT", "true", CONDITIONAL, "Traditional soy sauce is brewed with wheat; tamari is a wheat-free alternative.")],
     "teriyaki sauce": [attr("ALLERGEN_SOY", "true", VERIFIED_PRESENT),
                         attr("ALLERGEN_WHEAT", "true", CONDITIONAL, "Traditional soy sauce base is brewed with wheat; verify product.")],
     "chocolate": [attr("DAIRY_MILK", "true", CONDITIONAL, "Milk chocolate is dairy; dark/vegan chocolate exists. Hidden-source risk if the product isn't specified."),
-                  attr("ALLERGEN_SOY", "unspecified", CONDITIONAL, "Soy lecithin is a common chocolate emulsifier. Verify product.")],
+                  attr("ALLERGEN_SOY", "unspecified", CONDITIONAL, "Soy lecithin is a common chocolate emulsifier. Verify product."),
+                  attr("CAFFEINE_CONTENT", "true", CONDITIONAL, "Cocoa naturally contains caffeine/theobromine; amount varies by product.")],
     "choc chip": [attr("DAIRY_MILK", "true", CONDITIONAL, "Milk chocolate chips are common; dairy-free chips exist. Verify product."),
-                  attr("ALLERGEN_SOY", "unspecified", CONDITIONAL, "Soy lecithin is a common chocolate emulsifier. Verify product.")],
+                  attr("ALLERGEN_SOY", "unspecified", CONDITIONAL, "Soy lecithin is a common chocolate emulsifier. Verify product."),
+                  attr("CAFFEINE_CONTENT", "true", CONDITIONAL, "Cocoa naturally contains caffeine/theobromine; amount varies by product.")],
+    "cocoa oat": [attr("CAFFEINE_CONTENT", "true", CONDITIONAL, "Contains cocoa, which naturally contains caffeine/theobromine."),
+                  attr("ANIMAL_DERIVED", "false", VERIFIED_ABSENT)],
     "caramel": [attr("DAIRY_MILK", "true", CONDITIONAL, "Traditional caramel is made with butter/cream. Hidden-source risk if the product isn't specified.")],
     "vanilla": [attr("ALCOHOL_CONTENT", "unspecified", CONDITIONAL, "Vanilla extract is conventionally alcohol-based; vanilla essence/paste formulations vary. Hidden-source risk for an alcohol-free requirement; verify product.")],
     "sultana": [attr("ALLERGEN_SULPHITES", "unspecified", CONDITIONAL, "Dried fruit including sultanas is commonly treated with sulphur dioxide (220) as a preservative. Hidden-source risk; verify product for a sulphite-sensitive member.")],
@@ -293,12 +305,41 @@ def load_ingredient_names():
     return names
 
 
+HIDDEN_ONION_GARLIC_NOTE = (
+    "Commercial sauces, dressings and seasoning blends commonly include onion "
+    "and/or garlic powder even when not named. Not confirmed for this specific "
+    "ingredient text -- verify product for an onion/garlic-free requirement."
+)
+
+
+def add_generic_sauce_seasoning_onion_garlic_risk(name, info, attributes):
+    """Sauces and herb/spice-blend ingredients are a well-known hidden source of
+    onion/garlic even when not named (bottled sauces, seasoning mixes). Applied
+    by category (recipe group / swap group), not per exact ingredient name, to
+    avoid hand-enumerating dozens of sauce/seasoning entries individually --
+    it only fires where an ingredient doesn't already carry an explicit
+    ONION_CONTENT/GARLIC_CONTENT verdict from EXACT_RULES."""
+    is_sauce_or_seasoning = "sauce" in info["groups"] or "Herbs/Spices" in info["swap_groups"]
+    if not is_sauce_or_seasoning:
+        return attributes
+    codes_present = {a["attribute_code"] for a in attributes}
+    extra = []
+    if "ONION_CONTENT" not in codes_present:
+        extra.append(attr("ONION_CONTENT", "unspecified", CONDITIONAL, HIDDEN_ONION_GARLIC_NOTE,
+                           source="recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"))
+    if "GARLIC_CONTENT" not in codes_present:
+        extra.append(attr("GARLIC_CONTENT", "unspecified", CONDITIONAL, HIDDEN_ONION_GARLIC_NOTE,
+                           source="recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"))
+    return attributes + extra
+
+
 def main():
     names = load_ingredient_names()
     records = []
     for name in sorted(names):
         info = names[name]
         attributes, is_compound = classify(name)
+        attributes = add_generic_sauce_seasoning_onion_garlic_risk(name, info, attributes)
         records.append({
             "ingredient_key": name,
             "recipe_groups": sorted(info["groups"]),
@@ -309,7 +350,15 @@ def main():
             "attributes": attributes,
         })
     out = {
-        "schema_version": "1.0",
+        "schema_version": "1.1",
+        "change_log": [
+            {"version": "1.1", "change": "Phase 2.4 addendum: added CAFFEINE_CONTENT (coffee, chocolate, "
+                                          "choc chip, cocoa oat), ONION_CONTENT and GARLIC_CONTENT "
+                                          "(onion, garlic seasoning, creamy garlic sauce, soy garlic sauce, "
+                                          "pesto veg sauce exact matches, plus a generic CONDITIONAL flag for "
+                                          "any sauce-group or Herbs/Spices-swap-group ingredient) -- needed to "
+                                          "derive CAFFEINE_FREE/ONION_FREE/GARLIC_FREE per-recipe classification."},
+        ],
         "keying": "INTERIM: keyed by normalised ingredient_key (lowercased ingredient text), "
                   "not canonical ingredient_id. Re-key onto ingredients.ingredient_id "
                   "(schema/001_initial_schema.sql) when Phase 4 assigns canonical IDs.",
