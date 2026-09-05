@@ -22,7 +22,7 @@ export type CustomRuleType = "CUSTOM_EXCLUSION" | "CUSTOM_REQUIREMENT" | "CUSTOM
 /** Highest number wins when the same requirement_code appears on multiple
  * members in a shared meal -- the group must satisfy the strictest applicable
  * level, per DIETARY_REQUIREMENTS_MASTER_BLUEPRINT.md's evaluation order. */
-const ENFORCEMENT_PRECEDENCE: Record<EnforcementLevel, number> = {
+export const ENFORCEMENT_PRECEDENCE: Record<EnforcementLevel, number> = {
   HARD_EXCLUDE: 4,
   REQUIRE_VERIFIED: 3,
   PREFER: 2,
