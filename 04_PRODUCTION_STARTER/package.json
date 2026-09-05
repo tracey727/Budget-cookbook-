@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "wrangler dev",
     "deploy": "wrangler deploy",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "test:dietary": "tsc --ignoreConfig --outDir dist/dietary-test src/dietary/household.ts src/dietary/household.test.ts --target ES2022 --module CommonJS --strict && node dist/dietary-test/household.test.js"
   },
   "dependencies": {
     "pg": "^8.13.0"
