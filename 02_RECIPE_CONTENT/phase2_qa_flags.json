@@ -1,0 +1,4047 @@
+{
+  "recipes_scanned": 800,
+  "exact_duplicate_names": {},
+  "dense_families": {
+    "Breakfast / overnight oats": [
+      "GEN-RCP-0001",
+      "GEN-RCP-0002",
+      "GEN-RCP-0003",
+      "GEN-RCP-0004",
+      "GEN-RCP-0005",
+      "GEN-RCP-0006",
+      "GEN-RCP-0007",
+      "GEN-RCP-0008",
+      "GEN-RCP-0009",
+      "GEN-RCP-0010",
+      "GEN-RCP-0011",
+      "GEN-RCP-0012",
+      "GEN-RCP-0013",
+      "GEN-RCP-0014",
+      "GEN-RCP-0015",
+      "GEN-RCP-0016",
+      "GEN-RCP-0017",
+      "GEN-RCP-0018",
+      "GEN-RCP-0019",
+      "GEN-RCP-0020",
+      "GEN-RCP-0021",
+      "GEN-RCP-0022",
+      "GEN-RCP-0023",
+      "GEN-RCP-0024",
+      "GEN-RCP-0025",
+      "GEN-RCP-0026",
+      "GEN-RCP-0027",
+      "GEN-RCP-0028",
+      "GEN-RCP-0029",
+      "GEN-RCP-0030"
+    ],
+    "Breakfast / pancakes": [
+      "GEN-RCP-0031",
+      "GEN-RCP-0032",
+      "GEN-RCP-0033",
+      "GEN-RCP-0034",
+      "GEN-RCP-0035",
+      "GEN-RCP-0036",
+      "GEN-RCP-0037",
+      "GEN-RCP-0038",
+      "GEN-RCP-0039",
+      "GEN-RCP-0040",
+      "GEN-RCP-0041",
+      "GEN-RCP-0042",
+      "GEN-RCP-0043",
+      "GEN-RCP-0044",
+      "GEN-RCP-0045",
+      "GEN-RCP-0046",
+      "GEN-RCP-0047",
+      "GEN-RCP-0048",
+      "GEN-RCP-0049",
+      "GEN-RCP-0050",
+      "GEN-RCP-0051",
+      "GEN-RCP-0052",
+      "GEN-RCP-0053",
+      "GEN-RCP-0054",
+      "GEN-RCP-0055",
+      "GEN-RCP-0056",
+      "GEN-RCP-0057",
+      "GEN-RCP-0058",
+      "GEN-RCP-0059",
+      "GEN-RCP-0060"
+    ],
+    "Breakfast / egg breakfasts": [
+      "GEN-RCP-0061",
+      "GEN-RCP-0062",
+      "GEN-RCP-0063",
+      "GEN-RCP-0064",
+      "GEN-RCP-0065",
+      "GEN-RCP-0066",
+      "GEN-RCP-0067",
+      "GEN-RCP-0068",
+      "GEN-RCP-0069",
+      "GEN-RCP-0070",
+      "GEN-RCP-0071",
+      "GEN-RCP-0072",
+      "GEN-RCP-0073",
+      "GEN-RCP-0074",
+      "GEN-RCP-0075",
+      "GEN-RCP-0076",
+      "GEN-RCP-0077",
+      "GEN-RCP-0078",
+      "GEN-RCP-0079",
+      "GEN-RCP-0080",
+      "GEN-RCP-0081",
+      "GEN-RCP-0082",
+      "GEN-RCP-0083",
+      "GEN-RCP-0084",
+      "GEN-RCP-0085",
+      "GEN-RCP-0086",
+      "GEN-RCP-0087",
+      "GEN-RCP-0088",
+      "GEN-RCP-0089",
+      "GEN-RCP-0090"
+    ],
+    "Breakfast / breakfast breads": [
+      "GEN-RCP-0091",
+      "GEN-RCP-0092",
+      "GEN-RCP-0093",
+      "GEN-RCP-0094",
+      "GEN-RCP-0095",
+      "GEN-RCP-0096",
+      "GEN-RCP-0097",
+      "GEN-RCP-0098",
+      "GEN-RCP-0099",
+      "GEN-RCP-0100",
+      "GEN-RCP-0101",
+      "GEN-RCP-0102",
+      "GEN-RCP-0103",
+      "GEN-RCP-0104",
+      "GEN-RCP-0105",
+      "GEN-RCP-0106",
+      "GEN-RCP-0107",
+      "GEN-RCP-0108",
+      "GEN-RCP-0109",
+      "GEN-RCP-0110",
+      "GEN-RCP-0111",
+      "GEN-RCP-0112",
+      "GEN-RCP-0113",
+      "GEN-RCP-0114",
+      "GEN-RCP-0115",
+      "GEN-RCP-0116",
+      "GEN-RCP-0117",
+      "GEN-RCP-0118",
+      "GEN-RCP-0119",
+      "GEN-RCP-0120"
+    ],
+    "Breakfast / breakfast baking": [
+      "GEN-RCP-0121",
+      "GEN-RCP-0122",
+      "GEN-RCP-0123",
+      "GEN-RCP-0124",
+      "GEN-RCP-0125",
+      "GEN-RCP-0126",
+      "GEN-RCP-0127",
+      "GEN-RCP-0128",
+      "GEN-RCP-0129",
+      "GEN-RCP-0130",
+      "GEN-RCP-0131",
+      "GEN-RCP-0132",
+      "GEN-RCP-0133",
+      "GEN-RCP-0134",
+      "GEN-RCP-0135",
+      "GEN-RCP-0136",
+      "GEN-RCP-0137",
+      "GEN-RCP-0138",
+      "GEN-RCP-0139",
+      "GEN-RCP-0140",
+      "GEN-RCP-0141",
+      "GEN-RCP-0142",
+      "GEN-RCP-0143",
+      "GEN-RCP-0144",
+      "GEN-RCP-0145",
+      "GEN-RCP-0146",
+      "GEN-RCP-0147",
+      "GEN-RCP-0148",
+      "GEN-RCP-0149",
+      "GEN-RCP-0150"
+    ],
+    "Lunch / wraps & sandwiches": [
+      "GEN-RCP-0151",
+      "GEN-RCP-0152",
+      "GEN-RCP-0153",
+      "GEN-RCP-0154",
+      "GEN-RCP-0155",
+      "GEN-RCP-0156",
+      "GEN-RCP-0157",
+      "GEN-RCP-0158",
+      "GEN-RCP-0159",
+      "GEN-RCP-0160",
+      "GEN-RCP-0161",
+      "GEN-RCP-0162",
+      "GEN-RCP-0163",
+      "GEN-RCP-0164",
+      "GEN-RCP-0165",
+      "GEN-RCP-0166",
+      "GEN-RCP-0167",
+      "GEN-RCP-0168",
+      "GEN-RCP-0169",
+      "GEN-RCP-0170",
+      "GEN-RCP-0171",
+      "GEN-RCP-0172",
+      "GEN-RCP-0173",
+      "GEN-RCP-0174",
+      "GEN-RCP-0175",
+      "GEN-RCP-0176",
+      "GEN-RCP-0177",
+      "GEN-RCP-0178",
+      "GEN-RCP-0179",
+      "GEN-RCP-0180"
+    ],
+    "Lunch / lunch bowls": [
+      "GEN-RCP-0181",
+      "GEN-RCP-0182",
+      "GEN-RCP-0183",
+      "GEN-RCP-0184",
+      "GEN-RCP-0185",
+      "GEN-RCP-0186",
+      "GEN-RCP-0187",
+      "GEN-RCP-0188",
+      "GEN-RCP-0189",
+      "GEN-RCP-0190",
+      "GEN-RCP-0191",
+      "GEN-RCP-0192",
+      "GEN-RCP-0193",
+      "GEN-RCP-0194",
+      "GEN-RCP-0195",
+      "GEN-RCP-0196",
+      "GEN-RCP-0197",
+      "GEN-RCP-0198",
+      "GEN-RCP-0199",
+      "GEN-RCP-0200",
+      "GEN-RCP-0201",
+      "GEN-RCP-0202",
+      "GEN-RCP-0203",
+      "GEN-RCP-0204",
+      "GEN-RCP-0205",
+      "GEN-RCP-0206",
+      "GEN-RCP-0207",
+      "GEN-RCP-0208",
+      "GEN-RCP-0209",
+      "GEN-RCP-0210"
+    ],
+    "Lunch / soups": [
+      "GEN-RCP-0211",
+      "GEN-RCP-0212",
+      "GEN-RCP-0213",
+      "GEN-RCP-0214",
+      "GEN-RCP-0215",
+      "GEN-RCP-0216",
+      "GEN-RCP-0217",
+      "GEN-RCP-0218",
+      "GEN-RCP-0219",
+      "GEN-RCP-0220",
+      "GEN-RCP-0221",
+      "GEN-RCP-0222",
+      "GEN-RCP-0223",
+      "GEN-RCP-0224",
+      "GEN-RCP-0225",
+      "GEN-RCP-0226",
+      "GEN-RCP-0227",
+      "GEN-RCP-0228",
+      "GEN-RCP-0229",
+      "GEN-RCP-0230",
+      "GEN-RCP-0231",
+      "GEN-RCP-0232",
+      "GEN-RCP-0233",
+      "GEN-RCP-0234",
+      "GEN-RCP-0235",
+      "GEN-RCP-0236",
+      "GEN-RCP-0237",
+      "GEN-RCP-0238",
+      "GEN-RCP-0239",
+      "GEN-RCP-0240"
+    ],
+    "Lunch / loaded potatoes": [
+      "GEN-RCP-0241",
+      "GEN-RCP-0242",
+      "GEN-RCP-0243",
+      "GEN-RCP-0244",
+      "GEN-RCP-0245",
+      "GEN-RCP-0246",
+      "GEN-RCP-0247",
+      "GEN-RCP-0248",
+      "GEN-RCP-0249",
+      "GEN-RCP-0250",
+      "GEN-RCP-0251",
+      "GEN-RCP-0252",
+      "GEN-RCP-0253",
+      "GEN-RCP-0254",
+      "GEN-RCP-0255",
+      "GEN-RCP-0256",
+      "GEN-RCP-0257",
+      "GEN-RCP-0258",
+      "GEN-RCP-0259",
+      "GEN-RCP-0260",
+      "GEN-RCP-0261",
+      "GEN-RCP-0262",
+      "GEN-RCP-0263",
+      "GEN-RCP-0264",
+      "GEN-RCP-0265",
+      "GEN-RCP-0266",
+      "GEN-RCP-0267",
+      "GEN-RCP-0268",
+      "GEN-RCP-0269",
+      "GEN-RCP-0270"
+    ],
+    "Lunch / salads & pasta salads": [
+      "GEN-RCP-0271",
+      "GEN-RCP-0272",
+      "GEN-RCP-0273",
+      "GEN-RCP-0274",
+      "GEN-RCP-0275",
+      "GEN-RCP-0276",
+      "GEN-RCP-0277",
+      "GEN-RCP-0278",
+      "GEN-RCP-0279",
+      "GEN-RCP-0280",
+      "GEN-RCP-0281",
+      "GEN-RCP-0282",
+      "GEN-RCP-0283",
+      "GEN-RCP-0284",
+      "GEN-RCP-0285",
+      "GEN-RCP-0286",
+      "GEN-RCP-0287",
+      "GEN-RCP-0288",
+      "GEN-RCP-0289",
+      "GEN-RCP-0290",
+      "GEN-RCP-0291",
+      "GEN-RCP-0292",
+      "GEN-RCP-0293",
+      "GEN-RCP-0294",
+      "GEN-RCP-0295",
+      "GEN-RCP-0296",
+      "GEN-RCP-0297",
+      "GEN-RCP-0298",
+      "GEN-RCP-0299",
+      "GEN-RCP-0300"
+    ],
+    "Dinner/Tea / pasta dinners": [
+      "GEN-RCP-0301",
+      "GEN-RCP-0302",
+      "GEN-RCP-0303",
+      "GEN-RCP-0304",
+      "GEN-RCP-0305",
+      "GEN-RCP-0306",
+      "GEN-RCP-0307",
+      "GEN-RCP-0308",
+      "GEN-RCP-0309",
+      "GEN-RCP-0310",
+      "GEN-RCP-0311",
+      "GEN-RCP-0312",
+      "GEN-RCP-0313",
+      "GEN-RCP-0314",
+      "GEN-RCP-0315",
+      "GEN-RCP-0316",
+      "GEN-RCP-0317",
+      "GEN-RCP-0318",
+      "GEN-RCP-0319",
+      "GEN-RCP-0320",
+      "GEN-RCP-0321",
+      "GEN-RCP-0322",
+      "GEN-RCP-0323",
+      "GEN-RCP-0324",
+      "GEN-RCP-0325",
+      "GEN-RCP-0326",
+      "GEN-RCP-0327",
+      "GEN-RCP-0328",
+      "GEN-RCP-0329",
+      "GEN-RCP-0330",
+      "GEN-RCP-0331",
+      "GEN-RCP-0332",
+      "GEN-RCP-0333",
+      "GEN-RCP-0334",
+      "GEN-RCP-0335",
+      "GEN-RCP-0336",
+      "GEN-RCP-0337",
+      "GEN-RCP-0338",
+      "GEN-RCP-0339",
+      "GEN-RCP-0340",
+      "GEN-RCP-0341",
+      "GEN-RCP-0342",
+      "GEN-RCP-0343",
+      "GEN-RCP-0344",
+      "GEN-RCP-0345",
+      "GEN-RCP-0346",
+      "GEN-RCP-0347",
+      "GEN-RCP-0348",
+      "GEN-RCP-0349",
+      "GEN-RCP-0350"
+    ],
+    "Dinner/Tea / curries & rice": [
+      "GEN-RCP-0351",
+      "GEN-RCP-0352",
+      "GEN-RCP-0353",
+      "GEN-RCP-0354",
+      "GEN-RCP-0355",
+      "GEN-RCP-0356",
+      "GEN-RCP-0357",
+      "GEN-RCP-0358",
+      "GEN-RCP-0359",
+      "GEN-RCP-0360",
+      "GEN-RCP-0361",
+      "GEN-RCP-0362",
+      "GEN-RCP-0363",
+      "GEN-RCP-0364",
+      "GEN-RCP-0365",
+      "GEN-RCP-0366",
+      "GEN-RCP-0367",
+      "GEN-RCP-0368",
+      "GEN-RCP-0369",
+      "GEN-RCP-0370",
+      "GEN-RCP-0371",
+      "GEN-RCP-0372",
+      "GEN-RCP-0373",
+      "GEN-RCP-0374",
+      "GEN-RCP-0375",
+      "GEN-RCP-0376",
+      "GEN-RCP-0377",
+      "GEN-RCP-0378",
+      "GEN-RCP-0379",
+      "GEN-RCP-0380",
+      "GEN-RCP-0381",
+      "GEN-RCP-0382",
+      "GEN-RCP-0383",
+      "GEN-RCP-0384",
+      "GEN-RCP-0385",
+      "GEN-RCP-0386",
+      "GEN-RCP-0387",
+      "GEN-RCP-0388",
+      "GEN-RCP-0389",
+      "GEN-RCP-0390",
+      "GEN-RCP-0391",
+      "GEN-RCP-0392",
+      "GEN-RCP-0393",
+      "GEN-RCP-0394",
+      "GEN-RCP-0395",
+      "GEN-RCP-0396",
+      "GEN-RCP-0397",
+      "GEN-RCP-0398",
+      "GEN-RCP-0399",
+      "GEN-RCP-0400"
+    ],
+    "Dinner/Tea / stir-fries & noodles": [
+      "GEN-RCP-0401",
+      "GEN-RCP-0402",
+      "GEN-RCP-0403",
+      "GEN-RCP-0404",
+      "GEN-RCP-0405",
+      "GEN-RCP-0406",
+      "GEN-RCP-0407",
+      "GEN-RCP-0408",
+      "GEN-RCP-0409",
+      "GEN-RCP-0410",
+      "GEN-RCP-0411",
+      "GEN-RCP-0412",
+      "GEN-RCP-0413",
+      "GEN-RCP-0414",
+      "GEN-RCP-0415",
+      "GEN-RCP-0416",
+      "GEN-RCP-0417",
+      "GEN-RCP-0418",
+      "GEN-RCP-0419",
+      "GEN-RCP-0420",
+      "GEN-RCP-0421",
+      "GEN-RCP-0422",
+      "GEN-RCP-0423",
+      "GEN-RCP-0424",
+      "GEN-RCP-0425",
+      "GEN-RCP-0426",
+      "GEN-RCP-0427",
+      "GEN-RCP-0428",
+      "GEN-RCP-0429",
+      "GEN-RCP-0430",
+      "GEN-RCP-0431",
+      "GEN-RCP-0432",
+      "GEN-RCP-0433",
+      "GEN-RCP-0434",
+      "GEN-RCP-0435",
+      "GEN-RCP-0436",
+      "GEN-RCP-0437",
+      "GEN-RCP-0438",
+      "GEN-RCP-0439",
+      "GEN-RCP-0440",
+      "GEN-RCP-0441",
+      "GEN-RCP-0442",
+      "GEN-RCP-0443",
+      "GEN-RCP-0444",
+      "GEN-RCP-0445",
+      "GEN-RCP-0446",
+      "GEN-RCP-0447",
+      "GEN-RCP-0448",
+      "GEN-RCP-0449",
+      "GEN-RCP-0450"
+    ],
+    "Dinner/Tea / tray bakes": [
+      "GEN-RCP-0451",
+      "GEN-RCP-0452",
+      "GEN-RCP-0453",
+      "GEN-RCP-0454",
+      "GEN-RCP-0455",
+      "GEN-RCP-0456",
+      "GEN-RCP-0457",
+      "GEN-RCP-0458",
+      "GEN-RCP-0459",
+      "GEN-RCP-0460",
+      "GEN-RCP-0461",
+      "GEN-RCP-0462",
+      "GEN-RCP-0463",
+      "GEN-RCP-0464",
+      "GEN-RCP-0465",
+      "GEN-RCP-0466",
+      "GEN-RCP-0467",
+      "GEN-RCP-0468",
+      "GEN-RCP-0469",
+      "GEN-RCP-0470",
+      "GEN-RCP-0471",
+      "GEN-RCP-0472",
+      "GEN-RCP-0473",
+      "GEN-RCP-0474",
+      "GEN-RCP-0475",
+      "GEN-RCP-0476",
+      "GEN-RCP-0477",
+      "GEN-RCP-0478",
+      "GEN-RCP-0479",
+      "GEN-RCP-0480",
+      "GEN-RCP-0481",
+      "GEN-RCP-0482",
+      "GEN-RCP-0483",
+      "GEN-RCP-0484",
+      "GEN-RCP-0485",
+      "GEN-RCP-0486",
+      "GEN-RCP-0487",
+      "GEN-RCP-0488",
+      "GEN-RCP-0489",
+      "GEN-RCP-0490",
+      "GEN-RCP-0491",
+      "GEN-RCP-0492",
+      "GEN-RCP-0493",
+      "GEN-RCP-0494",
+      "GEN-RCP-0495",
+      "GEN-RCP-0496",
+      "GEN-RCP-0497",
+      "GEN-RCP-0498",
+      "GEN-RCP-0499",
+      "GEN-RCP-0500"
+    ],
+    "Dinner/Tea / casseroles & bakes": [
+      "GEN-RCP-0501",
+      "GEN-RCP-0502",
+      "GEN-RCP-0503",
+      "GEN-RCP-0504",
+      "GEN-RCP-0505",
+      "GEN-RCP-0506",
+      "GEN-RCP-0507",
+      "GEN-RCP-0508",
+      "GEN-RCP-0509",
+      "GEN-RCP-0510",
+      "GEN-RCP-0511",
+      "GEN-RCP-0512",
+      "GEN-RCP-0513",
+      "GEN-RCP-0514",
+      "GEN-RCP-0515",
+      "GEN-RCP-0516",
+      "GEN-RCP-0517",
+      "GEN-RCP-0518",
+      "GEN-RCP-0519",
+      "GEN-RCP-0520",
+      "GEN-RCP-0521",
+      "GEN-RCP-0522",
+      "GEN-RCP-0523",
+      "GEN-RCP-0524",
+      "GEN-RCP-0525",
+      "GEN-RCP-0526",
+      "GEN-RCP-0527",
+      "GEN-RCP-0528",
+      "GEN-RCP-0529",
+      "GEN-RCP-0530",
+      "GEN-RCP-0531",
+      "GEN-RCP-0532",
+      "GEN-RCP-0533",
+      "GEN-RCP-0534",
+      "GEN-RCP-0535",
+      "GEN-RCP-0536",
+      "GEN-RCP-0537",
+      "GEN-RCP-0538",
+      "GEN-RCP-0539",
+      "GEN-RCP-0540",
+      "GEN-RCP-0541",
+      "GEN-RCP-0542",
+      "GEN-RCP-0543",
+      "GEN-RCP-0544",
+      "GEN-RCP-0545",
+      "GEN-RCP-0546",
+      "GEN-RCP-0547",
+      "GEN-RCP-0548",
+      "GEN-RCP-0549",
+      "GEN-RCP-0550"
+    ],
+    "Snack / snack baking": [
+      "GEN-RCP-0551",
+      "GEN-RCP-0552",
+      "GEN-RCP-0553",
+      "GEN-RCP-0554",
+      "GEN-RCP-0555",
+      "GEN-RCP-0556",
+      "GEN-RCP-0557",
+      "GEN-RCP-0558",
+      "GEN-RCP-0559",
+      "GEN-RCP-0560",
+      "GEN-RCP-0561",
+      "GEN-RCP-0562",
+      "GEN-RCP-0563",
+      "GEN-RCP-0564",
+      "GEN-RCP-0565",
+      "GEN-RCP-0566",
+      "GEN-RCP-0567",
+      "GEN-RCP-0568",
+      "GEN-RCP-0569",
+      "GEN-RCP-0570",
+      "GEN-RCP-0571",
+      "GEN-RCP-0572",
+      "GEN-RCP-0573",
+      "GEN-RCP-0574",
+      "GEN-RCP-0575"
+    ],
+    "Snack / fruit snacks": [
+      "GEN-RCP-0576",
+      "GEN-RCP-0577",
+      "GEN-RCP-0578",
+      "GEN-RCP-0579",
+      "GEN-RCP-0580",
+      "GEN-RCP-0581",
+      "GEN-RCP-0582",
+      "GEN-RCP-0583",
+      "GEN-RCP-0584",
+      "GEN-RCP-0585",
+      "GEN-RCP-0586",
+      "GEN-RCP-0587",
+      "GEN-RCP-0588",
+      "GEN-RCP-0589",
+      "GEN-RCP-0590",
+      "GEN-RCP-0591",
+      "GEN-RCP-0592",
+      "GEN-RCP-0593",
+      "GEN-RCP-0594",
+      "GEN-RCP-0595",
+      "GEN-RCP-0596",
+      "GEN-RCP-0597",
+      "GEN-RCP-0598",
+      "GEN-RCP-0599",
+      "GEN-RCP-0600"
+    ],
+    "Snack / bars & bites": [
+      "GEN-RCP-0601",
+      "GEN-RCP-0602",
+      "GEN-RCP-0603",
+      "GEN-RCP-0604",
+      "GEN-RCP-0605",
+      "GEN-RCP-0606",
+      "GEN-RCP-0607",
+      "GEN-RCP-0608",
+      "GEN-RCP-0609",
+      "GEN-RCP-0610",
+      "GEN-RCP-0611",
+      "GEN-RCP-0612",
+      "GEN-RCP-0613",
+      "GEN-RCP-0614",
+      "GEN-RCP-0615",
+      "GEN-RCP-0616",
+      "GEN-RCP-0617",
+      "GEN-RCP-0618",
+      "GEN-RCP-0619",
+      "GEN-RCP-0620",
+      "GEN-RCP-0621",
+      "GEN-RCP-0622",
+      "GEN-RCP-0623",
+      "GEN-RCP-0624",
+      "GEN-RCP-0625"
+    ],
+    "Snack / savoury snacks": [
+      "GEN-RCP-0626",
+      "GEN-RCP-0627",
+      "GEN-RCP-0628",
+      "GEN-RCP-0629",
+      "GEN-RCP-0630",
+      "GEN-RCP-0631",
+      "GEN-RCP-0632",
+      "GEN-RCP-0633",
+      "GEN-RCP-0634",
+      "GEN-RCP-0635",
+      "GEN-RCP-0636",
+      "GEN-RCP-0637",
+      "GEN-RCP-0638",
+      "GEN-RCP-0639",
+      "GEN-RCP-0640",
+      "GEN-RCP-0641",
+      "GEN-RCP-0642",
+      "GEN-RCP-0643",
+      "GEN-RCP-0644",
+      "GEN-RCP-0645",
+      "GEN-RCP-0646",
+      "GEN-RCP-0647",
+      "GEN-RCP-0648",
+      "GEN-RCP-0649",
+      "GEN-RCP-0650"
+    ],
+    "Dessert / fruit crumbles": [
+      "GEN-RCP-0651",
+      "GEN-RCP-0652",
+      "GEN-RCP-0653",
+      "GEN-RCP-0654",
+      "GEN-RCP-0655",
+      "GEN-RCP-0656",
+      "GEN-RCP-0657",
+      "GEN-RCP-0658",
+      "GEN-RCP-0659",
+      "GEN-RCP-0660",
+      "GEN-RCP-0661",
+      "GEN-RCP-0662",
+      "GEN-RCP-0663",
+      "GEN-RCP-0664",
+      "GEN-RCP-0665",
+      "GEN-RCP-0666",
+      "GEN-RCP-0667",
+      "GEN-RCP-0668",
+      "GEN-RCP-0669",
+      "GEN-RCP-0670",
+      "GEN-RCP-0671",
+      "GEN-RCP-0672",
+      "GEN-RCP-0673",
+      "GEN-RCP-0674",
+      "GEN-RCP-0675",
+      "GEN-RCP-0676",
+      "GEN-RCP-0677",
+      "GEN-RCP-0678",
+      "GEN-RCP-0679",
+      "GEN-RCP-0680"
+    ],
+    "Dessert / puddings": [
+      "GEN-RCP-0681",
+      "GEN-RCP-0682",
+      "GEN-RCP-0683",
+      "GEN-RCP-0684",
+      "GEN-RCP-0685",
+      "GEN-RCP-0686",
+      "GEN-RCP-0687",
+      "GEN-RCP-0688",
+      "GEN-RCP-0689",
+      "GEN-RCP-0690",
+      "GEN-RCP-0691",
+      "GEN-RCP-0692",
+      "GEN-RCP-0693",
+      "GEN-RCP-0694",
+      "GEN-RCP-0695",
+      "GEN-RCP-0696",
+      "GEN-RCP-0697",
+      "GEN-RCP-0698",
+      "GEN-RCP-0699",
+      "GEN-RCP-0700",
+      "GEN-RCP-0701",
+      "GEN-RCP-0702",
+      "GEN-RCP-0703",
+      "GEN-RCP-0704",
+      "GEN-RCP-0705",
+      "GEN-RCP-0706",
+      "GEN-RCP-0707",
+      "GEN-RCP-0708",
+      "GEN-RCP-0709",
+      "GEN-RCP-0710"
+    ],
+    "Dessert / slices & brownies": [
+      "GEN-RCP-0711",
+      "GEN-RCP-0712",
+      "GEN-RCP-0713",
+      "GEN-RCP-0714",
+      "GEN-RCP-0715",
+      "GEN-RCP-0716",
+      "GEN-RCP-0717",
+      "GEN-RCP-0718",
+      "GEN-RCP-0719",
+      "GEN-RCP-0720",
+      "GEN-RCP-0721",
+      "GEN-RCP-0722",
+      "GEN-RCP-0723",
+      "GEN-RCP-0724",
+      "GEN-RCP-0725",
+      "GEN-RCP-0726",
+      "GEN-RCP-0727",
+      "GEN-RCP-0728",
+      "GEN-RCP-0729",
+      "GEN-RCP-0730",
+      "GEN-RCP-0731",
+      "GEN-RCP-0732",
+      "GEN-RCP-0733",
+      "GEN-RCP-0734",
+      "GEN-RCP-0735",
+      "GEN-RCP-0736",
+      "GEN-RCP-0737",
+      "GEN-RCP-0738",
+      "GEN-RCP-0739",
+      "GEN-RCP-0740"
+    ],
+    "Dessert / cakes & cupcakes": [
+      "GEN-RCP-0741",
+      "GEN-RCP-0742",
+      "GEN-RCP-0743",
+      "GEN-RCP-0744",
+      "GEN-RCP-0745",
+      "GEN-RCP-0746",
+      "GEN-RCP-0747",
+      "GEN-RCP-0748",
+      "GEN-RCP-0749",
+      "GEN-RCP-0750",
+      "GEN-RCP-0751",
+      "GEN-RCP-0752",
+      "GEN-RCP-0753",
+      "GEN-RCP-0754",
+      "GEN-RCP-0755",
+      "GEN-RCP-0756",
+      "GEN-RCP-0757",
+      "GEN-RCP-0758",
+      "GEN-RCP-0759",
+      "GEN-RCP-0760",
+      "GEN-RCP-0761",
+      "GEN-RCP-0762",
+      "GEN-RCP-0763",
+      "GEN-RCP-0764",
+      "GEN-RCP-0765",
+      "GEN-RCP-0766",
+      "GEN-RCP-0767",
+      "GEN-RCP-0768",
+      "GEN-RCP-0769",
+      "GEN-RCP-0770"
+    ],
+    "Baking/Side / breads & scones": [
+      "GEN-RCP-0771",
+      "GEN-RCP-0772",
+      "GEN-RCP-0773",
+      "GEN-RCP-0774",
+      "GEN-RCP-0775",
+      "GEN-RCP-0776",
+      "GEN-RCP-0777",
+      "GEN-RCP-0778",
+      "GEN-RCP-0779",
+      "GEN-RCP-0780",
+      "GEN-RCP-0781",
+      "GEN-RCP-0782",
+      "GEN-RCP-0783",
+      "GEN-RCP-0784",
+      "GEN-RCP-0785"
+    ],
+    "Baking/Side / vegetable sides": [
+      "GEN-RCP-0786",
+      "GEN-RCP-0787",
+      "GEN-RCP-0788",
+      "GEN-RCP-0789",
+      "GEN-RCP-0790",
+      "GEN-RCP-0791",
+      "GEN-RCP-0792",
+      "GEN-RCP-0793",
+      "GEN-RCP-0794",
+      "GEN-RCP-0795",
+      "GEN-RCP-0796",
+      "GEN-RCP-0797",
+      "GEN-RCP-0798",
+      "GEN-RCP-0799",
+      "GEN-RCP-0800"
+    ]
+  },
+  "method_timing_flags": [],
+  "quantity_realism_flags": [],
+  "high_risk_scaling": {
+    "GEN-RCP-0031": {
+      "name": "Banana Plain Pancakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg",
+        "Raising Agent"
+      ]
+    },
+    "GEN-RCP-0032": {
+      "name": "Banana Wholemeal Pancakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg",
+        "Raising Agent"
+      ]
+    },
+    "GEN-RCP-0033": {
+      "name": "Banana Oat Pancakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg",
+        "Raising Agent"
+      ]
+    },
+    "GEN-RCP-0034": {
+      "name": "Apple Plain Pancakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg",
+        "Raising Agent"
+      ]
+    },
+    "GEN-RCP-0035": {
+      "name": "Apple Wholemeal Pancakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg",
+        "Raising Agent"
+      ]
+    },
+    "GEN-RCP-0036": {
+      "name": "Apple Oat Pancakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg",
+        "Raising Agent"
+      ]
+    },
+    "GEN-RCP-0037": {
+      "name": "Blueberry Plain Pancakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg",
+        "Raising Agent"
+      ]
+    },
+    "GEN-RCP-0038": {
+      "name": "Blueberry Wholemeal Pancakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg",
+        "Raising Agent"
+      ]
+    },
+    "GEN-RCP-0039": {
+      "name": "Blueberry Oat Pancakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg",
+        "Raising Agent"
+      ]
+    },
+    "GEN-RCP-0040": {
+      "name": "Strawberry Plain Pancakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg",
+        "Raising Agent"
+      ]
+    },
+    "GEN-RCP-0041": {
+      "name": "Strawberry Wholemeal Pancakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg",
+        "Raising Agent"
+      ]
+    },
+    "GEN-RCP-0042": {
+      "name": "Strawberry Oat Pancakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg",
+        "Raising Agent"
+      ]
+    },
+    "GEN-RCP-0043": {
+      "name": "Pear Plain Pancakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg",
+        "Raising Agent"
+      ]
+    },
+    "GEN-RCP-0044": {
+      "name": "Pear Wholemeal Pancakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg",
+        "Raising Agent"
+      ]
+    },
+    "GEN-RCP-0045": {
+      "name": "Pear Oat Pancakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg",
+        "Raising Agent"
+      ]
+    },
+    "GEN-RCP-0046": {
+      "name": "Peach Plain Pancakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg",
+        "Raising Agent"
+      ]
+    },
+    "GEN-RCP-0047": {
+      "name": "Peach Wholemeal Pancakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg",
+        "Raising Agent"
+      ]
+    },
+    "GEN-RCP-0048": {
+      "name": "Peach Oat Pancakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg",
+        "Raising Agent"
+      ]
+    },
+    "GEN-RCP-0049": {
+      "name": "Sultana Plain Pancakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg",
+        "Raising Agent"
+      ]
+    },
+    "GEN-RCP-0050": {
+      "name": "Sultana Wholemeal Pancakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg",
+        "Raising Agent"
+      ]
+    },
+    "GEN-RCP-0051": {
+      "name": "Sultana Oat Pancakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg",
+        "Raising Agent"
+      ]
+    },
+    "GEN-RCP-0052": {
+      "name": "Choc Chip Plain Pancakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg",
+        "Raising Agent"
+      ]
+    },
+    "GEN-RCP-0053": {
+      "name": "Choc Chip Wholemeal Pancakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg",
+        "Raising Agent"
+      ]
+    },
+    "GEN-RCP-0054": {
+      "name": "Choc Chip Oat Pancakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg",
+        "Raising Agent"
+      ]
+    },
+    "GEN-RCP-0055": {
+      "name": "Cinnamon Plain Pancakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg",
+        "Raising Agent"
+      ]
+    },
+    "GEN-RCP-0056": {
+      "name": "Cinnamon Wholemeal Pancakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg",
+        "Raising Agent"
+      ]
+    },
+    "GEN-RCP-0057": {
+      "name": "Cinnamon Oat Pancakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg",
+        "Raising Agent"
+      ]
+    },
+    "GEN-RCP-0058": {
+      "name": "Vanilla Plain Pancakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg",
+        "Raising Agent"
+      ]
+    },
+    "GEN-RCP-0059": {
+      "name": "Vanilla Wholemeal Pancakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg",
+        "Raising Agent"
+      ]
+    },
+    "GEN-RCP-0060": {
+      "name": "Vanilla Oat Pancakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg",
+        "Raising Agent"
+      ]
+    },
+    "GEN-RCP-0061": {
+      "name": "Spinach Scramble",
+      "reasons": [
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0062": {
+      "name": "Spinach Breakfast Muffins",
+      "reasons": [
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0063": {
+      "name": "Spinach Breakfast Wrap",
+      "reasons": [
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0064": {
+      "name": "Tomato Scramble",
+      "reasons": [
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0065": {
+      "name": "Tomato Breakfast Muffins",
+      "reasons": [
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0066": {
+      "name": "Tomato Breakfast Wrap",
+      "reasons": [
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0067": {
+      "name": "Mushroom Scramble",
+      "reasons": [
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0068": {
+      "name": "Mushroom Breakfast Muffins",
+      "reasons": [
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0069": {
+      "name": "Mushroom Breakfast Wrap",
+      "reasons": [
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0070": {
+      "name": "Capsicum Scramble",
+      "reasons": [
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0071": {
+      "name": "Capsicum Breakfast Muffins",
+      "reasons": [
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0072": {
+      "name": "Capsicum Breakfast Wrap",
+      "reasons": [
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0073": {
+      "name": "Corn Scramble",
+      "reasons": [
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0074": {
+      "name": "Corn Breakfast Muffins",
+      "reasons": [
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0075": {
+      "name": "Corn Breakfast Wrap",
+      "reasons": [
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0076": {
+      "name": "Peas Scramble",
+      "reasons": [
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0077": {
+      "name": "Peas Breakfast Muffins",
+      "reasons": [
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0078": {
+      "name": "Peas Breakfast Wrap",
+      "reasons": [
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0079": {
+      "name": "Zucchini Scramble",
+      "reasons": [
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0080": {
+      "name": "Zucchini Breakfast Muffins",
+      "reasons": [
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0081": {
+      "name": "Zucchini Breakfast Wrap",
+      "reasons": [
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0082": {
+      "name": "Broccoli Scramble",
+      "reasons": [
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0083": {
+      "name": "Broccoli Breakfast Muffins",
+      "reasons": [
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0084": {
+      "name": "Broccoli Breakfast Wrap",
+      "reasons": [
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0085": {
+      "name": "Sweet Potato Scramble",
+      "reasons": [
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0086": {
+      "name": "Sweet Potato Breakfast Muffins",
+      "reasons": [
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0087": {
+      "name": "Sweet Potato Breakfast Wrap",
+      "reasons": [
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0088": {
+      "name": "Onion Scramble",
+      "reasons": [
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0089": {
+      "name": "Onion Breakfast Muffins",
+      "reasons": [
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0090": {
+      "name": "Onion Breakfast Wrap",
+      "reasons": [
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0121": {
+      "name": "Banana Breakfast Muffins",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0122": {
+      "name": "Banana Breakfast Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0123": {
+      "name": "Banana Baked Oat Cups",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0124": {
+      "name": "Apple Cinnamon Breakfast Muffins",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0125": {
+      "name": "Apple Cinnamon Breakfast Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0126": {
+      "name": "Apple Cinnamon Baked Oat Cups",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0127": {
+      "name": "Blueberry Breakfast Muffins",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0128": {
+      "name": "Blueberry Breakfast Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0129": {
+      "name": "Blueberry Baked Oat Cups",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0130": {
+      "name": "Pear Breakfast Muffins",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0131": {
+      "name": "Pear Breakfast Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0132": {
+      "name": "Pear Baked Oat Cups",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0133": {
+      "name": "Peach Breakfast Muffins",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0134": {
+      "name": "Peach Breakfast Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0135": {
+      "name": "Peach Baked Oat Cups",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0136": {
+      "name": "Carrot Breakfast Muffins",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0137": {
+      "name": "Carrot Breakfast Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0138": {
+      "name": "Carrot Baked Oat Cups",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0139": {
+      "name": "Pumpkin Breakfast Muffins",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0140": {
+      "name": "Pumpkin Breakfast Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0141": {
+      "name": "Pumpkin Baked Oat Cups",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0142": {
+      "name": "Choc Chip Breakfast Muffins",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0143": {
+      "name": "Choc Chip Breakfast Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0144": {
+      "name": "Choc Chip Baked Oat Cups",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0145": {
+      "name": "Sultana Breakfast Muffins",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0146": {
+      "name": "Sultana Breakfast Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0147": {
+      "name": "Sultana Baked Oat Cups",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0148": {
+      "name": "Berry Breakfast Muffins",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0149": {
+      "name": "Berry Breakfast Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0150": {
+      "name": "Berry Baked Oat Cups",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0351": {
+      "name": "Mild Coconut Chicken Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0352": {
+      "name": "Tomato Chicken Curry",
+      "reasons": [
+        "Cans/packs",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0353": {
+      "name": "Pumpkin Chicken Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0354": {
+      "name": "Korma-Style Chicken Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0355": {
+      "name": "Sweet Potato Chicken Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0356": {
+      "name": "Mild Coconut Beef Mince Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0357": {
+      "name": "Tomato Beef Mince Curry",
+      "reasons": [
+        "Cans/packs",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0358": {
+      "name": "Pumpkin Beef Mince Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0359": {
+      "name": "Korma-Style Beef Mince Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0360": {
+      "name": "Sweet Potato Beef Mince Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0361": {
+      "name": "Mild Coconut Pork Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0362": {
+      "name": "Tomato Pork Curry",
+      "reasons": [
+        "Cans/packs",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0363": {
+      "name": "Pumpkin Pork Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0364": {
+      "name": "Korma-Style Pork Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0365": {
+      "name": "Sweet Potato Pork Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0366": {
+      "name": "Mild Coconut Tofu Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0367": {
+      "name": "Tomato Tofu Curry",
+      "reasons": [
+        "Cans/packs",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0368": {
+      "name": "Pumpkin Tofu Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0369": {
+      "name": "Korma-Style Tofu Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0370": {
+      "name": "Sweet Potato Tofu Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0371": {
+      "name": "Mild Coconut Lentils Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0372": {
+      "name": "Tomato Lentils Curry",
+      "reasons": [
+        "Cans/packs",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0373": {
+      "name": "Pumpkin Lentils Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0374": {
+      "name": "Korma-Style Lentils Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0375": {
+      "name": "Sweet Potato Lentils Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0376": {
+      "name": "Mild Coconut Beans Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0377": {
+      "name": "Tomato Beans Curry",
+      "reasons": [
+        "Cans/packs",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0378": {
+      "name": "Pumpkin Beans Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0379": {
+      "name": "Korma-Style Beans Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0380": {
+      "name": "Sweet Potato Beans Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0381": {
+      "name": "Mild Coconut Sausages Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0382": {
+      "name": "Tomato Sausages Curry",
+      "reasons": [
+        "Cans/packs",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0383": {
+      "name": "Pumpkin Sausages Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0384": {
+      "name": "Korma-Style Sausages Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0385": {
+      "name": "Sweet Potato Sausages Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0386": {
+      "name": "Mild Coconut Tuna Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0387": {
+      "name": "Tomato Tuna Curry",
+      "reasons": [
+        "Cans/packs",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0388": {
+      "name": "Pumpkin Tuna Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0389": {
+      "name": "Korma-Style Tuna Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0390": {
+      "name": "Sweet Potato Tuna Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0391": {
+      "name": "Mild Coconut Chickpeas Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0392": {
+      "name": "Tomato Chickpeas Curry",
+      "reasons": [
+        "Cans/packs",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0393": {
+      "name": "Pumpkin Chickpeas Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0394": {
+      "name": "Korma-Style Chickpeas Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0395": {
+      "name": "Sweet Potato Chickpeas Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0396": {
+      "name": "Mild Coconut Egg Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0397": {
+      "name": "Tomato Egg Curry",
+      "reasons": [
+        "Cans/packs",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0398": {
+      "name": "Pumpkin Egg Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0399": {
+      "name": "Korma-Style Egg Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0400": {
+      "name": "Sweet Potato Egg Curry",
+      "reasons": [
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0401": {
+      "name": "Teriyaki Chicken Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0402": {
+      "name": "Sweet Chilli Chicken Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0403": {
+      "name": "Garlic Soy Chicken Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0404": {
+      "name": "Honey Soy Chicken Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0405": {
+      "name": "Satay Chicken Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0406": {
+      "name": "Teriyaki Beef Mince Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0407": {
+      "name": "Sweet Chilli Beef Mince Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0408": {
+      "name": "Garlic Soy Beef Mince Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0409": {
+      "name": "Honey Soy Beef Mince Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0410": {
+      "name": "Satay Beef Mince Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0411": {
+      "name": "Teriyaki Pork Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0412": {
+      "name": "Sweet Chilli Pork Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0413": {
+      "name": "Garlic Soy Pork Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0414": {
+      "name": "Honey Soy Pork Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0415": {
+      "name": "Satay Pork Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0416": {
+      "name": "Teriyaki Tofu Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0417": {
+      "name": "Sweet Chilli Tofu Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0418": {
+      "name": "Garlic Soy Tofu Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0419": {
+      "name": "Honey Soy Tofu Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0420": {
+      "name": "Satay Tofu Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0421": {
+      "name": "Teriyaki Lentils Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0422": {
+      "name": "Sweet Chilli Lentils Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0423": {
+      "name": "Garlic Soy Lentils Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0424": {
+      "name": "Honey Soy Lentils Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0425": {
+      "name": "Satay Lentils Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0426": {
+      "name": "Teriyaki Beans Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0427": {
+      "name": "Sweet Chilli Beans Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0428": {
+      "name": "Garlic Soy Beans Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0429": {
+      "name": "Honey Soy Beans Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0430": {
+      "name": "Satay Beans Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0431": {
+      "name": "Teriyaki Sausages Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0432": {
+      "name": "Sweet Chilli Sausages Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0433": {
+      "name": "Garlic Soy Sausages Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0434": {
+      "name": "Honey Soy Sausages Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0435": {
+      "name": "Satay Sausages Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0436": {
+      "name": "Teriyaki Tuna Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0437": {
+      "name": "Sweet Chilli Tuna Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0438": {
+      "name": "Garlic Soy Tuna Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0439": {
+      "name": "Honey Soy Tuna Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0440": {
+      "name": "Satay Tuna Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0441": {
+      "name": "Teriyaki Chickpeas Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0442": {
+      "name": "Sweet Chilli Chickpeas Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0443": {
+      "name": "Garlic Soy Chickpeas Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0444": {
+      "name": "Honey Soy Chickpeas Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0445": {
+      "name": "Satay Chickpeas Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0446": {
+      "name": "Teriyaki Egg Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0447": {
+      "name": "Sweet Chilli Egg Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0448": {
+      "name": "Garlic Soy Egg Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0449": {
+      "name": "Honey Soy Egg Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0450": {
+      "name": "Satay Egg Stir-Fry",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0451": {
+      "name": "Lemon Herb Chicken Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0452": {
+      "name": "Garlic Chicken Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0453": {
+      "name": "BBQ Chicken Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0454": {
+      "name": "Italian Chicken Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0455": {
+      "name": "Paprika Chicken Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0456": {
+      "name": "Lemon Herb Beef Mince Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0457": {
+      "name": "Garlic Beef Mince Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0458": {
+      "name": "BBQ Beef Mince Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0459": {
+      "name": "Italian Beef Mince Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0460": {
+      "name": "Paprika Beef Mince Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0461": {
+      "name": "Lemon Herb Pork Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0462": {
+      "name": "Garlic Pork Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0463": {
+      "name": "BBQ Pork Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0464": {
+      "name": "Italian Pork Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0465": {
+      "name": "Paprika Pork Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0466": {
+      "name": "Lemon Herb Tofu Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0467": {
+      "name": "Garlic Tofu Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0468": {
+      "name": "BBQ Tofu Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0469": {
+      "name": "Italian Tofu Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0470": {
+      "name": "Paprika Tofu Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0471": {
+      "name": "Lemon Herb Lentils Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0472": {
+      "name": "Garlic Lentils Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0473": {
+      "name": "BBQ Lentils Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0474": {
+      "name": "Italian Lentils Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0475": {
+      "name": "Paprika Lentils Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0476": {
+      "name": "Lemon Herb Beans Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0477": {
+      "name": "Garlic Beans Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0478": {
+      "name": "BBQ Beans Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0479": {
+      "name": "Italian Beans Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0480": {
+      "name": "Paprika Beans Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0481": {
+      "name": "Lemon Herb Sausages Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0482": {
+      "name": "Garlic Sausages Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0483": {
+      "name": "BBQ Sausages Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0484": {
+      "name": "Italian Sausages Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0485": {
+      "name": "Paprika Sausages Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0486": {
+      "name": "Lemon Herb Tuna Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0487": {
+      "name": "Garlic Tuna Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0488": {
+      "name": "BBQ Tuna Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0489": {
+      "name": "Italian Tuna Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0490": {
+      "name": "Paprika Tuna Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0491": {
+      "name": "Lemon Herb Chickpeas Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0492": {
+      "name": "Garlic Chickpeas Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0493": {
+      "name": "BBQ Chickpeas Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0494": {
+      "name": "Italian Chickpeas Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0495": {
+      "name": "Paprika Chickpeas Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0496": {
+      "name": "Lemon Herb Egg Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0497": {
+      "name": "Garlic Egg Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0498": {
+      "name": "BBQ Egg Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0499": {
+      "name": "Italian Egg Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0500": {
+      "name": "Paprika Egg Tray Bake",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0551": {
+      "name": "Banana Mini Muffins",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0552": {
+      "name": "Banana Snack Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0553": {
+      "name": "Banana Oat Cups",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0554": {
+      "name": "Apple Mini Muffins",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0555": {
+      "name": "Apple Snack Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0556": {
+      "name": "Apple Oat Cups",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0557": {
+      "name": "Blueberry Mini Muffins",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0558": {
+      "name": "Blueberry Snack Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0559": {
+      "name": "Blueberry Oat Cups",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0560": {
+      "name": "Carrot Mini Muffins",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0561": {
+      "name": "Carrot Snack Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0562": {
+      "name": "Carrot Oat Cups",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0563": {
+      "name": "Pumpkin Mini Muffins",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0564": {
+      "name": "Pumpkin Snack Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0565": {
+      "name": "Pumpkin Oat Cups",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0566": {
+      "name": "Corn Mini Muffins",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0567": {
+      "name": "Corn Snack Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0568": {
+      "name": "Corn Oat Cups",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0569": {
+      "name": "Cheese Mini Muffins",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0570": {
+      "name": "Cheese Snack Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0571": {
+      "name": "Cheese Oat Cups",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0572": {
+      "name": "Spinach Mini Muffins",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0573": {
+      "name": "Spinach Snack Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0574": {
+      "name": "Spinach Oat Cups",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0575": {
+      "name": "Sultana Mini Muffins",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0651": {
+      "name": "Apple Oat Crumble",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0652": {
+      "name": "Apple Cinnamon Crumble",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0653": {
+      "name": "Apple Budget Crumble",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0654": {
+      "name": "Pear Oat Crumble",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0655": {
+      "name": "Pear Cinnamon Crumble",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0656": {
+      "name": "Pear Budget Crumble",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0657": {
+      "name": "Peach Oat Crumble",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0658": {
+      "name": "Peach Cinnamon Crumble",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0659": {
+      "name": "Peach Budget Crumble",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0660": {
+      "name": "Berry Oat Crumble",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0661": {
+      "name": "Berry Cinnamon Crumble",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0662": {
+      "name": "Berry Budget Crumble",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0663": {
+      "name": "Plum Oat Crumble",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0664": {
+      "name": "Plum Cinnamon Crumble",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0665": {
+      "name": "Plum Budget Crumble",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0666": {
+      "name": "Banana Oat Crumble",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0667": {
+      "name": "Banana Cinnamon Crumble",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0668": {
+      "name": "Banana Budget Crumble",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0669": {
+      "name": "Pineapple Oat Crumble",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0670": {
+      "name": "Pineapple Cinnamon Crumble",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0671": {
+      "name": "Pineapple Budget Crumble",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0672": {
+      "name": "Mango Oat Crumble",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0673": {
+      "name": "Mango Cinnamon Crumble",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0674": {
+      "name": "Mango Budget Crumble",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0675": {
+      "name": "Apricot Oat Crumble",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0676": {
+      "name": "Apricot Cinnamon Crumble",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0677": {
+      "name": "Apricot Budget Crumble",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0678": {
+      "name": "Mixed Fruit Oat Crumble",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0679": {
+      "name": "Mixed Fruit Cinnamon Crumble",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0680": {
+      "name": "Mixed Fruit Budget Crumble",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0681": {
+      "name": "Chocolate Self-Saucing Pudding",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0682": {
+      "name": "Chocolate Baked Pudding",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0683": {
+      "name": "Chocolate Family Pudding",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0684": {
+      "name": "Vanilla Self-Saucing Pudding",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0685": {
+      "name": "Vanilla Baked Pudding",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0686": {
+      "name": "Vanilla Family Pudding",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0687": {
+      "name": "Banana Self-Saucing Pudding",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0688": {
+      "name": "Banana Baked Pudding",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0689": {
+      "name": "Banana Family Pudding",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0690": {
+      "name": "Apple Cinnamon Self-Saucing Pudding",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0691": {
+      "name": "Apple Cinnamon Baked Pudding",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0692": {
+      "name": "Apple Cinnamon Family Pudding",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0693": {
+      "name": "Lemon Self-Saucing Pudding",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0694": {
+      "name": "Lemon Baked Pudding",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0695": {
+      "name": "Lemon Family Pudding",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0696": {
+      "name": "Caramel Self-Saucing Pudding",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0697": {
+      "name": "Caramel Baked Pudding",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0698": {
+      "name": "Caramel Family Pudding",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0699": {
+      "name": "Berry Self-Saucing Pudding",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0700": {
+      "name": "Berry Baked Pudding",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0701": {
+      "name": "Berry Family Pudding",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0702": {
+      "name": "Coconut Self-Saucing Pudding",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0703": {
+      "name": "Coconut Baked Pudding",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0704": {
+      "name": "Coconut Family Pudding",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0705": {
+      "name": "Coffee Self-Saucing Pudding",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0706": {
+      "name": "Coffee Baked Pudding",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0707": {
+      "name": "Coffee Family Pudding",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0708": {
+      "name": "Orange Self-Saucing Pudding",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0709": {
+      "name": "Orange Baked Pudding",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0710": {
+      "name": "Orange Family Pudding",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0711": {
+      "name": "Chocolate Budget Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0712": {
+      "name": "Chocolate Brownie-Style Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0713": {
+      "name": "Chocolate Lunchbox Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0714": {
+      "name": "Caramel Budget Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0715": {
+      "name": "Caramel Brownie-Style Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0716": {
+      "name": "Caramel Lunchbox Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0717": {
+      "name": "Lemon Budget Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0718": {
+      "name": "Lemon Brownie-Style Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0719": {
+      "name": "Lemon Lunchbox Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0720": {
+      "name": "Coconut Budget Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0721": {
+      "name": "Coconut Brownie-Style Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0722": {
+      "name": "Coconut Lunchbox Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0723": {
+      "name": "Oat Jam Budget Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0724": {
+      "name": "Oat Jam Brownie-Style Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0725": {
+      "name": "Oat Jam Lunchbox Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0726": {
+      "name": "Peanut Budget Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0727": {
+      "name": "Peanut Brownie-Style Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0728": {
+      "name": "Peanut Lunchbox Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0729": {
+      "name": "Banana Budget Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0730": {
+      "name": "Banana Brownie-Style Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0731": {
+      "name": "Banana Lunchbox Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0732": {
+      "name": "Berry Budget Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0733": {
+      "name": "Berry Brownie-Style Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0734": {
+      "name": "Berry Lunchbox Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0735": {
+      "name": "Apple Budget Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0736": {
+      "name": "Apple Brownie-Style Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0737": {
+      "name": "Apple Lunchbox Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0738": {
+      "name": "Vanilla Budget Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0739": {
+      "name": "Vanilla Brownie-Style Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0740": {
+      "name": "Vanilla Lunchbox Slice",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0741": {
+      "name": "Banana Simple Cake",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0742": {
+      "name": "Banana Cupcakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0743": {
+      "name": "Banana Mini Cakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0744": {
+      "name": "Apple Simple Cake",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0745": {
+      "name": "Apple Cupcakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0746": {
+      "name": "Apple Mini Cakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0747": {
+      "name": "Carrot Simple Cake",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0748": {
+      "name": "Carrot Cupcakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0749": {
+      "name": "Carrot Mini Cakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0750": {
+      "name": "Chocolate Simple Cake",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0751": {
+      "name": "Chocolate Cupcakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0752": {
+      "name": "Chocolate Mini Cakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0753": {
+      "name": "Vanilla Simple Cake",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0754": {
+      "name": "Vanilla Cupcakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0755": {
+      "name": "Vanilla Mini Cakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0756": {
+      "name": "Lemon Simple Cake",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0757": {
+      "name": "Lemon Cupcakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0758": {
+      "name": "Lemon Mini Cakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0759": {
+      "name": "Orange Simple Cake",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0760": {
+      "name": "Orange Cupcakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0761": {
+      "name": "Orange Mini Cakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0762": {
+      "name": "Berry Simple Cake",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0763": {
+      "name": "Berry Cupcakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0764": {
+      "name": "Berry Mini Cakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0765": {
+      "name": "Pear Simple Cake",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0766": {
+      "name": "Pear Cupcakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0767": {
+      "name": "Pear Mini Cakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0768": {
+      "name": "Coconut Simple Cake",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0769": {
+      "name": "Coconut Cupcakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0770": {
+      "name": "Coconut Mini Cakes",
+      "reasons": [
+        "Cooking Fat",
+        "Egg"
+      ]
+    },
+    "GEN-RCP-0771": {
+      "name": "Plain Scones",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0772": {
+      "name": "Plain Quick Bread",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0773": {
+      "name": "Plain Flatbreads",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0774": {
+      "name": "Cheese Scones",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0775": {
+      "name": "Cheese Quick Bread",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0776": {
+      "name": "Cheese Flatbreads",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0777": {
+      "name": "Herb Scones",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0778": {
+      "name": "Herb Quick Bread",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0779": {
+      "name": "Herb Flatbreads",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0780": {
+      "name": "Corn Scones",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0781": {
+      "name": "Corn Quick Bread",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0782": {
+      "name": "Corn Flatbreads",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0783": {
+      "name": "Pumpkin Scones",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0784": {
+      "name": "Pumpkin Quick Bread",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0785": {
+      "name": "Pumpkin Flatbreads",
+      "reasons": [
+        "Cooking Fat"
+      ]
+    },
+    "GEN-RCP-0786": {
+      "name": "Roasted Potato Side",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0787": {
+      "name": "Mash Potato Side",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0788": {
+      "name": "Seasoned Tray Potato Side",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0789": {
+      "name": "Roasted Sweet Potato Side",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0790": {
+      "name": "Mash Sweet Potato Side",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0791": {
+      "name": "Seasoned Tray Sweet Potato Side",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0792": {
+      "name": "Roasted Carrot Side",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0793": {
+      "name": "Mash Carrot Side",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0794": {
+      "name": "Seasoned Tray Carrot Side",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0795": {
+      "name": "Roasted Pumpkin Side",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0796": {
+      "name": "Mash Pumpkin Side",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0797": {
+      "name": "Seasoned Tray Pumpkin Side",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0798": {
+      "name": "Roasted Broccoli Side",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0799": {
+      "name": "Mash Broccoli Side",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    },
+    "GEN-RCP-0800": {
+      "name": "Seasoned Tray Broccoli Side",
+      "reasons": [
+        "Cooking Fat",
+        "Herbs/Spices"
+      ]
+    }
+  },
+  "kitchen_test_queue": [
+    "GEN-RCP-0031",
+    "GEN-RCP-0032",
+    "GEN-RCP-0033",
+    "GEN-RCP-0034",
+    "GEN-RCP-0035",
+    "GEN-RCP-0036",
+    "GEN-RCP-0037",
+    "GEN-RCP-0038",
+    "GEN-RCP-0039",
+    "GEN-RCP-0040",
+    "GEN-RCP-0041",
+    "GEN-RCP-0042",
+    "GEN-RCP-0043",
+    "GEN-RCP-0044",
+    "GEN-RCP-0045",
+    "GEN-RCP-0046",
+    "GEN-RCP-0047",
+    "GEN-RCP-0048",
+    "GEN-RCP-0049",
+    "GEN-RCP-0050",
+    "GEN-RCP-0051",
+    "GEN-RCP-0052",
+    "GEN-RCP-0053",
+    "GEN-RCP-0054",
+    "GEN-RCP-0055",
+    "GEN-RCP-0056",
+    "GEN-RCP-0057",
+    "GEN-RCP-0058",
+    "GEN-RCP-0059",
+    "GEN-RCP-0060",
+    "GEN-RCP-0061",
+    "GEN-RCP-0062",
+    "GEN-RCP-0063",
+    "GEN-RCP-0064",
+    "GEN-RCP-0065",
+    "GEN-RCP-0066",
+    "GEN-RCP-0067",
+    "GEN-RCP-0068",
+    "GEN-RCP-0069",
+    "GEN-RCP-0070",
+    "GEN-RCP-0071",
+    "GEN-RCP-0072",
+    "GEN-RCP-0073",
+    "GEN-RCP-0074",
+    "GEN-RCP-0075",
+    "GEN-RCP-0076",
+    "GEN-RCP-0077",
+    "GEN-RCP-0078",
+    "GEN-RCP-0079",
+    "GEN-RCP-0080",
+    "GEN-RCP-0081",
+    "GEN-RCP-0082",
+    "GEN-RCP-0083",
+    "GEN-RCP-0084",
+    "GEN-RCP-0085",
+    "GEN-RCP-0086",
+    "GEN-RCP-0087",
+    "GEN-RCP-0088",
+    "GEN-RCP-0089",
+    "GEN-RCP-0090",
+    "GEN-RCP-0121",
+    "GEN-RCP-0122",
+    "GEN-RCP-0123",
+    "GEN-RCP-0124",
+    "GEN-RCP-0125",
+    "GEN-RCP-0126",
+    "GEN-RCP-0127",
+    "GEN-RCP-0128",
+    "GEN-RCP-0129",
+    "GEN-RCP-0130",
+    "GEN-RCP-0131",
+    "GEN-RCP-0132",
+    "GEN-RCP-0133",
+    "GEN-RCP-0134",
+    "GEN-RCP-0135",
+    "GEN-RCP-0136",
+    "GEN-RCP-0137",
+    "GEN-RCP-0138",
+    "GEN-RCP-0139",
+    "GEN-RCP-0140",
+    "GEN-RCP-0141",
+    "GEN-RCP-0142",
+    "GEN-RCP-0143",
+    "GEN-RCP-0144",
+    "GEN-RCP-0145",
+    "GEN-RCP-0146",
+    "GEN-RCP-0147",
+    "GEN-RCP-0148",
+    "GEN-RCP-0149",
+    "GEN-RCP-0150",
+    "GEN-RCP-0351",
+    "GEN-RCP-0352",
+    "GEN-RCP-0353",
+    "GEN-RCP-0354",
+    "GEN-RCP-0355",
+    "GEN-RCP-0356",
+    "GEN-RCP-0357",
+    "GEN-RCP-0358",
+    "GEN-RCP-0359",
+    "GEN-RCP-0360",
+    "GEN-RCP-0361",
+    "GEN-RCP-0362",
+    "GEN-RCP-0363",
+    "GEN-RCP-0364",
+    "GEN-RCP-0365",
+    "GEN-RCP-0366",
+    "GEN-RCP-0367",
+    "GEN-RCP-0368",
+    "GEN-RCP-0369",
+    "GEN-RCP-0370",
+    "GEN-RCP-0371",
+    "GEN-RCP-0372",
+    "GEN-RCP-0373",
+    "GEN-RCP-0374",
+    "GEN-RCP-0375",
+    "GEN-RCP-0376",
+    "GEN-RCP-0377",
+    "GEN-RCP-0378",
+    "GEN-RCP-0379",
+    "GEN-RCP-0380",
+    "GEN-RCP-0381",
+    "GEN-RCP-0382",
+    "GEN-RCP-0383",
+    "GEN-RCP-0384",
+    "GEN-RCP-0385",
+    "GEN-RCP-0386",
+    "GEN-RCP-0387",
+    "GEN-RCP-0388",
+    "GEN-RCP-0389",
+    "GEN-RCP-0390",
+    "GEN-RCP-0391",
+    "GEN-RCP-0392",
+    "GEN-RCP-0393",
+    "GEN-RCP-0394",
+    "GEN-RCP-0395",
+    "GEN-RCP-0396",
+    "GEN-RCP-0397",
+    "GEN-RCP-0398",
+    "GEN-RCP-0399",
+    "GEN-RCP-0400",
+    "GEN-RCP-0401",
+    "GEN-RCP-0402",
+    "GEN-RCP-0403",
+    "GEN-RCP-0404",
+    "GEN-RCP-0405",
+    "GEN-RCP-0406",
+    "GEN-RCP-0407",
+    "GEN-RCP-0408",
+    "GEN-RCP-0409",
+    "GEN-RCP-0410",
+    "GEN-RCP-0411",
+    "GEN-RCP-0412",
+    "GEN-RCP-0413",
+    "GEN-RCP-0414",
+    "GEN-RCP-0415",
+    "GEN-RCP-0416",
+    "GEN-RCP-0417",
+    "GEN-RCP-0418",
+    "GEN-RCP-0419",
+    "GEN-RCP-0420",
+    "GEN-RCP-0421",
+    "GEN-RCP-0422",
+    "GEN-RCP-0423",
+    "GEN-RCP-0424",
+    "GEN-RCP-0425",
+    "GEN-RCP-0426",
+    "GEN-RCP-0427",
+    "GEN-RCP-0428",
+    "GEN-RCP-0429",
+    "GEN-RCP-0430",
+    "GEN-RCP-0431",
+    "GEN-RCP-0432",
+    "GEN-RCP-0433",
+    "GEN-RCP-0434",
+    "GEN-RCP-0435",
+    "GEN-RCP-0436",
+    "GEN-RCP-0437",
+    "GEN-RCP-0438",
+    "GEN-RCP-0439",
+    "GEN-RCP-0440",
+    "GEN-RCP-0441",
+    "GEN-RCP-0442",
+    "GEN-RCP-0443",
+    "GEN-RCP-0444",
+    "GEN-RCP-0445",
+    "GEN-RCP-0446",
+    "GEN-RCP-0447",
+    "GEN-RCP-0448",
+    "GEN-RCP-0449",
+    "GEN-RCP-0450",
+    "GEN-RCP-0451",
+    "GEN-RCP-0452",
+    "GEN-RCP-0453",
+    "GEN-RCP-0454",
+    "GEN-RCP-0455",
+    "GEN-RCP-0456",
+    "GEN-RCP-0457",
+    "GEN-RCP-0458",
+    "GEN-RCP-0459",
+    "GEN-RCP-0460",
+    "GEN-RCP-0461",
+    "GEN-RCP-0462",
+    "GEN-RCP-0463",
+    "GEN-RCP-0464",
+    "GEN-RCP-0465",
+    "GEN-RCP-0466",
+    "GEN-RCP-0467",
+    "GEN-RCP-0468",
+    "GEN-RCP-0469",
+    "GEN-RCP-0470",
+    "GEN-RCP-0471",
+    "GEN-RCP-0472",
+    "GEN-RCP-0473",
+    "GEN-RCP-0474",
+    "GEN-RCP-0475",
+    "GEN-RCP-0476",
+    "GEN-RCP-0477",
+    "GEN-RCP-0478",
+    "GEN-RCP-0479",
+    "GEN-RCP-0480",
+    "GEN-RCP-0481",
+    "GEN-RCP-0482",
+    "GEN-RCP-0483",
+    "GEN-RCP-0484",
+    "GEN-RCP-0485",
+    "GEN-RCP-0486",
+    "GEN-RCP-0487",
+    "GEN-RCP-0488",
+    "GEN-RCP-0489",
+    "GEN-RCP-0490",
+    "GEN-RCP-0491",
+    "GEN-RCP-0492",
+    "GEN-RCP-0493",
+    "GEN-RCP-0494",
+    "GEN-RCP-0495",
+    "GEN-RCP-0496",
+    "GEN-RCP-0497",
+    "GEN-RCP-0498",
+    "GEN-RCP-0499",
+    "GEN-RCP-0500",
+    "GEN-RCP-0551",
+    "GEN-RCP-0552",
+    "GEN-RCP-0553",
+    "GEN-RCP-0554",
+    "GEN-RCP-0555",
+    "GEN-RCP-0556",
+    "GEN-RCP-0557",
+    "GEN-RCP-0558",
+    "GEN-RCP-0559",
+    "GEN-RCP-0560",
+    "GEN-RCP-0561",
+    "GEN-RCP-0562",
+    "GEN-RCP-0563",
+    "GEN-RCP-0564",
+    "GEN-RCP-0565",
+    "GEN-RCP-0566",
+    "GEN-RCP-0567",
+    "GEN-RCP-0568",
+    "GEN-RCP-0569",
+    "GEN-RCP-0570",
+    "GEN-RCP-0571",
+    "GEN-RCP-0572",
+    "GEN-RCP-0573",
+    "GEN-RCP-0574",
+    "GEN-RCP-0575",
+    "GEN-RCP-0651",
+    "GEN-RCP-0652",
+    "GEN-RCP-0653",
+    "GEN-RCP-0654",
+    "GEN-RCP-0655",
+    "GEN-RCP-0656",
+    "GEN-RCP-0657",
+    "GEN-RCP-0658",
+    "GEN-RCP-0659",
+    "GEN-RCP-0660",
+    "GEN-RCP-0661",
+    "GEN-RCP-0662",
+    "GEN-RCP-0663",
+    "GEN-RCP-0664",
+    "GEN-RCP-0665",
+    "GEN-RCP-0666",
+    "GEN-RCP-0667",
+    "GEN-RCP-0668",
+    "GEN-RCP-0669",
+    "GEN-RCP-0670",
+    "GEN-RCP-0671",
+    "GEN-RCP-0672",
+    "GEN-RCP-0673",
+    "GEN-RCP-0674",
+    "GEN-RCP-0675",
+    "GEN-RCP-0676",
+    "GEN-RCP-0677",
+    "GEN-RCP-0678",
+    "GEN-RCP-0679",
+    "GEN-RCP-0680",
+    "GEN-RCP-0681",
+    "GEN-RCP-0682",
+    "GEN-RCP-0683",
+    "GEN-RCP-0684",
+    "GEN-RCP-0685",
+    "GEN-RCP-0686",
+    "GEN-RCP-0687",
+    "GEN-RCP-0688",
+    "GEN-RCP-0689",
+    "GEN-RCP-0690",
+    "GEN-RCP-0691",
+    "GEN-RCP-0692",
+    "GEN-RCP-0693",
+    "GEN-RCP-0694",
+    "GEN-RCP-0695",
+    "GEN-RCP-0696",
+    "GEN-RCP-0697",
+    "GEN-RCP-0698",
+    "GEN-RCP-0699",
+    "GEN-RCP-0700",
+    "GEN-RCP-0701",
+    "GEN-RCP-0702",
+    "GEN-RCP-0703",
+    "GEN-RCP-0704",
+    "GEN-RCP-0705",
+    "GEN-RCP-0706",
+    "GEN-RCP-0707",
+    "GEN-RCP-0708",
+    "GEN-RCP-0709",
+    "GEN-RCP-0710",
+    "GEN-RCP-0711",
+    "GEN-RCP-0712",
+    "GEN-RCP-0713",
+    "GEN-RCP-0714",
+    "GEN-RCP-0715",
+    "GEN-RCP-0716",
+    "GEN-RCP-0717",
+    "GEN-RCP-0718",
+    "GEN-RCP-0719",
+    "GEN-RCP-0720",
+    "GEN-RCP-0721",
+    "GEN-RCP-0722",
+    "GEN-RCP-0723",
+    "GEN-RCP-0724",
+    "GEN-RCP-0725",
+    "GEN-RCP-0726",
+    "GEN-RCP-0727",
+    "GEN-RCP-0728",
+    "GEN-RCP-0729",
+    "GEN-RCP-0730",
+    "GEN-RCP-0731",
+    "GEN-RCP-0732",
+    "GEN-RCP-0733",
+    "GEN-RCP-0734",
+    "GEN-RCP-0735",
+    "GEN-RCP-0736",
+    "GEN-RCP-0737",
+    "GEN-RCP-0738",
+    "GEN-RCP-0739",
+    "GEN-RCP-0740",
+    "GEN-RCP-0741",
+    "GEN-RCP-0742",
+    "GEN-RCP-0743",
+    "GEN-RCP-0744",
+    "GEN-RCP-0745",
+    "GEN-RCP-0746",
+    "GEN-RCP-0747",
+    "GEN-RCP-0748",
+    "GEN-RCP-0749",
+    "GEN-RCP-0750",
+    "GEN-RCP-0751",
+    "GEN-RCP-0752",
+    "GEN-RCP-0753",
+    "GEN-RCP-0754",
+    "GEN-RCP-0755",
+    "GEN-RCP-0756",
+    "GEN-RCP-0757",
+    "GEN-RCP-0758",
+    "GEN-RCP-0759",
+    "GEN-RCP-0760",
+    "GEN-RCP-0761",
+    "GEN-RCP-0762",
+    "GEN-RCP-0763",
+    "GEN-RCP-0764",
+    "GEN-RCP-0765",
+    "GEN-RCP-0766",
+    "GEN-RCP-0767",
+    "GEN-RCP-0768",
+    "GEN-RCP-0769",
+    "GEN-RCP-0770",
+    "GEN-RCP-0771",
+    "GEN-RCP-0772",
+    "GEN-RCP-0773",
+    "GEN-RCP-0774",
+    "GEN-RCP-0775",
+    "GEN-RCP-0776",
+    "GEN-RCP-0777",
+    "GEN-RCP-0778",
+    "GEN-RCP-0779",
+    "GEN-RCP-0780",
+    "GEN-RCP-0781",
+    "GEN-RCP-0782",
+    "GEN-RCP-0783",
+    "GEN-RCP-0784",
+    "GEN-RCP-0785",
+    "GEN-RCP-0786",
+    "GEN-RCP-0787",
+    "GEN-RCP-0788",
+    "GEN-RCP-0789",
+    "GEN-RCP-0790",
+    "GEN-RCP-0791",
+    "GEN-RCP-0792",
+    "GEN-RCP-0793",
+    "GEN-RCP-0794",
+    "GEN-RCP-0795",
+    "GEN-RCP-0796",
+    "GEN-RCP-0797",
+    "GEN-RCP-0798",
+    "GEN-RCP-0799",
+    "GEN-RCP-0800"
+  ]
+}
