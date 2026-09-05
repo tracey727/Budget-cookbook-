@@ -64,9 +64,20 @@ CREATE TABLE IF NOT EXISTS unit_conversions (
   ingredient_id uuid REFERENCES ingredients(ingredient_id),
   multiplier numeric(18,8) NOT NULL CHECK (multiplier > 0),
   verified boolean NOT NULL DEFAULT false,
-  notes text,
-  PRIMARY KEY (from_unit_code, to_unit_code, ingredient_id)
+  notes text
 );
+-- ingredient_id is nullable (NULL = universal conversion, e.g. kg<->g, that
+-- applies to any ingredient -- see 08_CANONICAL_INGREDIENT_MODEL). A
+-- composite PRIMARY KEY including ingredient_id would make it implicitly
+-- NOT NULL in Postgres, so uniqueness is two partial indexes instead: one
+-- per specific ingredient, one for the universal (NULL-ingredient) rows.
+-- ingredient_id has no CREATE TABLE-level NOT NULL, but a column that was
+-- ever part of a PRIMARY KEY keeps attnotnull=true even after the
+-- constraint is dropped -- ALTER COLUMN ... DROP NOT NULL below is required,
+-- not just dropping the constraint (found by actually seeding this table).
+ALTER TABLE unit_conversions ALTER COLUMN ingredient_id DROP NOT NULL;
+CREATE UNIQUE INDEX IF NOT EXISTS unit_conversions_specific_uq ON unit_conversions (from_unit_code, to_unit_code, ingredient_id) WHERE ingredient_id IS NOT NULL;
+CREATE UNIQUE INDEX IF NOT EXISTS unit_conversions_universal_uq ON unit_conversions (from_unit_code, to_unit_code) WHERE ingredient_id IS NULL;
 
 CREATE TABLE IF NOT EXISTS households (
   household_id uuid PRIMARY KEY DEFAULT gen_random_uuid(),

@@ -18,12 +18,22 @@
   "excluded_stack": [
     "Vercel"
   ],
-  "next_phase": "Phase 5 \u2014 Neon Database Foundation",
+  "next_phase": "Phase 6 \u2014 Cloudflare Worker + Hyperdrive Foundation",
   "pack_name": "GENEVIEVE_Family_Budget_Cookbook_COMPLETE_BUILD_PACK_V2_DIETARY_ENGINE",
   "version": "2.0",
   "phase_2_status": "ALL SUB-PHASES 2.1\u20132.8 GREEN. 385/800 recipes LAUNCH_READY; 415/800 HELD_FOR_KITCHEN_TEST (real kitchen/scaling testing, not a content defect -- see 02_RECIPE_CONTENT/PHASE_2_8_LAUNCH_READINESS_REPORT.md).",
   "phase_3_status": "PARTIAL. Repo identity confirmed (tracey727/Budget-cookbook-, id 1357962713, default branch main), PR #1 opened merging Phase 0-2 into main, .gitignore present, no secrets committed. Visibility is currently PUBLIC and main is unprotected -- no GitHub tool available in this session can change either; both need manual action by the repo owner. See 01_MASTER_BLUEPRINT/PHASE_3_REPOSITORY_AND_PROTECTION_REPORT.md.",
   "phase_4_status": "GREEN. Canonical ingredient IDs (stable uuid5) assigned to all 151 ingredients; quantity dimensions classified (5 MASS, 114 VOLUME, 1 COUNT, 31 explicitly MANUAL); unit conversion table built (8 verified universal + 6 reference ingredient-specific rows); pack-rounding rule implemented and tested; all 187 ingredient/unit pantry-price keys verified to resolve with no orphans. See 08_CANONICAL_INGREDIENT_MODEL/CANONICAL_INGREDIENT_UNIT_PACK_MODEL.md.",
+  "phase_5_status": "PARTIAL. Neon project genevieve-family-budget-cookbook (round-tree-37047152, aws-ap-southeast-2, database genevieve_cookbook) created after ruling out 3 unrelated existing projects by inspection. Both schema migrations applied from zero, with a real unit_conversions PK/NOT NULL defect found and fixed in-file. All catalogue data seeded and reconciled against source (800 recipes, 3,840 recipe_ingredients, 151 ingredients, 365 ingredient_dietary_attributes, 95 dietary_requirement_definitions, 33,600 recipe_requirement_assessments -- the last checksum-verified byte-for-byte against source). Least-privilege role genevieve_app created with verified object-level grants (read-only on catalogue, read-write on household data, append-only on audit_events), but Neon grants every role CREATEDB/CREATEROLE by platform default and this could not be revoked even by the project owner, and a live network connection test could not be run from this sandbox (outbound Postgres/HTTPS-to-Neon both blocked). Backup/recovery is Neon's continuous PITR at a 6-hour retention window (free-tier default) -- disclosed, not silently accepted as sufficient. See 01_MASTER_BLUEPRINT/PHASE_5_NEON_DATABASE_FOUNDATION_REPORT.md.",
+  "neon_database": {
+    "project_id": "round-tree-37047152",
+    "project_name": "genevieve-family-budget-cookbook",
+    "region": "aws-ap-southeast-2",
+    "database": "genevieve_cookbook",
+    "app_role": "genevieve_app",
+    "seed_generator": "04_PRODUCTION_STARTER/scripts/build_seed_sql.py",
+    "known_content_gap": "23 of 43 swap_group_code values referenced by recipe_ingredients (1,165 of 3,840 lines) have no matching swap_groups/swap_options entry -- a V1 pack content gap, not a seeding defect."
+  },
   "canonical_ingredient_model": {
     "ingredients": "08_CANONICAL_INGREDIENT_MODEL/canonical_ingredients_v1.json",
     "unit_conversions": "08_CANONICAL_INGREDIENT_MODEL/unit_conversions_v1.json",
