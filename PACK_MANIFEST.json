@@ -1,0 +1,15 @@
+{
+  "product": "GENEVIEVE Family Budget Cookbook™",
+  "pack": "COMPLETE_BUILD_PACK_V1",
+  "prepared_date": "2026-09-05",
+  "timezone": "Australia/Brisbane",
+  "verified_source_counts": {
+    "recipes": 800,
+    "ingredient_lines": 3840,
+    "ingredient_unit_keys": 187,
+    "swap_groups": 20
+  },
+  "production_stack": ["GitHub", "Cloudflare", "Neon PostgreSQL", "Stripe payments"],
+  "excluded_stack": ["Vercel"],
+  "next_phase": "Phase 2 — Recipe/content production QA and dietary-claim boundary"
+}

@@ -1,0 +1,16 @@
+name = "genevieve-family-budget-cookbook"
+main = "src/index.ts"
+compatibility_date = "2026-09-05"
+compatibility_flags = ["nodejs_compat"]
+
+[assets]
+directory = "./public"
+binding = "ASSETS"
+
+[[hyperdrive]]
+binding = "HYPERDRIVE"
+id = "REPLACE_WITH_CLOUDFLARE_HYPERDRIVE_ID"
+
+# Secrets belong in Cloudflare secrets, never this file:
+# wrangler secret put STRIPE_SECRET_KEY
+# wrangler secret put STRIPE_WEBHOOK_SECRET

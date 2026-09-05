@@ -1,0 +1,17 @@
+{
+  "product": "GENEVIEVE Family Budget Cookbook\u2122",
+  "component": "Household Decision Engine",
+  "recipes": 800,
+  "ingredient_lines": 3840,
+  "ingredient_unit_keys": 187,
+  "files": [
+    "index.html",
+    "styles.css",
+    "engine.js",
+    "data.js",
+    "README.md",
+    "ENGINE_CONTRACT.md"
+  ],
+  "persistence": "browser localStorage prototype",
+  "production_stack_target": "GitHub + Cloudflare + Neon"
+}

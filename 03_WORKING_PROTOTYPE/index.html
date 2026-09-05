@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GENEVIEVE Family Budget Cookbook — Household Engine</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <div class="brand">GENEVIEVE App™</div>
+      <h1>Family Budget Cookbook</h1>
+      <p>What have I got? · What can I afford? · How many people am I feeding?</p>
+    </div>
+    <div class="recipe-count"><strong id="recipeCount">800</strong><span>recipes</span></div>
+  </header>
+
+  <main>
+    <section class="panel control-panel">
+      <h2>1. Tell GENEVIEVE what the household needs</h2>
+      <div class="controls-grid">
+        <label>People to feed<input id="householdSize" type="number" min="1" max="30" value="4"></label>
+        <label>Maximum spend for this meal ($)<input id="mealBudget" type="number" min="0" step="0.50" value="20"></label>
+        <label>Meal type<select id="mealType"><option>Any</option><option>Breakfast</option><option>Lunch</option><option>Dinner/Tea</option><option>Snack</option><option>Dessert</option><option>Baking/Side</option></select></label>
+        <label>Vegetarian<select id="vegetarian"><option>No restriction</option><option>Required</option></select></label>
+        <label>GF adaptable<select id="gf"><option>No restriction</option><option>Required</option></select></label>
+        <label>DF adaptable<select id="df"><option>No restriction</option><option>Required</option></select></label>
+        <label>Lunchbox friendly<select id="lunchbox"><option>No restriction</option><option>Required</option></select></label>
+        <label>Freezer friendly<select id="freezer"><option>No restriction</option><option>Required</option></select></label>
+        <label>One pan / pot<select id="onePot"><option>No restriction</option><option>Required</option></select></label>
+      </div>
+      <button class="primary" id="rankBtn">Find meals</button>
+    </section>
+
+    <section class="two-col">
+      <div class="panel">
+        <div class="panel-head"><div><h2>2. What have I got?</h2><p>Enter only what is already at home. Quantities use the recipe unit shown.</p></div><span id="pantryCount" class="pill">0 entered</span></div>
+        <div class="search-row"><input id="pantrySearch" placeholder="Search pantry ingredients…"><button id="clearPantry" class="secondary">Clear pantry</button></div>
+        <div id="pantryList" class="entry-list"></div>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><div><h2>3. What will missing food cost?</h2><p>Enter a local price for the recipe unit. Unpriced shortages are labelled — never guessed.</p></div><span id="priceCount" class="pill">0 priced</span></div>
+        <div class="search-row"><input id="priceSearch" placeholder="Search price book…"><button id="clearPrices" class="secondary">Clear prices</button></div>
+        <div id="priceList" class="entry-list"></div>
+      </div>
+    </section>
+
+    <section class="panel results-panel">
+      <div class="panel-head">
+        <div><h2>4. Best matches from all 800 recipes</h2><p>Ranking = pantry coverage (60) + affordability (30) + low missing-item bonus (10).</p></div>
+        <div class="kpis"><span><b id="eligibleKpi">800</b> eligible</span><span><b id="cookNowKpi">0</b> cook now</span><span><b id="budgetKpi">0</b> within budget</span></div>
+      </div>
+      <div id="results" class="results"></div>
+    </section>
+  </main>
+
+  <dialog id="recipeDialog">
+    <button id="closeDialog" class="dialog-close" aria-label="Close">×</button>
+    <div id="recipeDetail"></div>
+  </dialog>
+
+  <footer>GENEVIEVE Family Budget Cookbook™ · Prototype household decision engine · Local browser storage only</footer>
+  <script src="data.js"></script>
+  <script src="engine.js"></script>
+</body>
+</html>
