@@ -18,10 +18,11 @@
   "excluded_stack": [
     "Vercel"
   ],
-  "next_phase": "Phase 3 \u2014 Authoritative GitHub Production Repository & Protection",
+  "next_phase": "Phase 4 \u2014 Canonical Ingredient, Unit & Pack Model",
   "pack_name": "GENEVIEVE_Family_Budget_Cookbook_COMPLETE_BUILD_PACK_V2_DIETARY_ENGINE",
   "version": "2.0",
   "phase_2_status": "ALL SUB-PHASES 2.1\u20132.8 GREEN. 385/800 recipes LAUNCH_READY; 415/800 HELD_FOR_KITCHEN_TEST (real kitchen/scaling testing, not a content defect -- see 02_RECIPE_CONTENT/PHASE_2_8_LAUNCH_READINESS_REPORT.md).",
+  "phase_3_status": "PARTIAL. Repo identity confirmed (tracey727/Budget-cookbook-, id 1357962713, default branch main), PR #1 opened merging Phase 0-2 into main, .gitignore present, no secrets committed. Visibility is currently PUBLIC and main is unprotected -- no GitHub tool available in this session can change either; both need manual action by the repo owner. See 01_MASTER_BLUEPRINT/PHASE_3_REPOSITORY_AND_PROTECTION_REPORT.md.",
   "dietary_engine": {
     "status": "TAXONOMY v1.1 FROZEN (Phase 2.1 GREEN); ingredient attribute model built for all 151 distinct V1 ingredients, v1.2 with LACTOSE_CONTENT (Phase 2.2 GREEN, addenda in 2.4/2.5); household member combination engine built and tested (Phase 2.3 GREEN); all 800 recipes classified against 42 ingredient-derivable requirement codes, reviewed=false pending human sign-off (Phase 2.4 GREEN); substitution safety + cost recalculation engine built and tested against all 20 V1 swap groups (Phase 2.5 GREEN); clinician-directed nutrition targets modelled with an explicit-only constructor and an activation gate that strips any unbacked flag from a household's combined requirements (Phase 2.6 GREEN); texture/IDDSI suitability modelled so it can only be set by an explicit tested verification, never inferred from a recipe's description (Phase 2.7 GREEN); final recipe launch-readiness split drawn across all 800 recipes (Phase 2.8 GREEN) -- Phase 2 COMPLETE",
     "suitability_states": [
@@ -48,7 +49,7 @@
       "07_DIETARY_REQUIREMENTS_ENGINE/PHASE_2_7_TEXTURE_IDDSI_BOUNDARY_REPORT.md",
       "02_RECIPE_CONTENT/PHASE_2_8_LAUNCH_READINESS_REPORT.md"
     ],
-    "exact_next_gate": "Phase 3 \u2014 Authoritative GitHub Production Repository & Protection",
+    "exact_next_gate": "Dietary engine track (Phase 2.1-2.8) complete. Re-keying onto canonical ingredient IDs happens in Phase 4.",
     "migration": "04_PRODUCTION_STARTER/schema/002_dietary_requirements.sql"
   }
 }
