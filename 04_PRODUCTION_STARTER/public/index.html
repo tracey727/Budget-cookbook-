@@ -13,12 +13,15 @@
       <h1>Family Budget Cookbook</h1>
       <p>What have I got? · What can I afford? · How many people am I feeding?</p>
     </div>
-    <div class="recipe-count"><strong id="recipeCount">800</strong><span>recipes</span></div>
+    <div class="recipe-count"><strong id="recipeCount">…</strong><span>recipes</span></div>
   </header>
 
   <div class="disclaimer-banner" role="note">
     <strong>Adaptable, not allergen-safe.</strong> GF/DF badges mean a recipe's structure can usually be adapted with an ingredient swap — they are not a guarantee that any specific product is gluten-free, dairy-free, or safe for a diagnosed allergy or coeliac disease. Always check packaged product labels yourself.
   </div>
+
+  <div id="loadStatus" class="load-status" role="status" aria-live="polite">Loading the recipe catalogue…</div>
+  <div id="loadError" class="load-error" role="alert" hidden></div>
 
   <main>
     <section class="panel control-panel">
@@ -53,19 +56,18 @@
     <section class="panel results-panel">
       <div class="panel-head">
         <div><h2>4. Best matches from all 800 recipes</h2><p>Ranking = pantry coverage (60) + affordability (30) + low missing-item bonus (10).</p></div>
-        <div class="kpis"><span><b id="eligibleKpi">800</b> eligible</span><span><b id="cookNowKpi">0</b> cook now</span><span><b id="budgetKpi">0</b> within budget</span></div>
+        <div class="kpis" role="status" aria-live="polite"><span><b id="eligibleKpi">0</b> eligible</span><span><b id="cookNowKpi">0</b> cook now</span><span><b id="budgetKpi">0</b> within budget</span></div>
       </div>
       <div id="results" class="results"></div>
     </section>
   </main>
 
-  <dialog id="recipeDialog">
+  <dialog id="recipeDialog" aria-label="Recipe detail">
     <button id="closeDialog" class="dialog-close" aria-label="Close">×</button>
     <div id="recipeDetail"></div>
   </dialog>
 
-  <footer>GENEVIEVE Family Budget Cookbook™ · Prototype household decision engine · Local browser storage only</footer>
-  <script src="data.prototype.js"></script>
-  <script src="engine.prototype.js"></script>
+  <footer>GENEVIEVE Family Budget Cookbook™ · Household decision engine · Local browser storage only</footer>
+  <script src="app.js"></script>
 </body>
 </html>
