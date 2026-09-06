@@ -161,3 +161,39 @@ work this session's tools can do is complete and verified (including two
 real pre-existing defects fixed along the way); the remaining work is
 account-level Cloudflare provisioning that requires either credentials or
 manual action this session does not have.
+
+## Addendum — direct connection string supplied (later session)
+
+The product owner supplied the live `genevieve_cookbook_owner` connection
+string directly. Before using it, it was checked against the Neon account
+rather than trusted at face value (the same discipline as inspecting the 20
+existing Workers and 7 Hyperdrive configs above): `list_projects` confirms
+its host and database belong to project `round-tree-37047152`
+(`genevieve-family-budget-cookbook`), exactly the project Phase 5 created —
+not one of the account's many similarly-named unrelated projects.
+
+A direct `psql` connection using this string was attempted from this
+sandbox: it did not complete within 20 seconds (no explicit rejection this
+time, unlike Phase 5's proxy-rejected attempt — just silence, consistent
+with packets being dropped rather than proxied-and-rejected). Practically
+this confirms the same conclusion as Phase 5 and this report's main body:
+direct Postgres reachability is unavailable from this sandbox regardless of
+whether valid credentials are supplied, so the connection string itself
+cannot unblock a live Worker/Hyperdrive deployment from here.
+
+What it can unblock: Cloudflare's documented `localConnectionString` /
+`CLOUDFLARE_HYPERDRIVE_LOCAL_CONNECTION_STRING_<BINDING_NAME>` mechanism
+lets `wrangler dev` reach a real database directly from wherever it runs,
+without a live Hyperdrive resource existing yet (confirmed against current
+Cloudflare docs, not assumed). This only helps on a machine that can reach
+Neon's Postgres port — not this sandbox — so it is wired up for the product
+owner's own machine: `.dev.vars.example`, gitignore coverage for
+`.dev.vars`, and instructions were added to `04_PRODUCTION_STARTER`. The
+example points at the least-privilege `genevieve_app` role (per Phase 5),
+not the owner role this session was given — the owner string was used only
+for the identity check and connectivity test above, and was not written to
+any file.
+
+This addendum does not change the GREEN gate assessment above: creating the
+live Worker and Hyperdrive configuration is still blocked for the same
+reason.

@@ -11,6 +11,12 @@ binding = "ASSETS"
 binding = "HYPERDRIVE"
 id = "REPLACE_WITH_CLOUDFLARE_HYPERDRIVE_ID"
 
+# For `wrangler dev` against the real Neon database before a live Hyperdrive
+# resource exists, do not put a connection string here. Instead set
+# CLOUDFLARE_HYPERDRIVE_LOCAL_CONNECTION_STRING_HYPERDRIVE in a local
+# `.dev.vars` file (see .dev.vars.example) -- this "id" placeholder is never
+# contacted when that local override is present.
+
 # Secrets belong in Cloudflare secrets, never this file:
 # wrangler secret put STRIPE_SECRET_KEY
 # wrangler secret put STRIPE_WEBHOOK_SECRET

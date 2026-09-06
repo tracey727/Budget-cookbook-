@@ -22,6 +22,19 @@ This folder is a **starter**, not a claim that production is already complete.
 ## Prototype migration note
 `public/engine.prototype.js` and `public/data.prototype.js` are preserved to prevent behavioural regression. Production should replace bundled catalogue data with API-backed data and authenticated household persistence while keeping the deterministic calculation rules.
 
+## Local development against the real database
+`wrangler dev` can reach the real Neon database directly from your own
+machine, without a live Hyperdrive resource existing yet:
+1. Copy `.dev.vars.example` to `.dev.vars` (gitignored, never commit it).
+2. Set `CLOUDFLARE_HYPERDRIVE_LOCAL_CONNECTION_STRING_HYPERDRIVE` to a real
+   connection string, using the least-privilege `genevieve_app` role (copy
+   it from the Neon console), not the `genevieve_cookbook_owner` role.
+3. Run `npm run dev` and hit `/api/health`.
+
+This only works from a network that can reach Neon's Postgres port; see
+`01_MASTER_BLUEPRINT/PHASE_6_CLOUDFLARE_WORKER_HYPERDRIVE_REPORT.md` for why
+that is not this sandbox.
+
 ## Secrets
 Use Cloudflare secret storage for Stripe secrets and any other secret. Never put secret values in source, `wrangler.toml.example`, `.env.example` or browser JavaScript.
 

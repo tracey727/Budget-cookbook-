@@ -1,0 +1,16 @@
+# Local-only Wrangler dev vars. Copy to `.dev.vars` and fill in real values;
+# never commit the real file (already gitignored).
+#
+# Lets `wrangler dev` reach the real Neon database directly from your own
+# machine -- no live Hyperdrive resource needs to exist yet. Env var name
+# must match wrangler.toml's [[hyperdrive]] binding name ("HYPERDRIVE").
+# See: https://developers.cloudflare.com/hyperdrive/configuration/local-development/
+#
+# Use the least-privilege `genevieve_app` role here, not
+# `genevieve_cookbook_owner` (see PHASE_5_NEON_DATABASE_FOUNDATION_REPORT.md
+# for why the two roles exist and what each can touch). Copy the real value
+# from the Neon console (Connection Details, role genevieve_app).
+CLOUDFLARE_HYPERDRIVE_LOCAL_CONNECTION_STRING_HYPERDRIVE=postgresql://genevieve_app:REPLACE_WITH_REAL_PASSWORD@ep-divine-mountain-a79gcke0-pooler.ap-southeast-2.aws.neon.tech/genevieve_cookbook?sslmode=require
+
+# STRIPE_SECRET_KEY=sk_test_...
+# STRIPE_WEBHOOK_SECRET=whsec_...
