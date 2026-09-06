@@ -91,22 +91,57 @@ def yes(value):
 # --------------------------------------------------------------------------
 # recipes
 # --------------------------------------------------------------------------
+def load_launch_readiness():
+    """The Phase 2.8 launch/hold verdict, keyed by recipe_id -- the
+    authoritative source for `recipes.public_launch_approved`. See
+    02_RECIPE_CONTENT/PHASE_2_8_LAUNCH_READINESS_REPORT.md: LAUNCH_READY
+    recipes have zero open QA flags and a complete dietary classification;
+    HELD_FOR_KITCHEN_TEST recipes are real, distinct recipes that still need
+    a human scaling/kitchen-test pass and must stay out of the launch set
+    (CHRONOLOGICAL_BUILD_AND_GREEN_GATES.md Phase 2.8 GREEN gate) until then.
+    This is a different gate to dietary-claim review ("the Launch Rule" for
+    MEETS claims in recipe_requirement_assessments) -- a recipe can be
+    launch-approved for display while every one of its dietary assessments
+    is still UNVERIFIED pending human sign-off.
+    """
+    readiness = load("02_RECIPE_CONTENT", "recipe_launch_readiness_v1.json")
+    by_id = {r["recipe_id"]: r["status"] for r in readiness["recipes"]}
+    assert len(by_id) == len(readiness["recipes"]), "duplicate recipe_id in launch readiness file"
+    for status in by_id.values():
+        assert status in ("LAUNCH_READY", "HELD_FOR_KITCHEN_TEST"), f"unknown launch status {status}"
+    approved_count = sum(1 for s in by_id.values() if s == "LAUNCH_READY")
+    assert approved_count == readiness["launch_ready_count"], (
+        f"LAUNCH_READY count {approved_count} does not match "
+        f"recorded launch_ready_count {readiness['launch_ready_count']}"
+    )
+    return by_id
+
+
 def build_recipes(manifest):
     catalog = load("04_PRODUCTION_STARTER", "data", "recipe_catalog_v1.json")
     recipes = catalog["recipes"]
+    launch_status = load_launch_readiness()
 
     for i, r in enumerate(recipes, start=1):
         assert r["id"] == f"GEN-RCP-{i:04d}", f"recipe ids are not sequential at {r['id']}"
     assert {r["budgetTier"] for r in recipes} == {"$"}, "budget_tier is no longer constant"
+    assert set(launch_status) == {r["id"] for r in recipes}, (
+        "recipe_launch_readiness_v1.json ids do not match recipe_catalog_v1.json ids exactly"
+    )
 
     d_meal, d_fam, d_prot, d_carb, d_focus, d_meth, d_swap = (Dict1() for _ in range(7))
     numbers, bools = Dict1(), Dict1()
 
     rows = []
+    approved_rows = 0
     for r in recipes:
         num = numbers(f"{r['baseServes']}|{r['prepMin']}|{r['cookMin']}")
+        launch_approved = launch_status[r["id"]] == "LAUNCH_READY"
+        if launch_approved:
+            approved_rows += 1
         flags = bools("|".join(
-            yes(r[k]) for k in ("freezer", "lunchbox", "vegetarian", "gfAdaptable", "dfAdaptable", "onePot")
+            [yes(r[k]) for k in ("freezer", "lunchbox", "vegetarian", "gfAdaptable", "dfAdaptable", "onePot")]
+            + ["true" if launch_approved else "false"]
         ))
         parts = [
             str(int(r["id"].split("-")[-1])),
@@ -145,8 +180,11 @@ CREATE TABLE IF NOT EXISTS _seed_recipe (
         rows,
     )
 
-    # public_launch_approved stays false for every recipe: the Launch Rule holds
-    # every computed claim back until a human reviewer approves it.
+    # public_launch_approved comes from the Phase 2.8 launch-readiness verdict
+    # (recipe_launch_readiness_v1.json), folded into the `flags` dictionary
+    # above as its 7th '|'-separated field -- this is a display gate, distinct
+    # from the dietary-claim "Launch Rule" applied separately in
+    # build_assessments() below.
     write("13_recipes_materialise.sql", """
 INSERT INTO recipes (
   recipe_id, meal_type, recipe_name, base_family, base_serves, prep_min, cook_min,
@@ -168,7 +206,7 @@ SELECT
   split_part(dflag.v, '|', 5)::boolean,
   split_part(dflag.v, '|', 6)::boolean,
   dmeth.v, dswap.v,
-  false
+  split_part(dflag.v, '|', 7)::boolean
 FROM _seed_recipe s
 JOIN _seed_dict dmeal ON dmeal.kind = 'meal'  AND dmeal.i = s.meal
 JOIN _seed_dict dfam  ON dfam.kind  = 'fam'   AND dfam.i  = s.fam
@@ -182,7 +220,55 @@ LEFT JOIN _seed_dict dfocus ON dfocus.kind = 'focus' AND dfocus.i = s.focus
 ON CONFLICT (recipe_id) DO NOTHING;
 """.strip())
 
-    manifest["recipes"] = {"rows": len(rows), "dict_rows": len(dict_rows)}
+    manifest["recipes"] = {
+        "rows": len(rows),
+        "dict_rows": len(dict_rows),
+        "public_launch_approved_rows": approved_rows,
+    }
+
+
+# --------------------------------------------------------------------------
+# swap_groups / swap_options
+# --------------------------------------------------------------------------
+def build_swap_groups(manifest):
+    """recipe_catalog_v1.json's `swapMap` is the only source for swap_groups/
+    swap_options -- there is no separately-authored group code, so the
+    swapMap key is used as both swap_group_code and display_name (same
+    approach as the mechanical dietary requirement_definitions.display_name
+    below, for the same reason: no authored copy exists yet).
+
+    PHASE_5_NEON_DATABASE_FOUNDATION_REPORT.md already flagged that only 20
+    of the ~43 distinct swap_group_code values referenced by
+    recipe_ingredients rows have an entry in swapMap at all -- that's a
+    content gap in the V1 pack, not something this generator can fix by
+    itself (the missing option lists don't exist anywhere in the source).
+    This function seeds the 20 that do exist; it does not invent the rest.
+    """
+    catalog = load("04_PRODUCTION_STARTER", "data", "recipe_catalog_v1.json")
+    swap_map = catalog["swapMap"]
+    assert len(swap_map) == 20, f"expected 20 swap groups, got {len(swap_map)}"
+
+    group_rows = [f"({q(code)},{q(code)})" for code in swap_map]
+    write_chunked(
+        "60_swap_groups",
+        "INSERT INTO swap_groups (swap_group_code, display_name) VALUES ",
+        group_rows,
+        footer=" ON CONFLICT (swap_group_code) DO NOTHING",
+    )
+
+    option_rows = []
+    for code, options in swap_map.items():
+        for order, ingredient_name in enumerate(options, start=1):
+            option_rows.append(f"({q(code)},{order},{q(ingredient_name)})")
+    write_chunked(
+        "61_swap_options",
+        "INSERT INTO swap_options (swap_group_code, option_order, ingredient_name) VALUES ",
+        option_rows,
+        footer=" ON CONFLICT (swap_group_code, option_order) DO NOTHING",
+    )
+
+    manifest["swap_groups"] = {"rows": len(group_rows)}
+    manifest["swap_options"] = {"rows": len(option_rows)}
 
 
 # --------------------------------------------------------------------------
@@ -462,6 +548,7 @@ def main():
     os.makedirs(OUT, exist_ok=True)
     manifest = {}
     build_recipes(manifest)
+    build_swap_groups(manifest)
     valid_codes = build_requirement_definitions(manifest)
     build_ingredient_attributes(manifest)
     build_recipe_ingredients(manifest)

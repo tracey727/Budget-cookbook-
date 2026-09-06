@@ -10,7 +10,9 @@
     "test:substitution": "tsc --outDir dist/dietary-test src/dietary/household.ts src/dietary/substitutionCatalogue.ts src/dietary/substitution.ts src/dietary/substitution.test.ts --target ES2022 --module CommonJS --strict && node dist/dietary-test/substitution.test.js",
     "test:professional": "tsc --outDir dist/dietary-test src/dietary/household.ts src/dietary/professionalTargets.ts src/dietary/professionalTargets.test.ts --target ES2022 --module CommonJS --strict && node dist/dietary-test/professionalTargets.test.js",
     "test:texture": "tsc --outDir dist/dietary-test src/dietary/household.ts src/dietary/textureVerification.ts src/dietary/textureVerification.test.ts --target ES2022 --module CommonJS --strict && node dist/dietary-test/textureVerification.test.js",
-    "test:units": "tsc --outDir dist/dietary-test src/canonical/units.ts src/canonical/units.test.ts --target ES2022 --module CommonJS --strict && node dist/dietary-test/units.test.js"
+    "test:units": "tsc --outDir dist/dietary-test src/canonical/units.ts src/canonical/units.test.ts --target ES2022 --module CommonJS --strict && node dist/dietary-test/units.test.js",
+    "test:recipes-api": "tsc --outDir dist/api-test src/api/recipes.ts src/api/recipes.test.ts --target ES2022 --module CommonJS --strict && node dist/api-test/recipes.test.js",
+    "test:catalogue-api": "tsc --outDir dist/api-test src/api/catalogue.ts src/api/catalogue.test.ts --target ES2022 --module CommonJS --strict && node dist/api-test/catalogue.test.js"
   },
   "dependencies": {
     "pg": "^8.13.0"

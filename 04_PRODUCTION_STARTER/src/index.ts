@@ -1,4 +1,19 @@
 import { Client } from "pg";
+import {
+  buildRecipeDetailQuery,
+  buildRecipeIngredientsQuery,
+  buildRecipeListQuery,
+  mapRecipeDetailRow,
+  mapRecipeSummaryRow,
+  parseRecipeListFilters,
+} from "./api/recipes";
+import {
+  assembleCatalogue,
+  buildCatalogueIngredientsQuery,
+  buildCatalogueRecipesQuery,
+  buildIngredientUnitPairsQuery,
+  buildSwapMapQuery,
+} from "./api/catalogue";
 
 interface Env {
   ASSETS: Fetcher;
@@ -78,52 +93,41 @@ async function api(request: Request, env: Env, requestId: string): Promise<Respo
   }
 
   if (url.pathname === "/api/recipes" && request.method === "GET") {
-    const mealType = url.searchParams.get("mealType");
-    const rows = await withDb(env, async (db) => {
-      if (mealType && mealType !== "Any") {
-        return db.query(
-          `select recipe_id, meal_type, recipe_name, base_family, base_serves,
-                  prep_min, cook_min, budget_tier, freezer_friendly,
-                  lunchbox_friendly, vegetarian_base, gf_adaptable,
-                  df_adaptable, one_pan_pot
-             from recipes
-            where meal_type = $1
-            order by recipe_name
-            limit 1000`,
-          [mealType],
-        );
-      }
-      return db.query(
-        `select recipe_id, meal_type, recipe_name, base_family, base_serves,
-                prep_min, cook_min, budget_tier, freezer_friendly,
-                lunchbox_friendly, vegetarian_base, gf_adaptable,
-                df_adaptable, one_pan_pot
-           from recipes
-          order by recipe_name
-          limit 1000`,
-      );
-    });
-    return json({ recipes: rows.rows, requestId }, 200, requestId);
+    const filters = parseRecipeListFilters(url.searchParams);
+    const query = buildRecipeListQuery(filters);
+    const rows = await withDb(env, async (db) => db.query(query.text, query.values));
+    return json({ recipes: rows.rows.map(mapRecipeSummaryRow), requestId }, 200, requestId);
   }
 
   const match = url.pathname.match(/^\/api\/recipes\/([^/]+)$/);
   if (match && request.method === "GET") {
     const recipeId = decodeURIComponent(match[1]);
     const payload = await withDb(env, async (db) => {
-      const recipe = await db.query("select * from recipes where recipe_id = $1", [recipeId]);
+      const detailQuery = buildRecipeDetailQuery(recipeId);
+      const recipe = await db.query(detailQuery.text, detailQuery.values);
       if (!recipe.rowCount) return null;
-      const ingredients = await db.query(
-        `select ri.line_no, i.canonical_name as ingredient, ri.base_qty, ri.unit_code,
-                ri.optional, ri.swap_group_code
-           from recipe_ingredients ri
-           join ingredients i on i.ingredient_id = ri.ingredient_id
-          where ri.recipe_id = $1
-          order by ri.line_no`,
-        [recipeId],
-      );
-      return { recipe: recipe.rows[0], ingredients: ingredients.rows };
+      const ingredientsQuery = buildRecipeIngredientsQuery(recipeId);
+      const ingredients = await db.query(ingredientsQuery.text, ingredientsQuery.values);
+      return mapRecipeDetailRow(recipe.rows[0], ingredients.rows);
     });
     if (!payload) throw new ApiError(404, "recipe_not_found");
+    return json({ recipe: payload, requestId }, 200, requestId);
+  }
+
+  if (url.pathname === "/api/catalogue" && request.method === "GET") {
+    const payload = await withDb(env, async (db) => {
+      const recipesQuery = buildCatalogueRecipesQuery();
+      const ingredientsQuery = buildCatalogueIngredientsQuery();
+      const swapMapQuery = buildSwapMapQuery();
+      const pairsQuery = buildIngredientUnitPairsQuery();
+      const [recipes, ingredients, swapOptions, pairs] = await Promise.all([
+        db.query(recipesQuery.text, recipesQuery.values),
+        db.query(ingredientsQuery.text, ingredientsQuery.values),
+        db.query(swapMapQuery.text, swapMapQuery.values),
+        db.query(pairsQuery.text, pairsQuery.values),
+      ]);
+      return assembleCatalogue(recipes.rows, ingredients.rows, swapOptions.rows, pairs.rows);
+    });
     return json({ ...payload, requestId }, 200, requestId);
   }
 
