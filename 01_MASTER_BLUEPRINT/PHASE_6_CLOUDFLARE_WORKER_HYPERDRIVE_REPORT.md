@@ -105,16 +105,30 @@ already `.gitignore`d because it will carry a real Hyperdrive binding ID
 once one exists, and creating it now with a placeholder would invite it
 being deployed against a non-existent resource.
 
+## Credential path attempted and ruled out
+
+The product owner provided a scoped Cloudflare API token to unblock this.
+Verifying it (`curl https://api.cloudflare.com/client/v4/user/tokens/verify`)
+failed before the token was ever checked: this sandbox's outbound network
+policy rejects the connection to `api.cloudflare.com` itself with a 403 at
+the egress gateway (`connect_rejected`, logged as an explicit organization
+policy denial, not a timeout or DNS failure). The same proxy blocked direct
+Postgres access to Neon in Phase 5 for the identical reason. Per this
+environment's own operating guidance, a policy denial (403/407) is to be
+reported, not retried or routed around — so `wrangler` and direct Cloudflare
+API calls are unusable from this sandbox regardless of how the token is
+scoped, and the token was revoked by the product owner rather than left
+live and pasted in a chat transcript.
+
+This means the only two remaining paths are the ones below; a credential
+handed to this session cannot close the gap, because the gap is network
+policy, not authorization.
+
 ## What's needed to finish this phase
 
 One of, from the product owner:
 
-1. **Provide Cloudflare credentials to this session** — a `CLOUDFLARE_API_TOKEN`
-   (scoped to Workers Scripts:Edit and Hyperdrive:Edit for this account) as
-   an environment variable would let `wrangler` create and deploy the
-   Worker and let the Hyperdrive config be created directly, finishing
-   items 1, 3, and 5 in this same session.
-2. **Provision manually and hand back the resulting IDs** — create the
+1. **Provision manually and hand back the resulting IDs** — create the
    Worker (any name; `genevieve-family-budget-cookbook` matches the repo)
    and a Hyperdrive configuration pointing at
    `ep-divine-mountain-a79gcke0-pooler.ap-southeast-2.aws.neon.tech:5432`,
@@ -123,6 +137,13 @@ One of, from the product owner:
    Cloudflare dashboard, then share the Hyperdrive config ID so
    `wrangler.toml`'s `[[hyperdrive]] id` can be set and the Worker
    deployed from this session.
+2. **Deploy it yourself from your own machine** — clone
+   `04_PRODUCTION_STARTER`, run `npm install`, copy `wrangler.toml.example`
+   to `wrangler.toml`, run `wrangler login` (interactive OAuth works fine
+   outside this sandbox), create the Hyperdrive config with
+   `wrangler hyperdrive create` (or the dashboard) pointing at the Neon
+   details above, put its ID in `wrangler.toml`, then `wrangler deploy`.
+   This needs no changes from this session at all.
 
 Until one of those happens, Phase 7 (which builds the recipe catalogue API
 on top of this Worker) can proceed on the code side but cannot be verified
