@@ -4,6 +4,5 @@ dist/
 .env
 .env.*
 !.env.example
-wrangler.toml
 .DS_Store
 *.log
