@@ -1,0 +1,72 @@
+{
+  "product": "GENEVIEVE Family Budget Cookbook\u2122",
+  "pack": "COMPLETE_BUILD_PACK_V2_DIETARY_ENGINE",
+  "prepared_date": "2026-09-05",
+  "timezone": "Australia/Brisbane",
+  "verified_source_counts": {
+    "recipes": 800,
+    "ingredient_lines": 3840,
+    "ingredient_unit_keys": 187,
+    "swap_groups": 20
+  },
+  "production_stack": [
+    "GitHub",
+    "Cloudflare",
+    "Neon PostgreSQL",
+    "Stripe payments"
+  ],
+  "excluded_stack": [
+    "Vercel"
+  ],
+  "next_phase": "Phase 6 \u2014 Cloudflare Worker + Hyperdrive Foundation (BLOCKED on Cloudflare credentials/manual provisioning; see phase_6_status)",
+  "pack_name": "GENEVIEVE_Family_Budget_Cookbook_COMPLETE_BUILD_PACK_V2_DIETARY_ENGINE",
+  "version": "2.0",
+  "phase_2_status": "ALL SUB-PHASES 2.1\u20132.8 GREEN. 385/800 recipes LAUNCH_READY; 415/800 HELD_FOR_KITCHEN_TEST (real kitchen/scaling testing, not a content defect -- see 02_RECIPE_CONTENT/PHASE_2_8_LAUNCH_READINESS_REPORT.md).",
+  "phase_3_status": "PARTIAL. Repo identity confirmed (tracey727/Budget-cookbook-, id 1357962713, default branch main), PR #1 opened merging Phase 0-2 into main, .gitignore present, no secrets committed. Visibility is currently PUBLIC and main is unprotected -- no GitHub tool available in this session can change either; both need manual action by the repo owner. See 01_MASTER_BLUEPRINT/PHASE_3_REPOSITORY_AND_PROTECTION_REPORT.md.",
+  "phase_4_status": "GREEN. Canonical ingredient IDs (stable uuid5) assigned to all 151 ingredients; quantity dimensions classified (5 MASS, 114 VOLUME, 1 COUNT, 31 explicitly MANUAL); unit conversion table built (8 verified universal + 6 reference ingredient-specific rows); pack-rounding rule implemented and tested; all 187 ingredient/unit pantry-price keys verified to resolve with no orphans. See 08_CANONICAL_INGREDIENT_MODEL/CANONICAL_INGREDIENT_UNIT_PACK_MODEL.md.",
+  "phase_5_status": "PARTIAL. Neon project genevieve-family-budget-cookbook (round-tree-37047152, aws-ap-southeast-2, database genevieve_cookbook) created after ruling out 3 unrelated existing projects by inspection. Both schema migrations applied from zero, with a real unit_conversions PK/NOT NULL defect found and fixed in-file. All catalogue data seeded and reconciled against source (800 recipes, 3,840 recipe_ingredients, 151 ingredients, 365 ingredient_dietary_attributes, 95 dietary_requirement_definitions, 33,600 recipe_requirement_assessments -- the last checksum-verified byte-for-byte against source). Least-privilege role genevieve_app created with verified object-level grants (read-only on catalogue, read-write on household data, append-only on audit_events), but Neon grants every role CREATEDB/CREATEROLE by platform default and this could not be revoked even by the project owner, and a live network connection test could not be run from this sandbox (outbound Postgres/HTTPS-to-Neon both blocked). Backup/recovery is Neon's continuous PITR at a 6-hour retention window (free-tier default) -- disclosed, not silently accepted as sufficient. See 01_MASTER_BLUEPRINT/PHASE_5_NEON_DATABASE_FOUNDATION_REPORT.md.",
+  "neon_database": {
+    "project_id": "round-tree-37047152",
+    "project_name": "genevieve-family-budget-cookbook",
+    "region": "aws-ap-southeast-2",
+    "database": "genevieve_cookbook",
+    "app_role": "genevieve_app",
+    "seed_generator": "04_PRODUCTION_STARTER/scripts/build_seed_sql.py",
+    "known_content_gap": "23 of 43 swap_group_code values referenced by recipe_ingredients (1,165 of 3,840 lines) have no matching swap_groups/swap_options entry -- a V1 pack content gap, not a seeding defect."
+  },
+  "phase_6_status": "PARTIAL/BLOCKED. Checked 20 existing Workers and 7 existing Hyperdrive configs in the Cloudflare account by inspection (not name alone) -- none is this product; closest name match genevieve-budget-app is an unrelated generic expense tracker reusing the 'Genevieve' brand. Structured error handling + per-request x-request-id added to src/index.ts and verified via typecheck. Fixed two real starter-pack defects found while verifying: package.json pinned a nonexistent @cloudflare/workers-types version (npm install failed outright), and all 5 test:* scripts invoked a nonexistent 'tsc --ignoreConfig' flag (every dietary/canonical test script was unrunnable as written); both fixed and all 5 suites re-run clean. Creating the actual Worker, creating the Hyperdrive config, and deploying /api/health are BLOCKED: the Cloudflare MCP tools available this session can list/get/edit/delete Workers and Hyperdrive configs but not create either, and wrangler has no stored Cloudflare credentials in this sandbox (wrangler login needs interactive OAuth). A scoped Cloudflare API token was provided and tried, but this sandbox's egress policy rejects api.cloudflare.com outright (403 at the gateway) before any credential is even checked -- the same class of block that stopped direct Postgres access in Phase 5 -- so no token can close this gap from inside this session; the token was revoked rather than left live in the transcript. Needs the product owner to either provision the Worker + Hyperdrive config manually via the dashboard and hand back the Hyperdrive config ID, or deploy directly from their own machine (wrangler login works outside this sandbox). See 01_MASTER_BLUEPRINT/PHASE_6_CLOUDFLARE_WORKER_HYPERDRIVE_REPORT.md.",
+  "canonical_ingredient_model": {
+    "ingredients": "08_CANONICAL_INGREDIENT_MODEL/canonical_ingredients_v1.json",
+    "unit_conversions": "08_CANONICAL_INGREDIENT_MODEL/unit_conversions_v1.json",
+    "units_engine": "04_PRODUCTION_STARTER/src/canonical/units.ts"
+  },
+  "dietary_engine": {
+    "status": "TAXONOMY v1.1 FROZEN (Phase 2.1 GREEN); ingredient attribute model built for all 151 distinct V1 ingredients, v1.2 with LACTOSE_CONTENT (Phase 2.2 GREEN, addenda in 2.4/2.5); household member combination engine built and tested (Phase 2.3 GREEN); all 800 recipes classified against 42 ingredient-derivable requirement codes, reviewed=false pending human sign-off (Phase 2.4 GREEN); substitution safety + cost recalculation engine built and tested against all 20 V1 swap groups (Phase 2.5 GREEN); clinician-directed nutrition targets modelled with an explicit-only constructor and an activation gate that strips any unbacked flag from a household's combined requirements (Phase 2.6 GREEN); texture/IDDSI suitability modelled so it can only be set by an explicit tested verification, never inferred from a recipe's description (Phase 2.7 GREEN); final recipe launch-readiness split drawn across all 800 recipes (Phase 2.8 GREEN) -- Phase 2 COMPLETE",
+    "suitability_states": [
+      "MEETS",
+      "ADAPTABLE",
+      "EXCLUDED",
+      "UNVERIFIED"
+    ],
+    "taxonomy": "07_DIETARY_REQUIREMENTS_ENGINE/DIETARY_TAXONOMY.json",
+    "ingredient_attribute_model": "07_DIETARY_REQUIREMENTS_ENGINE/ingredient_dietary_attributes_v1.json",
+    "household_member_model": "04_PRODUCTION_STARTER/src/dietary/household.ts",
+    "recipe_requirement_assessments": "07_DIETARY_REQUIREMENTS_ENGINE/recipe_requirement_assessments_v1.json",
+    "substitution_engine": "04_PRODUCTION_STARTER/src/dietary/substitution.ts",
+    "professional_targets_engine": "04_PRODUCTION_STARTER/src/dietary/professionalTargets.ts",
+    "texture_verification_engine": "04_PRODUCTION_STARTER/src/dietary/textureVerification.ts",
+    "recipe_launch_readiness": "02_RECIPE_CONTENT/recipe_launch_readiness_v1.json",
+    "frozen_gate_records": [
+      "07_DIETARY_REQUIREMENTS_ENGINE/PHASE_2_1_TAXONOMY_AND_LANGUAGE_FREEZE.md",
+      "07_DIETARY_REQUIREMENTS_ENGINE/PHASE_2_2_INGREDIENT_ATTRIBUTE_MODEL_REPORT.md",
+      "07_DIETARY_REQUIREMENTS_ENGINE/PHASE_2_3_HOUSEHOLD_MEMBER_REQUIREMENT_MODEL_REPORT.md",
+      "07_DIETARY_REQUIREMENTS_ENGINE/PHASE_2_4_RECIPE_CLASSIFICATION_REPORT.md",
+      "07_DIETARY_REQUIREMENTS_ENGINE/PHASE_2_5_SUBSTITUTION_SAFETY_REPORT.md",
+      "07_DIETARY_REQUIREMENTS_ENGINE/PHASE_2_6_MEDICAL_PROFESSIONAL_PLAN_BOUNDARIES_REPORT.md",
+      "07_DIETARY_REQUIREMENTS_ENGINE/PHASE_2_7_TEXTURE_IDDSI_BOUNDARY_REPORT.md",
+      "02_RECIPE_CONTENT/PHASE_2_8_LAUNCH_READINESS_REPORT.md"
+    ],
+    "exact_next_gate": "Dietary engine track (Phase 2.1-2.8) complete. Re-keying onto canonical ingredient IDs happens in Phase 4.",
+    "migration": "04_PRODUCTION_STARTER/schema/002_dietary_requirements.sql"
+  }
+}

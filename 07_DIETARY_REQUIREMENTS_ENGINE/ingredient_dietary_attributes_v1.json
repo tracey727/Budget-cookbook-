@@ -1,0 +1,5201 @@
+{
+  "schema_version": "1.2",
+  "change_log": [
+    {
+      "version": "1.1",
+      "change": "Phase 2.4 addendum: added CAFFEINE_CONTENT (coffee, chocolate, choc chip, cocoa oat), ONION_CONTENT and GARLIC_CONTENT (onion, garlic seasoning, creamy garlic sauce, soy garlic sauce, pesto veg sauce exact matches, plus a generic CONDITIONAL flag for any sauce-group or Herbs/Spices-swap-group ingredient) -- needed to derive CAFFEINE_FREE/ONION_FREE/GARLIC_FREE per-recipe classification."
+    },
+    {
+      "version": "1.2",
+      "change": "Phase 2.5 addendum: added LACTOSE_CONTENT, mirroring DAIRY_MILK on every dairy ingredient in this table. Needed once the substitution catalogue introduced 'lactose-free milk' as a real substitute option: it is DAIRY_MILK=true (still carries the milk allergen) but LACTOSE_CONTENT=false, a distinction DAIRY_MILK alone cannot express."
+    }
+  ],
+  "keying": "INTERIM: keyed by normalised ingredient_key (lowercased ingredient text), not canonical ingredient_id. Re-key onto ingredients.ingredient_id (schema/001_initial_schema.sql) when Phase 4 assigns canonical IDs.",
+  "attribute_dictionary": "See INGREDIENT_ATTRIBUTE_CODES.md for attribute_code definitions and evidence_state semantics.",
+  "ingredient_count": 151,
+  "ingredients": [
+    {
+      "ingredient_key": "apple",
+      "recipe_groups": [
+        "add-in",
+        "flavour",
+        "fruit",
+        "topping"
+      ],
+      "swap_groups": [
+        "Breakfast Topping",
+        "Dessert Flavour",
+        "Fruit/Add-in",
+        "Seasonal Fruit"
+      ],
+      "recipe_units": [
+        "cup",
+        "serve"
+      ],
+      "ingredient_line_count": 24,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "apple cinnamon",
+      "recipe_groups": [
+        "add-in",
+        "flavour"
+      ],
+      "swap_groups": [
+        "Dessert Flavour",
+        "Fruit/Add-in"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 9,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "apricot",
+      "recipe_groups": [
+        "fruit"
+      ],
+      "swap_groups": [
+        "Seasonal Fruit"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 3,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "avocado",
+      "recipe_groups": [
+        "topping"
+      ],
+      "swap_groups": [
+        "Breakfast Topping"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 3,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "baked beans",
+      "recipe_groups": [
+        "protein",
+        "topping"
+      ],
+      "swap_groups": [
+        "Breakfast Topping",
+        "Lunch Protein"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 9,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Standard baked beans (beans in tomato sauce) are vegetarian, but some brands add pork/bacon. Verify product for a strict vegetarian/pork-free member.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "baking powder",
+      "recipe_groups": [
+        "raising"
+      ],
+      "swap_groups": [
+        "Raising Agent"
+      ],
+      "recipe_units": [
+        "tsp"
+      ],
+      "ingredient_line_count": 30,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "banana",
+      "recipe_groups": [
+        "add-in",
+        "flavour",
+        "fruit",
+        "topping"
+      ],
+      "swap_groups": [
+        "Dessert Flavour",
+        "Fruit/Add-in",
+        "Seasonal Fruit"
+      ],
+      "recipe_units": [
+        "cup",
+        "serve"
+      ],
+      "ingredient_line_count": 30,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "banana oat",
+      "recipe_groups": [
+        "add-in"
+      ],
+      "swap_groups": [
+        "Fruit/Add-in"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 3,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "bbq sauce",
+      "recipe_groups": [
+        "sauce"
+      ],
+      "swap_groups": [
+        "Sauce"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 6,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "FISH",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Some commercial BBQ sauces include Worcestershire sauce, which typically contains anchovy. Hidden-source risk; verify product for fish allergy.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Some commercial BBQ sauces include Worcestershire sauce (anchovy); verify product.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "bbq seasoning",
+      "recipe_groups": [
+        "flavour"
+      ],
+      "swap_groups": [
+        "Herbs/Spices"
+      ],
+      "recipe_units": [
+        "tbsp"
+      ],
+      "ingredient_line_count": 10,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "bbq tomato sauce",
+      "recipe_groups": [
+        "sauce"
+      ],
+      "swap_groups": [
+        "Pasta Sauce"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 10,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "FISH",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Some commercial BBQ-style sauces include Worcestershire sauce (anchovy). Hidden-source risk; verify product.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Some commercial BBQ-style sauces include Worcestershire sauce (anchovy); verify product.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "beans",
+      "recipe_groups": [
+        "main",
+        "protein"
+      ],
+      "swap_groups": [
+        "Dinner Protein",
+        "Lunch Protein",
+        "Snack Protein",
+        "Soup Protein"
+      ],
+      "recipe_units": [
+        "cup",
+        "g"
+      ],
+      "ingredient_line_count": 42,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "beef mince",
+      "recipe_groups": [
+        "protein"
+      ],
+      "swap_groups": [
+        "Dinner Protein",
+        "Lunch Protein"
+      ],
+      "recipe_units": [
+        "cup",
+        "g"
+      ],
+      "ingredient_line_count": 36,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "MEAT_BEEF",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "berries",
+      "recipe_groups": [
+        "fruit"
+      ],
+      "swap_groups": [
+        "Seasonal Fruit"
+      ],
+      "recipe_units": [
+        "serve"
+      ],
+      "ingredient_line_count": 3,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "berry",
+      "recipe_groups": [
+        "add-in",
+        "flavour",
+        "fruit"
+      ],
+      "swap_groups": [
+        "Dessert Flavour",
+        "Fruit/Add-in",
+        "Seasonal Fruit"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 15,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "berry oat",
+      "recipe_groups": [
+        "add-in"
+      ],
+      "swap_groups": [
+        "Fruit/Add-in"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 1,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "blueberry",
+      "recipe_groups": [
+        "add-in",
+        "fruit"
+      ],
+      "swap_groups": [
+        "Fruit/Add-in",
+        "Seasonal Fruit"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 12,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "bread",
+      "recipe_groups": [
+        "bread"
+      ],
+      "swap_groups": [
+        "Wrap/Bread"
+      ],
+      "recipe_units": [
+        "serve"
+      ],
+      "ingredient_line_count": 20,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_WHEAT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "GLUTEN_CEREAL_WHEAT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial bread/wraps/muffins commonly contain milk powder or an egg glaze not implied by the plain ingredient name. Verify product for a dairy-free/vegan requirement.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "DAIRY_MILK",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial bread-family products commonly contain milk powder. Verify product.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "bread rolls",
+      "recipe_groups": [
+        "bread"
+      ],
+      "swap_groups": [
+        "Wrap/Bread"
+      ],
+      "recipe_units": [
+        "serve"
+      ],
+      "ingredient_line_count": 10,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_WHEAT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "GLUTEN_CEREAL_WHEAT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial bread/wraps/muffins commonly contain milk powder or an egg glaze not implied by the plain ingredient name. Verify product for a dairy-free/vegan requirement.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "DAIRY_MILK",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial bread-family products commonly contain milk powder. Verify product.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "breadcrumbs",
+      "recipe_groups": [
+        "starch"
+      ],
+      "swap_groups": [
+        "Bake Base"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 10,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_WHEAT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "GLUTEN_CEREAL_WHEAT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "broccoli",
+      "recipe_groups": [
+        "produce",
+        "produce/sauce",
+        "vegetable"
+      ],
+      "swap_groups": [
+        "Flexible Vegetables",
+        "Frozen/Seasonal Vegetables"
+      ],
+      "recipe_units": [
+        "cup",
+        "kg"
+      ],
+      "ingredient_line_count": 38,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "brown sugar",
+      "recipe_groups": [
+        "sweetener"
+      ],
+      "swap_groups": [
+        "Sweetener/Flavour"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 30,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "HONEY_BEE_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "brown sugar or honey",
+      "recipe_groups": [
+        "sweetener"
+      ],
+      "swap_groups": [
+        "Sweetener/Flavour"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 30,
+      "is_compound_alternative": true,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Swap-flexible ingredient line ('brown sugar or honey'): 'brown sugar' -> false; 'honey' -> true. Household's actual choice determines this attribute.",
+          "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "HONEY_BEE_DERIVED",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Swap-flexible ingredient line ('brown sugar or honey'): 'brown sugar' -> false; 'honey' -> true. Household's actual choice determines this attribute.",
+          "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "butter or oil",
+      "recipe_groups": [
+        "fat"
+      ],
+      "swap_groups": [
+        "Cooking Fat"
+      ],
+      "recipe_units": [
+        "g"
+      ],
+      "ingredient_line_count": 30,
+      "is_compound_alternative": true,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_MILK",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Swap-flexible ingredient line ('butter or oil'): 'butter' -> true; 'oil' -> not identified. Household's actual choice determines this attribute.",
+          "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Swap-flexible ingredient line ('butter or oil'): 'butter' -> true; 'oil' -> false. Household's actual choice determines this attribute.",
+          "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "DAIRY_MILK",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Swap-flexible ingredient line ('butter or oil'): 'butter' -> true; 'oil' -> false. Household's actual choice determines this attribute.",
+          "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "butter or plant spread",
+      "recipe_groups": [
+        "fat"
+      ],
+      "swap_groups": [
+        "Cooking Fat"
+      ],
+      "recipe_units": [
+        "g"
+      ],
+      "ingredient_line_count": 30,
+      "is_compound_alternative": true,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_MILK",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Swap-flexible ingredient line ('butter or plant spread'): 'butter' -> true; 'plant spread' -> not identified. Household's actual choice determines this attribute.",
+          "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Swap-flexible ingredient line ('butter or plant spread'): 'butter' -> true; 'plant spread' -> unspecified. Household's actual choice determines this attribute.",
+          "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "DAIRY_MILK",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Swap-flexible ingredient line ('butter or plant spread'): 'butter' -> true; 'plant spread' -> unspecified. Household's actual choice determines this attribute.",
+          "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "cabbage",
+      "recipe_groups": [
+        "produce"
+      ],
+      "swap_groups": [
+        "Flexible Vegetables"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 3,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "canned tomatoes",
+      "recipe_groups": [
+        "sauce"
+      ],
+      "swap_groups": [
+        "Curry Base"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 10,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "capsicum",
+      "recipe_groups": [
+        "produce",
+        "vegetable"
+      ],
+      "swap_groups": [
+        "Flexible Vegetables",
+        "Frozen/Seasonal Vegetables"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 23,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "caramel",
+      "recipe_groups": [
+        "flavour"
+      ],
+      "swap_groups": [
+        "Dessert Flavour"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 6,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "DAIRY_MILK",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Traditional caramel is made with butter/cream. Hidden-source risk if the product isn't specified.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Follows the DAIRY_MILK assessment: traditional caramel uses butter/cream.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "carrot",
+      "recipe_groups": [
+        "add-in",
+        "flavour",
+        "produce",
+        "side"
+      ],
+      "swap_groups": [
+        "Dessert Flavour",
+        "Flexible Vegetables",
+        "Frozen/Seasonal Vegetables",
+        "Fruit/Add-in",
+        "Snack Side"
+      ],
+      "recipe_units": [
+        "cup",
+        "kg"
+      ],
+      "ingredient_line_count": 57,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "cheese",
+      "recipe_groups": [
+        "add-in",
+        "dairy",
+        "main",
+        "produce",
+        "produce/sauce",
+        "protein",
+        "protein/topping",
+        "topping"
+      ],
+      "swap_groups": [
+        "Cheese",
+        "Flexible Vegetables",
+        "Fruit/Add-in",
+        "Lunch Protein",
+        "Savoury Add-in",
+        "Snack Protein"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 114,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "DAIRY_MILK",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ALLERGEN_MILK",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "cheese or breadcrumbs",
+      "recipe_groups": [
+        "topping"
+      ],
+      "swap_groups": [
+        "Bake Topping"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 50,
+      "is_compound_alternative": true,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_MILK",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Swap-flexible ingredient line ('cheese or breadcrumbs'): 'cheese' -> true; 'breadcrumbs' -> not identified. Household's actual choice determines this attribute.",
+          "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "ALLERGEN_WHEAT",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Swap-flexible ingredient line ('cheese or breadcrumbs'): 'cheese' -> not identified; 'breadcrumbs' -> true. Household's actual choice determines this attribute.",
+          "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Swap-flexible ingredient line ('cheese or breadcrumbs'): 'cheese' -> true; 'breadcrumbs' -> false. Household's actual choice determines this attribute.",
+          "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "DAIRY_MILK",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Swap-flexible ingredient line ('cheese or breadcrumbs'): 'cheese' -> true; 'breadcrumbs' -> not identified. Household's actual choice determines this attribute.",
+          "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "GLUTEN_CEREAL_WHEAT",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Swap-flexible ingredient line ('cheese or breadcrumbs'): 'cheese' -> not identified; 'breadcrumbs' -> true. Household's actual choice determines this attribute.",
+          "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "cheese or yoghurt",
+      "recipe_groups": [
+        "topping"
+      ],
+      "swap_groups": [
+        "Dairy Topping"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 30,
+      "is_compound_alternative": true,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_MILK",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "DAIRY_MILK",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "chia seeds",
+      "recipe_groups": [
+        "seed"
+      ],
+      "swap_groups": [
+        "Seeds"
+      ],
+      "recipe_units": [
+        "tbsp"
+      ],
+      "ingredient_line_count": 30,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "chicken",
+      "recipe_groups": [
+        "protein"
+      ],
+      "swap_groups": [
+        "Dinner Protein",
+        "Lunch Protein",
+        "Soup Protein"
+      ],
+      "recipe_units": [
+        "cup",
+        "g"
+      ],
+      "ingredient_line_count": 50,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "POULTRY",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "chickpeas",
+      "recipe_groups": [
+        "main",
+        "protein"
+      ],
+      "swap_groups": [
+        "Dinner Protein",
+        "Lunch Protein",
+        "Snack Protein",
+        "Soup Protein"
+      ],
+      "recipe_units": [
+        "cup",
+        "g"
+      ],
+      "ingredient_line_count": 51,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "choc chip",
+      "recipe_groups": [
+        "add-in"
+      ],
+      "swap_groups": [
+        "Fruit/Add-in"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 6,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "DAIRY_MILK",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Milk chocolate chips are common; dairy-free chips exist. Verify product.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ALLERGEN_SOY",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Soy lecithin is a common chocolate emulsifier. Verify product.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "CAFFEINE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Cocoa naturally contains caffeine/theobromine; amount varies by product.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Follows the DAIRY_MILK assessment: milk chocolate chips are common.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "chocolate",
+      "recipe_groups": [
+        "flavour"
+      ],
+      "swap_groups": [
+        "Dessert Flavour"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 9,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "DAIRY_MILK",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Milk chocolate is dairy; dark/vegan chocolate exists. Hidden-source risk if the product isn't specified.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ALLERGEN_SOY",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Soy lecithin is a common chocolate emulsifier. Verify product.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "CAFFEINE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Cocoa naturally contains caffeine/theobromine; amount varies by product.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Follows the DAIRY_MILK assessment: milk chocolate is common.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "cinnamon",
+      "recipe_groups": [
+        "add-in",
+        "flavour",
+        "topping"
+      ],
+      "swap_groups": [
+        "Fruit/Add-in",
+        "Sweetener/Flavour"
+      ],
+      "recipe_units": [
+        "cup",
+        "tsp"
+      ],
+      "ingredient_line_count": 16,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "cocoa oat",
+      "recipe_groups": [
+        "add-in"
+      ],
+      "swap_groups": [
+        "Fruit/Add-in"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 3,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "CAFFEINE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Contains cocoa, which naturally contains caffeine/theobromine.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "coconut",
+      "recipe_groups": [
+        "flavour"
+      ],
+      "swap_groups": [
+        "Dessert Flavour"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 9,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "coconut milk",
+      "recipe_groups": [
+        "sauce"
+      ],
+      "swap_groups": [
+        "Curry Base"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 10,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "DAIRY_MILK",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "Coconut milk is plant-derived. Named 'milk' but must NOT be classified as dairy or as the AU milk allergen -- naive substring matching on 'milk' would get this wrong, which is exactly the failure mode this model exists to avoid.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "coconut oat",
+      "recipe_groups": [
+        "add-in"
+      ],
+      "swap_groups": [
+        "Fruit/Add-in"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 3,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "coffee",
+      "recipe_groups": [
+        "flavour"
+      ],
+      "swap_groups": [
+        "Dessert Flavour"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 3,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "CAFFEINE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "corn",
+      "recipe_groups": [
+        "add-in",
+        "produce",
+        "produce/sauce",
+        "side",
+        "topping",
+        "vegetable"
+      ],
+      "swap_groups": [
+        "Flexible Vegetables",
+        "Frozen/Seasonal Vegetables",
+        "Fruit/Add-in",
+        "Savoury Add-in",
+        "Snack Side"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 57,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "cottage cheese",
+      "recipe_groups": [
+        "protein/topping",
+        "topping"
+      ],
+      "swap_groups": [
+        "Breakfast Topping",
+        "Snack Protein"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 6,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "DAIRY_MILK",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ALLERGEN_MILK",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "couscous",
+      "recipe_groups": [
+        "grain/starch"
+      ],
+      "swap_groups": [
+        "Rice/Grain"
+      ],
+      "recipe_units": [
+        "cup cooked"
+      ],
+      "ingredient_line_count": 6,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_WHEAT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": "Couscous is made from wheat semolina -- not gluten-free despite sometimes being treated like a plain grain.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "GLUTEN_CEREAL_WHEAT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "crackers",
+      "recipe_groups": [
+        "side"
+      ],
+      "swap_groups": [
+        "Snack Side"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 3,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_WHEAT",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Most crackers are wheat-based but gluten-free crackers exist; verify product.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "GLUTEN_CEREAL_WHEAT",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "crackers or oats",
+      "recipe_groups": [
+        "grain"
+      ],
+      "swap_groups": [
+        "Crackers/Oats"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 25,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_WHEAT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Crackers alternative is typically wheat-based; oats alternative falls under the AU oats claim boundary.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ALLERGEN_OATS",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Australian gluten-free claim boundary: oats are modelled separately from other gluten cereals. Do not treat as coeliac-safe unless the specific product is a verified gluten-free-certified oat source (see 07_DIETARY_REQUIREMENTS_ENGINE/REFERENCE_SOURCES.md).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "creamy garlic sauce",
+      "recipe_groups": [
+        "sauce"
+      ],
+      "swap_groups": [
+        "Pasta Sauce"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 10,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "DAIRY_MILK",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Cream-based sauces are conventionally dairy; verify the specific product/recipe if a dairy-free version is used.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ALLERGEN_MILK",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": "Named in the ingredient itself.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Follows the DAIRY_MILK assessment for this ingredient: conventionally cream-based.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "cucumber",
+      "recipe_groups": [
+        "produce",
+        "side",
+        "topping"
+      ],
+      "swap_groups": [
+        "Flexible Vegetables",
+        "Fruit/Add-in",
+        "Snack Side"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 24,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "egg",
+      "recipe_groups": [
+        "main",
+        "protein",
+        "topping"
+      ],
+      "swap_groups": [
+        "Breakfast Topping",
+        "Dinner Protein",
+        "Egg",
+        "Lunch Protein",
+        "Snack Protein"
+      ],
+      "recipe_units": [
+        "cup",
+        "each",
+        "g"
+      ],
+      "ingredient_line_count": 75,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "EGG",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ALLERGEN_EGG",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "eggs",
+      "recipe_groups": [
+        "protein"
+      ],
+      "swap_groups": [
+        "Egg"
+      ],
+      "recipe_units": [
+        "each"
+      ],
+      "ingredient_line_count": 175,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "EGG",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ALLERGEN_EGG",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "english muffins",
+      "recipe_groups": [
+        "bread"
+      ],
+      "swap_groups": [
+        "Wrap/Bread"
+      ],
+      "recipe_units": [
+        "serve"
+      ],
+      "ingredient_line_count": 10,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_WHEAT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "GLUTEN_CEREAL_WHEAT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial bread/wraps/muffins commonly contain milk powder or an egg glaze not implied by the plain ingredient name. Verify product for a dairy-free/vegan requirement.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "DAIRY_MILK",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial bread-family products commonly contain milk powder. Verify product.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "garlic seasoning",
+      "recipe_groups": [
+        "flavour"
+      ],
+      "swap_groups": [
+        "Herbs/Spices"
+      ],
+      "recipe_units": [
+        "tbsp"
+      ],
+      "ingredient_line_count": 10,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": "Named in the ingredient itself.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "grapes",
+      "recipe_groups": [
+        "fruit"
+      ],
+      "swap_groups": [
+        "Seasonal Fruit"
+      ],
+      "recipe_units": [
+        "serve"
+      ],
+      "ingredient_line_count": 3,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "green beans",
+      "recipe_groups": [
+        "produce"
+      ],
+      "swap_groups": [
+        "Frozen/Seasonal Vegetables"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 10,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "ham",
+      "recipe_groups": [
+        "protein"
+      ],
+      "swap_groups": [
+        "Lunch Protein",
+        "Soup Protein"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 8,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "MEAT_PORK",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "herb",
+      "recipe_groups": [
+        "add-in"
+      ],
+      "swap_groups": [
+        "Savoury Add-in"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 3,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "herbs",
+      "recipe_groups": [
+        "side"
+      ],
+      "swap_groups": [
+        "Snack Side"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 3,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "herbs or seasoning",
+      "recipe_groups": [
+        "flavour"
+      ],
+      "swap_groups": [
+        "Herbs/Spices"
+      ],
+      "recipe_units": [
+        "tsp"
+      ],
+      "ingredient_line_count": 15,
+      "is_compound_alternative": true,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "honey",
+      "recipe_groups": [
+        "flavour",
+        "topping"
+      ],
+      "swap_groups": [
+        "Fruit/Add-in",
+        "Sweetener/Flavour"
+      ],
+      "recipe_units": [
+        "cup",
+        "tsp"
+      ],
+      "ingredient_line_count": 13,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "HONEY_BEE_DERIVED",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": "Bee-derived. Relevant to VEGAN, not to VEGETARIAN.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "honey or syrup",
+      "recipe_groups": [
+        "sweetener"
+      ],
+      "swap_groups": [
+        "Sweetener/Flavour"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 25,
+      "is_compound_alternative": true,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Swap-flexible ingredient line ('honey or syrup'): 'honey' -> true; 'syrup' -> false. Household's actual choice determines this attribute.",
+          "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "HONEY_BEE_DERIVED",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Swap-flexible ingredient line ('honey or syrup'): 'honey' -> true; 'syrup' -> false. Household's actual choice determines this attribute.",
+          "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "honey soy sauce",
+      "recipe_groups": [
+        "sauce"
+      ],
+      "swap_groups": [
+        "Stir-fry Sauce"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 10,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_SOY",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "HONEY_BEE_DERIVED",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ALLERGEN_WHEAT",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Traditional soy sauce is brewed with wheat; tamari is a wheat-free alternative.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": "Honey is bee-derived.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "hummus",
+      "recipe_groups": [
+        "main",
+        "protein",
+        "topping"
+      ],
+      "swap_groups": [
+        "Breakfast Topping",
+        "Lunch Protein",
+        "Snack Protein"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 9,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ALLERGEN_SESAME",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Standard hummus is made with tahini (sesame paste). Not named in the ingredient text -- hidden-source risk. Verify for a sesame-allergic member rather than trusting the name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "italian herbs",
+      "recipe_groups": [
+        "flavour"
+      ],
+      "swap_groups": [
+        "Herbs/Spices"
+      ],
+      "recipe_units": [
+        "tbsp"
+      ],
+      "ingredient_line_count": 10,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "jam",
+      "recipe_groups": [
+        "topping"
+      ],
+      "swap_groups": [
+        "Breakfast Topping"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 3,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "leftover roast meat",
+      "recipe_groups": [
+        "protein"
+      ],
+      "swap_groups": [
+        "Lunch Protein"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 3,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": "Meat type (beef/pork/poultry/lamb) not specified by the recipe -- 'any leftover roast'. Treat MEAT_BEEF/MEAT_PORK/POULTRY as UNVERIFIED, not false, until the household states what was roasted; do not code a specific meat-type attribute from a guess.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "lemon",
+      "recipe_groups": [
+        "flavour"
+      ],
+      "swap_groups": [
+        "Dessert Flavour"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 9,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "lemon herb dressing",
+      "recipe_groups": [
+        "sauce"
+      ],
+      "swap_groups": [
+        "Dressing",
+        "Sauce"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 11,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "lemon herb seasoning",
+      "recipe_groups": [
+        "flavour"
+      ],
+      "swap_groups": [
+        "Herbs/Spices"
+      ],
+      "recipe_units": [
+        "tbsp"
+      ],
+      "ingredient_line_count": 10,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "lentils",
+      "recipe_groups": [
+        "protein"
+      ],
+      "swap_groups": [
+        "Dinner Protein",
+        "Lunch Protein",
+        "Soup Protein"
+      ],
+      "recipe_units": [
+        "cup",
+        "g"
+      ],
+      "ingredient_line_count": 33,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "lettuce",
+      "recipe_groups": [
+        "produce"
+      ],
+      "swap_groups": [
+        "Flexible Vegetables"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 6,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "mango",
+      "recipe_groups": [
+        "fruit"
+      ],
+      "swap_groups": [
+        "Seasonal Fruit"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 6,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "melon",
+      "recipe_groups": [
+        "fruit"
+      ],
+      "swap_groups": [
+        "Seasonal Fruit"
+      ],
+      "recipe_units": [
+        "serve"
+      ],
+      "ingredient_line_count": 1,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "mild chilli sauce",
+      "recipe_groups": [
+        "sauce"
+      ],
+      "swap_groups": [
+        "Pasta Sauce"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 10,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "mild curry powder or paste",
+      "recipe_groups": [
+        "flavour"
+      ],
+      "swap_groups": [
+        "Herbs/Spices"
+      ],
+      "recipe_units": [
+        "tbsp"
+      ],
+      "ingredient_line_count": 50,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "FISH",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Some commercial curry pastes contain shrimp/fish paste. Not named in the ingredient text -- hidden-source risk; verify product for fish/shellfish allergy.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ALLERGEN_CRUSTACEAN",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Some commercial curry pastes contain shrimp paste. Verify product.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Some commercial curry pastes contain shrimp paste; verify product.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "mild curry sauce",
+      "recipe_groups": [
+        "sauce"
+      ],
+      "swap_groups": [
+        "Sauce"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 6,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "FISH",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Some commercial curry sauces/pastes contain shrimp paste. Verify product for fish/shellfish allergy.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "DAIRY_MILK",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Curry sauces are often cream/yoghurt based; verify product.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Curry sauces are often cream/yoghurt based and some pastes contain shrimp paste; verify product.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "mild paprika",
+      "recipe_groups": [
+        "flavour"
+      ],
+      "swap_groups": [
+        "Herbs/Spices"
+      ],
+      "recipe_units": [
+        "tbsp"
+      ],
+      "ingredient_line_count": 10,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "milk",
+      "recipe_groups": [
+        "liquid"
+      ],
+      "swap_groups": [
+        "Milk"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 205,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "DAIRY_MILK",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ALLERGEN_MILK",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "milk or water",
+      "recipe_groups": [
+        "liquid"
+      ],
+      "swap_groups": [
+        "Milk/Water"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 15,
+      "is_compound_alternative": true,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_MILK",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Swap-flexible ingredient line ('milk or water'): 'milk' -> true; 'water' -> false. Household's actual choice determines this attribute.",
+          "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Swap-flexible ingredient line ('milk or water'): 'milk' -> true; 'water' -> false. Household's actual choice determines this attribute.",
+          "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "DAIRY_MILK",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Swap-flexible ingredient line ('milk or water'): 'milk' -> true; 'water' -> false. Household's actual choice determines this attribute.",
+          "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "mixed fruit",
+      "recipe_groups": [
+        "fruit"
+      ],
+      "swap_groups": [
+        "Seasonal Fruit"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 3,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "mixed salad vegetables",
+      "recipe_groups": [
+        "produce"
+      ],
+      "swap_groups": [
+        "Flexible Vegetables"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 30,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "mixed vegetables",
+      "recipe_groups": [
+        "produce",
+        "starch"
+      ],
+      "swap_groups": [
+        "Bake Base",
+        "Flexible Vegetables",
+        "Frozen/Seasonal Vegetables"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 170,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "mushroom",
+      "recipe_groups": [
+        "vegetable"
+      ],
+      "swap_groups": [
+        "Flexible Vegetables"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 3,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "mustard dressing",
+      "recipe_groups": [
+        "sauce"
+      ],
+      "swap_groups": [
+        "Dressing"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 5,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "noodles",
+      "recipe_groups": [
+        "starch"
+      ],
+      "swap_groups": [
+        "Noodles",
+        "Soup Starch"
+      ],
+      "recipe_units": [
+        "cup",
+        "g"
+      ],
+      "ingredient_line_count": 56,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_WHEAT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Recipe does not specify wheat noodles vs. rice/gluten-free noodles. Verify product for a wheat allergy or coeliac requirement.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "oat flour",
+      "recipe_groups": [
+        "flour"
+      ],
+      "swap_groups": [
+        "Flour"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 10,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_OATS",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": "Australian gluten-free claim boundary: oats are modelled separately from other gluten cereals. Do not treat as coeliac-safe unless the specific product is a verified gluten-free-certified oat source (see 07_DIETARY_REQUIREMENTS_ENGINE/REFERENCE_SOURCES.md).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "GLUTEN_CEREAL_OATS",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": "Australian gluten-free claim boundary: oats are modelled separately from other gluten cereals. Do not treat as coeliac-safe unless the specific product is a verified gluten-free-certified oat source (see 07_DIETARY_REQUIREMENTS_ENGINE/REFERENCE_SOURCES.md).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "oat honey",
+      "recipe_groups": [
+        "add-in"
+      ],
+      "swap_groups": [
+        "Fruit/Add-in"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 3,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "oat jam",
+      "recipe_groups": [
+        "flavour"
+      ],
+      "swap_groups": [
+        "Dessert Flavour"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 3,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "oil",
+      "recipe_groups": [
+        "fat"
+      ],
+      "swap_groups": [
+        "Cooking Fat"
+      ],
+      "recipe_units": [
+        "cup",
+        "tbsp"
+      ],
+      "ingredient_line_count": 215,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "DAIRY_MILK",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "oil or butter",
+      "recipe_groups": [
+        "fat"
+      ],
+      "swap_groups": [
+        "Cooking Fat"
+      ],
+      "recipe_units": [
+        "cup",
+        "tbsp"
+      ],
+      "ingredient_line_count": 30,
+      "is_compound_alternative": true,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_MILK",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Swap-flexible ingredient line ('oil or butter'): 'oil' -> not identified; 'butter' -> true. Household's actual choice determines this attribute.",
+          "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Swap-flexible ingredient line ('oil or butter'): 'oil' -> false; 'butter' -> true. Household's actual choice determines this attribute.",
+          "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "DAIRY_MILK",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Swap-flexible ingredient line ('oil or butter'): 'oil' -> false; 'butter' -> true. Household's actual choice determines this attribute.",
+          "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "oil or melted butter",
+      "recipe_groups": [
+        "fat"
+      ],
+      "swap_groups": [
+        "Cooking Fat"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 30,
+      "is_compound_alternative": true,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_MILK",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Swap-flexible ingredient line ('oil or melted butter'): 'oil' -> not identified; 'melted butter' -> true. Household's actual choice determines this attribute.",
+          "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Swap-flexible ingredient line ('oil or melted butter'): 'oil' -> false; 'melted butter' -> true. Household's actual choice determines this attribute.",
+          "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "DAIRY_MILK",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Swap-flexible ingredient line ('oil or melted butter'): 'oil' -> false; 'melted butter' -> true. Household's actual choice determines this attribute.",
+          "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "onion",
+      "recipe_groups": [
+        "produce",
+        "vegetable"
+      ],
+      "swap_groups": [
+        "Aromatics",
+        "Flexible Vegetables"
+      ],
+      "recipe_units": [
+        "cup",
+        "each"
+      ],
+      "ingredient_line_count": 33,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "orange",
+      "recipe_groups": [
+        "flavour",
+        "fruit"
+      ],
+      "swap_groups": [
+        "Dessert Flavour",
+        "Seasonal Fruit"
+      ],
+      "recipe_units": [
+        "cup",
+        "serve"
+      ],
+      "ingredient_line_count": 9,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "paprika",
+      "recipe_groups": [
+        "side"
+      ],
+      "swap_groups": [
+        "Snack Side"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 1,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "pasta",
+      "recipe_groups": [
+        "grain/starch",
+        "starch"
+      ],
+      "swap_groups": [
+        "Bake Base",
+        "Pasta",
+        "Rice/Grain"
+      ],
+      "recipe_units": [
+        "cup",
+        "cup cooked",
+        "g"
+      ],
+      "ingredient_line_count": 66,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_WHEAT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": "Standard pasta is wheat-based; a gluten-free pasta swap is available via the Pasta swap group but changes this attribute for the adapted version, not the base recipe.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "GLUTEN_CEREAL_WHEAT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "peach",
+      "recipe_groups": [
+        "add-in",
+        "fruit"
+      ],
+      "swap_groups": [
+        "Fruit/Add-in",
+        "Seasonal Fruit"
+      ],
+      "recipe_units": [
+        "cup",
+        "serve"
+      ],
+      "ingredient_line_count": 15,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "peanut",
+      "recipe_groups": [
+        "flavour"
+      ],
+      "swap_groups": [
+        "Dessert Flavour"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 3,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_PEANUT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "peanut butter",
+      "recipe_groups": [
+        "protein/topping",
+        "topping"
+      ],
+      "swap_groups": [
+        "Breakfast Topping",
+        "Snack Protein"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 6,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_PEANUT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "peanut oat",
+      "recipe_groups": [
+        "add-in"
+      ],
+      "swap_groups": [
+        "Fruit/Add-in"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 3,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_PEANUT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "peanut or seed butter",
+      "recipe_groups": [
+        "binder"
+      ],
+      "swap_groups": [
+        "Nut/Seed Butter"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 25,
+      "is_compound_alternative": true,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_PEANUT",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Swap-flexible ingredient line ('peanut or seed butter'): 'peanut' -> true; 'seed butter' -> not identified. Household's actual choice determines this attribute.",
+          "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "ALLERGEN_SESAME",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Swap-flexible ingredient line ('peanut or seed butter'): 'peanut' -> not identified; 'seed butter' -> unspecified. Household's actual choice determines this attribute.",
+          "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "peanut sauce",
+      "recipe_groups": [
+        "sauce"
+      ],
+      "swap_groups": [
+        "Stir-fry Sauce"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 10,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_PEANUT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "pear",
+      "recipe_groups": [
+        "add-in",
+        "flavour",
+        "fruit"
+      ],
+      "swap_groups": [
+        "Dessert Flavour",
+        "Fruit/Add-in",
+        "Seasonal Fruit"
+      ],
+      "recipe_units": [
+        "cup",
+        "serve"
+      ],
+      "ingredient_line_count": 18,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "peas",
+      "recipe_groups": [
+        "produce",
+        "produce/sauce",
+        "vegetable"
+      ],
+      "swap_groups": [
+        "Flexible Vegetables",
+        "Frozen/Seasonal Vegetables"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 46,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "pesto veg sauce",
+      "recipe_groups": [
+        "sauce"
+      ],
+      "swap_groups": [
+        "Pasta Sauce"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 10,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "DAIRY_MILK",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Traditional pesto contains parmesan (dairy) and pine nuts. Not named in the ingredient text -- hidden-source risk.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ALLERGEN_PINE_NUT",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Traditional pesto contains pine nuts. Hidden-source risk; verify product/recipe.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Garlic is a core traditional pesto ingredient, not named in the ingredient text.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Follows the DAIRY_MILK/pine-nut assessment: traditional pesto contains parmesan.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "pineapple",
+      "recipe_groups": [
+        "fruit",
+        "topping"
+      ],
+      "swap_groups": [
+        "Fruit/Add-in",
+        "Seasonal Fruit"
+      ],
+      "recipe_units": [
+        "cup",
+        "serve"
+      ],
+      "ingredient_line_count": 12,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "pita bread",
+      "recipe_groups": [
+        "bread"
+      ],
+      "swap_groups": [
+        "Wrap/Bread"
+      ],
+      "recipe_units": [
+        "serve"
+      ],
+      "ingredient_line_count": 10,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_WHEAT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "GLUTEN_CEREAL_WHEAT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial bread/wraps/muffins commonly contain milk powder or an egg glaze not implied by the plain ingredient name. Verify product for a dairy-free/vegan requirement.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "DAIRY_MILK",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial bread-family products commonly contain milk powder. Verify product.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "plain",
+      "recipe_groups": [
+        "add-in"
+      ],
+      "swap_groups": [
+        "Savoury Add-in"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 3,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "plain flour",
+      "recipe_groups": [
+        "flour"
+      ],
+      "swap_groups": [
+        "Flour"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 70,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_WHEAT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "GLUTEN_CEREAL_WHEAT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "plum",
+      "recipe_groups": [
+        "fruit"
+      ],
+      "swap_groups": [
+        "Seasonal Fruit"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 3,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "popcorn",
+      "recipe_groups": [
+        "main"
+      ],
+      "swap_groups": [
+        "Snack Protein"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 3,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "pork",
+      "recipe_groups": [
+        "protein"
+      ],
+      "swap_groups": [
+        "Dinner Protein"
+      ],
+      "recipe_units": [
+        "g"
+      ],
+      "ingredient_line_count": 25,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "MEAT_PORK",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "potato",
+      "recipe_groups": [
+        "grain/starch",
+        "produce",
+        "protein",
+        "starch"
+      ],
+      "swap_groups": [
+        "Bake Base",
+        "Flexible Vegetables",
+        "Potato",
+        "Rice/Grain",
+        "Soup Protein",
+        "Soup Starch"
+      ],
+      "recipe_units": [
+        "cup",
+        "cup cooked",
+        "g",
+        "kg",
+        "large"
+      ],
+      "ingredient_line_count": 97,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "pumpkin",
+      "recipe_groups": [
+        "add-in",
+        "produce",
+        "sauce"
+      ],
+      "swap_groups": [
+        "Curry Base",
+        "Flexible Vegetables",
+        "Fruit/Add-in",
+        "Savoury Add-in"
+      ],
+      "recipe_units": [
+        "cup",
+        "kg"
+      ],
+      "ingredient_line_count": 27,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "raspberry",
+      "recipe_groups": [
+        "fruit"
+      ],
+      "swap_groups": [
+        "Seasonal Fruit"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 3,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "rice",
+      "recipe_groups": [
+        "grain",
+        "grain/starch",
+        "starch"
+      ],
+      "swap_groups": [
+        "Bake Base",
+        "Rice/Grain",
+        "Soup Starch"
+      ],
+      "recipe_units": [
+        "cup",
+        "cup cooked",
+        "cup dry"
+      ],
+      "ingredient_line_count": 108,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "ricotta",
+      "recipe_groups": [
+        "topping"
+      ],
+      "swap_groups": [
+        "Breakfast Topping"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 3,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "DAIRY_MILK",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ALLERGEN_MILK",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "rolled oats",
+      "recipe_groups": [
+        "grain",
+        "grain/flour"
+      ],
+      "swap_groups": [
+        "Flour/Oats",
+        "Oats/Breakfast Grain"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 95,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_OATS",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": "Australian gluten-free claim boundary: oats are modelled separately from other gluten cereals. Do not treat as coeliac-safe unless the specific product is a verified gluten-free-certified oat source (see 07_DIETARY_REQUIREMENTS_ENGINE/REFERENCE_SOURCES.md).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "GLUTEN_CEREAL_OATS",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": "Australian gluten-free claim boundary: oats are modelled separately from other gluten cereals. Do not treat as coeliac-safe unless the specific product is a verified gluten-free-certified oat source (see 07_DIETARY_REQUIREMENTS_ENGINE/REFERENCE_SOURCES.md).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "salad leaves",
+      "recipe_groups": [
+        "produce"
+      ],
+      "swap_groups": [
+        "Flexible Vegetables"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 30,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "salsa",
+      "recipe_groups": [
+        "produce",
+        "produce/sauce",
+        "sauce",
+        "side"
+      ],
+      "swap_groups": [
+        "Flexible Vegetables",
+        "Sauce",
+        "Snack Side"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 18,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "sausages",
+      "recipe_groups": [
+        "protein"
+      ],
+      "swap_groups": [
+        "Dinner Protein"
+      ],
+      "recipe_units": [
+        "g"
+      ],
+      "ingredient_line_count": 25,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "MEAT_PORK",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Recipe does not specify sausage type; beef/plant-based sausages are also sold. Verify product before excluding for a pork-free member.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "seed oat",
+      "recipe_groups": [
+        "add-in"
+      ],
+      "swap_groups": [
+        "Fruit/Add-in"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 3,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "self-raising flour",
+      "recipe_groups": [
+        "flour",
+        "grain/flour"
+      ],
+      "swap_groups": [
+        "Flour",
+        "Flour/Oats"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 95,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_WHEAT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "GLUTEN_CEREAL_WHEAT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "self-raising flour or oats",
+      "recipe_groups": [
+        "flour/grain"
+      ],
+      "swap_groups": [
+        "Flour/Oats"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 25,
+      "is_compound_alternative": true,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_OATS",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Swap-flexible ingredient line ('self-raising flour or oats'): 'self-raising flour' -> not identified; 'oats' -> true. Household's actual choice determines this attribute.",
+          "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "ALLERGEN_WHEAT",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Swap-flexible ingredient line ('self-raising flour or oats'): 'self-raising flour' -> true; 'oats' -> not identified. Household's actual choice determines this attribute.",
+          "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "GLUTEN_CEREAL_OATS",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Swap-flexible ingredient line ('self-raising flour or oats'): 'self-raising flour' -> not identified; 'oats' -> true. Household's actual choice determines this attribute.",
+          "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        },
+        {
+          "attribute_code": "GLUTEN_CEREAL_WHEAT",
+          "attribute_value": "depends_on_choice",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Swap-flexible ingredient line ('self-raising flour or oats'): 'self-raising flour' -> true; 'oats' -> not identified. Household's actual choice determines this attribute.",
+          "source_reference": "derived from 'X or Y' alternatives in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "simple white or tomato sauce",
+      "recipe_groups": [
+        "sauce"
+      ],
+      "swap_groups": [
+        "Bake Sauce"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 50,
+      "is_compound_alternative": true,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "soy garlic sauce",
+      "recipe_groups": [
+        "sauce"
+      ],
+      "swap_groups": [
+        "Stir-fry Sauce"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 10,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_SOY",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ALLERGEN_WHEAT",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Traditional soy sauce is brewed with wheat; tamari is a wheat-free alternative. Verify product for a wheat allergy.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": "Named in the ingredient itself.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "spinach",
+      "recipe_groups": [
+        "add-in",
+        "produce",
+        "topping",
+        "vegetable"
+      ],
+      "swap_groups": [
+        "Flexible Vegetables",
+        "Frozen/Seasonal Vegetables",
+        "Fruit/Add-in"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 19,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "spread or dressing",
+      "recipe_groups": [
+        "sauce"
+      ],
+      "swap_groups": [
+        "Sauce"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 30,
+      "is_compound_alternative": true,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "stock",
+      "recipe_groups": [
+        "liquid"
+      ],
+      "swap_groups": [
+        "Stock"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 30,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "unspecified",
+          "evidence_state": "UNVERIFIED",
+          "notes": "Recipe does not specify chicken/beef/vegetable stock. A certified vegetable stock is required for vegetarian/vegan; do not assume plant-based from the name alone.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "strawberry",
+      "recipe_groups": [
+        "add-in",
+        "fruit"
+      ],
+      "swap_groups": [
+        "Fruit/Add-in",
+        "Seasonal Fruit"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 6,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "sugar",
+      "recipe_groups": [
+        "sweetener"
+      ],
+      "swap_groups": [
+        "Sweetener/Flavour"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 90,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "sultana",
+      "recipe_groups": [
+        "add-in",
+        "fruit"
+      ],
+      "swap_groups": [
+        "Fruit/Add-in",
+        "Seasonal Fruit"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 10,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_SULPHITES",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Dried fruit including sultanas is commonly treated with sulphur dioxide (220) as a preservative. Hidden-source risk; verify product for a sulphite-sensitive member.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "sultana oat",
+      "recipe_groups": [
+        "add-in"
+      ],
+      "swap_groups": [
+        "Fruit/Add-in"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 3,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_SULPHITES",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Contains sultanas; dried fruit is commonly sulphured. Verify product.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "sweet chilli dressing",
+      "recipe_groups": [
+        "sauce"
+      ],
+      "swap_groups": [
+        "Dressing"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 5,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "sweet chilli sauce",
+      "recipe_groups": [
+        "sauce"
+      ],
+      "swap_groups": [
+        "Stir-fry Sauce"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 10,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "sweet potato",
+      "recipe_groups": [
+        "produce",
+        "sauce",
+        "starch",
+        "vegetable"
+      ],
+      "swap_groups": [
+        "Curry Base",
+        "Flexible Vegetables",
+        "Potato"
+      ],
+      "recipe_units": [
+        "cup",
+        "g",
+        "kg",
+        "large"
+      ],
+      "ingredient_line_count": 41,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "teriyaki sauce",
+      "recipe_groups": [
+        "sauce"
+      ],
+      "swap_groups": [
+        "Sauce",
+        "Stir-fry Sauce"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 16,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_SOY",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ALLERGEN_WHEAT",
+          "attribute_value": "true",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Traditional soy sauce base is brewed with wheat; verify product.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "tofu",
+      "recipe_groups": [
+        "protein"
+      ],
+      "swap_groups": [
+        "Dinner Protein",
+        "Lunch Protein"
+      ],
+      "recipe_units": [
+        "g"
+      ],
+      "ingredient_line_count": 30,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "tomato",
+      "recipe_groups": [
+        "produce",
+        "side",
+        "topping",
+        "vegetable"
+      ],
+      "swap_groups": [
+        "Flexible Vegetables",
+        "Fruit/Add-in",
+        "Snack Side"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 23,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "tomato herb dressing",
+      "recipe_groups": [
+        "sauce"
+      ],
+      "swap_groups": [
+        "Dressing"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 5,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "tomato herb sauce",
+      "recipe_groups": [
+        "sauce"
+      ],
+      "swap_groups": [
+        "Pasta Sauce"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 10,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "tuna",
+      "recipe_groups": [
+        "main",
+        "protein",
+        "topping"
+      ],
+      "swap_groups": [
+        "Breakfast Topping",
+        "Dinner Protein",
+        "Lunch Protein",
+        "Snack Protein"
+      ],
+      "recipe_units": [
+        "cup",
+        "g"
+      ],
+      "ingredient_line_count": 51,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "FISH",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ALLERGEN_FISH",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "vanilla",
+      "recipe_groups": [
+        "add-in",
+        "flavour"
+      ],
+      "swap_groups": [
+        "Dessert Flavour",
+        "Fruit/Add-in",
+        "Sweetener/Flavour"
+      ],
+      "recipe_units": [
+        "cup",
+        "tsp"
+      ],
+      "ingredient_line_count": 22,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ALCOHOL_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Vanilla extract is conventionally alcohol-based; vanilla essence/paste formulations vary. Hidden-source risk for an alcohol-free requirement; verify product.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "vegetable sticks or fruit",
+      "recipe_groups": [
+        "produce"
+      ],
+      "swap_groups": [
+        "Flexible Vegetables"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 25,
+      "is_compound_alternative": true,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "vinaigrette dressing",
+      "recipe_groups": [
+        "sauce"
+      ],
+      "swap_groups": [
+        "Dressing"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 5,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "wholemeal flour",
+      "recipe_groups": [
+        "flour"
+      ],
+      "swap_groups": [
+        "Flour"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 10,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_WHEAT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "GLUTEN_CEREAL_WHEAT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "wraps",
+      "recipe_groups": [
+        "bread"
+      ],
+      "swap_groups": [
+        "Wrap/Bread"
+      ],
+      "recipe_units": [
+        "each",
+        "serve"
+      ],
+      "ingredient_line_count": 20,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ALLERGEN_WHEAT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "GLUTEN_CEREAL_WHEAT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial bread/wraps/muffins commonly contain milk powder or an egg glaze not implied by the plain ingredient name. Verify product for a dairy-free/vegan requirement.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "DAIRY_MILK",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial bread-family products commonly contain milk powder. Verify product.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "yoghurt",
+      "recipe_groups": [
+        "main",
+        "protein/topping",
+        "sauce",
+        "topping"
+      ],
+      "swap_groups": [
+        "Curry Base",
+        "Fruit/Add-in",
+        "Snack Protein"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 28,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "DAIRY_MILK",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ALLERGEN_MILK",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "yoghurt dressing",
+      "recipe_groups": [
+        "sauce"
+      ],
+      "swap_groups": [
+        "Dressing"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 5,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "DAIRY_MILK",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ALLERGEN_MILK",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": null,
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        },
+        {
+          "attribute_code": "ONION_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "GARLIC_CONTENT",
+          "attribute_value": "unspecified",
+          "evidence_state": "CONDITIONAL",
+          "notes": "Commercial sauces, dressings and seasoning blends commonly include onion and/or garlic powder even when not named. Not confirmed for this specific ingredient text -- verify product for an onion/garlic-free requirement.",
+          "source_reference": "recipe group/swap group heuristic (sauce or Herbs/Spices), not a specific product check"
+        },
+        {
+          "attribute_code": "LACTOSE_CONTENT",
+          "attribute_value": "true",
+          "evidence_state": "VERIFIED_PRESENT",
+          "notes": "Mirrors this ingredient's DAIRY_MILK assessment (ordinary dairy, not a lactose-reduced product).",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    },
+    {
+      "ingredient_key": "zucchini",
+      "recipe_groups": [
+        "produce",
+        "vegetable"
+      ],
+      "swap_groups": [
+        "Flexible Vegetables",
+        "Frozen/Seasonal Vegetables"
+      ],
+      "recipe_units": [
+        "cup"
+      ],
+      "ingredient_line_count": 13,
+      "is_compound_alternative": false,
+      "attributes": [
+        {
+          "attribute_code": "ANIMAL_DERIVED",
+          "attribute_value": "false",
+          "evidence_state": "VERIFIED_ABSENT",
+          "notes": "No animal-derived component identified in this generic ingredient name.",
+          "source_reference": "generic ingredient identity, as named in the recipe bank"
+        }
+      ]
+    }
+  ]
+}
