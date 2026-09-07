@@ -9,6 +9,7 @@
     head.addEventListener("click", () => {
       const collapsed = body.classList.toggle("collapsed");
       btn.setAttribute("aria-expanded", String(!collapsed));
+      btn.textContent = collapsed ? "Show ▸" : "Hide ▾";
     });
   });
 })();
