@@ -1,0 +1,33 @@
+name: Cookbook Regression CI
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  production-starter:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: 04_PRODUCTION_STARTER
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+          cache-dependency-path: 04_PRODUCTION_STARTER/package-lock.json
+      - run: npm ci
+      - run: npm run typecheck
+      - run: npm run test:dietary
+      - run: npm run test:substitution
+      - run: npm run test:professional
+      - run: npm run test:texture
+      - run: npm run test:units
+      - run: npm run test:recipes-api
+      - run: npm run test:catalogue-api
