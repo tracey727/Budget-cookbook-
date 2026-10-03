@@ -34,6 +34,17 @@ ranking rules are identical to the prototype's -- only the data source
 changed. Still outstanding for a later phase: authenticated household
 persistence (pantry/prices currently stay in `localStorage`, as before).
 
+## Local development against Neon
+
+For local `wrangler dev` testing from a machine that can reach Neon:
+
+1. Copy `.dev.vars.example` to `.dev.vars`.
+2. Replace the placeholder password using the least-privilege `genevieve_app` connection details from Neon.
+3. Never use the database owner connection string in browser code or commit it to Git.
+4. Run `npm run dev` and verify `/api/health`.
+
+The production `wrangler.toml` remains committed with the real non-secret Hyperdrive configuration ID. The local override is only for development and does not replace the production binding.
+
 ## Secrets
 Use Cloudflare secret storage for Stripe secrets and any other secret. Never put secret values in source, `wrangler.toml.example`, `.env.example` or browser JavaScript.
 
