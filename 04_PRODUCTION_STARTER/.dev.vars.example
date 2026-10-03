@@ -1,0 +1,11 @@
+# Local-only Wrangler development variables.
+# Copy this file to `.dev.vars` and replace placeholders locally.
+# The real `.dev.vars` file is gitignored and must never be committed.
+#
+# Binding name must match the [[hyperdrive]] binding in wrangler.toml.
+# Use the least-privilege `genevieve_app` role, not the database owner role.
+CLOUDFLARE_HYPERDRIVE_LOCAL_CONNECTION_STRING_HYPERDRIVE=postgresql://genevieve_app:REPLACE_WITH_REAL_PASSWORD@ep-divine-mountain-a79gcke0-pooler.ap-southeast-2.aws.neon.tech/genevieve_cookbook?sslmode=require
+
+# Future Stripe secrets, when Phase 14 is deliberately reached, remain local/secret-only:
+# STRIPE_SECRET_KEY=sk_test_...
+# STRIPE_WEBHOOK_SECRET=whsec_...
