@@ -7,3 +7,8 @@ Start here: [`00_START_HERE.md`](./00_START_HERE.md).
 Build order and status: [`01_MASTER_BLUEPRINT/CHRONOLOGICAL_BUILD_AND_GREEN_GATES.md`](./01_MASTER_BLUEPRINT/CHRONOLOGICAL_BUILD_AND_GREEN_GATES.md).
 
 Working browser prototype: [`03_WORKING_PROTOTYPE/`](./03_WORKING_PROTOTYPE/) (open `index.html`, or serve the folder with any static file server).
+
+
+Current repository status: [`CURRENT_STATUS.md`](./CURRENT_STATUS.md).
+
+Food/cookbook family map: [`01_MASTER_BLUEPRINT/FOOD_PRODUCT_FAMILY.md`](./01_MASTER_BLUEPRINT/FOOD_PRODUCT_FAMILY.md).
