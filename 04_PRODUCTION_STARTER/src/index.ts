@@ -1,4 +1,5 @@
 import { Client } from "pg";
+import { buildHealthResponse } from "./health-contract";
 import {
   buildRecipeDetailQuery,
   buildRecipeIngredientsQuery,
@@ -85,10 +86,10 @@ async function api(request: Request, env: Env, requestId: string): Promise<Respo
   if (url.pathname === "/api/health") {
     try {
       const result = await withDb(env, async (db) => db.query("select now() as database_time"));
-      return json({ ok: true, databaseTime: result.rows[0]?.database_time ?? null, requestId }, 200, requestId);
+      return json(buildHealthResponse(true, requestId, result.rows[0]?.database_time ?? null), 200, requestId);
     } catch (error) {
       console.error("health_check_db_unavailable", requestId, error);
-      return json({ ok: false, error: "database_unavailable", requestId }, 503, requestId);
+      return json(buildHealthResponse(false, requestId), 503, requestId);
     }
   }
 
