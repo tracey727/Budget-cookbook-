@@ -18,6 +18,7 @@ for (const payload of [ready, down]) {
   }
 }
 equal(ready.ok, true, "success status");
+if (!("databaseTime" in ready)) throw new Error("Success response missing database time");
 equal(ready.databaseTime, "2026-10-14T00:00:00.000Z", "existing database time");
 equal(down.ok, false, "failure status");
 if (!("error" in down) || down.error !== "database_unavailable") throw new Error("Error contract changed");
