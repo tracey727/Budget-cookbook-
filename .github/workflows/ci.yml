@@ -24,6 +24,7 @@ jobs:
           cache-dependency-path: 04_PRODUCTION_STARTER/package-lock.json
       - run: npm ci
       - run: npm run typecheck
+      - run: npm run test:health-identity
       - run: npm run test:dietary
       - run: npm run test:substitution
       - run: npm run test:professional
